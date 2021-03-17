@@ -1,6 +1,6 @@
-2021-03-17T00:59:03.22329800255-00:59:03 **** Incremental Build of configuration Release for project FPRock_CmodA735t_bootloader_system ****
+2021-03-17T01:46:49.95067400255-01:46:49 **** Incremental Build of configuration Release for project FPRock_CmodA735t_bootloader_system ****
 000-make all 
 000-Skipping SD card image generation. Reason: The system project only has applications for microblaze processors.
 00255-
-00:59:03 Build Finished (took 115ms)
+01:46:50 Build Finished (took 116ms)
 

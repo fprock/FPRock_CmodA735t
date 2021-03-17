@@ -461,3 +461,23 @@ con
 01:02:56 INFO  : Caching converted image as '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/_ide/flash/FPRock_CmodA735t_app.elf.srec'.
 01:03:54 INFO  : Invoking Bootgen: bootgen -arch fpga -image /home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/_ide/flash/bootimage.bif -w -o /home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/_ide/flash/BOOT.bin  -interface spi
 01:03:55 INFO  : Bootgen command execution is done.
+01:44:09 INFO  : Hardware specification for platform project 'FPRock_Platform' is updated.
+01:44:11 INFO  : Successfully done sdx_reload_mss "/home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss"
+01:45:05 INFO  : (SwPlatform) Successfully done update_mss 
+01:45:05 INFO  : No changes in MSS file content so sources will not be generated.
+01:46:49 INFO  : Checking for BSP changes to sync application flags for project 'FPRock_CmodA735t_bootloader'...
+01:46:49 INFO  : Updating application flags with new BSP settings...
+01:46:49 INFO  : Successfully updated application flags for project FPRock_CmodA735t_bootloader.
+01:46:49 INFO  : The hardware specfication used by project 'FPRock_CmodA735t_bootloader' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+01:46:49 INFO  : The file '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_bootloader/_ide/bitstream/download.bit' stored in project is removed.
+01:46:49 INFO  : The file '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_bootloader/_ide/bitstream/design_1_wrapper.mmi' stored in project is removed.
+01:46:49 INFO  : The file '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_bootloader/_ide/bitstream/design_1_wrapper.bit' stored in project is removed.
+01:46:49 INFO  : The updated bitstream files are copied from platform to folder '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_bootloader/_ide/bitstream' in project 'FPRock_CmodA735t_bootloader'.
+01:47:07 INFO  : Checking for BSP changes to sync application flags for project 'FPRock_CmodA735t_app'...
+01:47:07 INFO  : Updating application flags with new BSP settings...
+01:47:07 INFO  : Successfully updated application flags for project FPRock_CmodA735t_app.
+01:47:08 INFO  : The hardware specfication used by project 'FPRock_CmodA735t_app' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+01:47:08 INFO  : The file '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/_ide/bitstream/download.bit' stored in project is removed.
+01:47:08 INFO  : The file '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/_ide/bitstream/design_1_wrapper.mmi' stored in project is removed.
+01:47:08 INFO  : The file '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/_ide/bitstream/design_1_wrapper.bit' stored in project is removed.
+01:47:08 INFO  : The updated bitstream files are copied from platform to folder '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/_ide/bitstream' in project 'FPRock_CmodA735t_app'.

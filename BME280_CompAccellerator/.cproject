@@ -59,8 +59,6 @@
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2019.2/include/ap_sysc"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/home/chrispy/workspace/FPRock_CmodA735t"/>
-                                    									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2019.2/lnx64/tools/systemc/include"/>
                                     								
                                 </option>
@@ -94,8 +92,6 @@
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2019.2/lnx64/tools/auto_cc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2019.2/include/ap_sysc"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="/home/chrispy/workspace/FPRock_CmodA735t"/>
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2019.2/lnx64/tools/systemc/include"/>
                                     								
@@ -231,8 +227,6 @@
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2019.2/include/ap_sysc"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/home/chrispy/workspace/FPRock_CmodA735t"/>
-                                    									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2019.2/lnx64/tools/systemc/include"/>
                                     								
                                 </option>
@@ -256,8 +250,6 @@
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2019.2/lnx64/tools/auto_cc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2019.2/include/ap_sysc"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="/home/chrispy/workspace/FPRock_CmodA735t"/>
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2019.2/lnx64/tools/systemc/include"/>
                                     								

@@ -1,0 +1,1188 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Mar 17 01:35:17 2021
+# Process ID: 43890
+# Current directory: /home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/impl_1
+# Command line: vivado -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+# Log file: /home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/impl_1/design_1_wrapper.vdi
+# Journal file: /home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.2/data/ip'.
+Command: link_design -top design_1_wrapper -part xc7a35tcpg236-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-454] Reading design checkpoint '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_axi_emc_0_0/design_1_axi_emc_0_0.dcp' for cell 'design_1_i/axi_emc_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.dcp' for cell 'design_1_i/axi_gpio_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/design_1_axi_iic_0_0.dcp' for cell 'design_1_i/axi_iic_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0.dcp' for cell 'design_1_i/axi_quad_spi_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0.dcp' for cell 'design_1_i/axi_smc'
+INFO: [Project 1-454] Reading design checkpoint '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.dcp' for cell 'design_1_i/axi_uartlite_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_1_0/design_1_axi_uartlite_1_0.dcp' for cell 'design_1_i/axi_uartlite_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_2_0/design_1_axi_uartlite_2_0.dcp' for cell 'design_1_i/axi_uartlite_2'
+INFO: [Project 1-454] Reading design checkpoint '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.dcp' for cell 'design_1_i/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_compensator_0_0/design_1_compensator_0_0.dcp' for cell 'design_1_i/compensator_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.dcp' for cell 'design_1_i/mdm_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.dcp' for cell 'design_1_i/microblaze_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0.dcp' for cell 'design_1_i/microblaze_0_axi_intc'
+INFO: [Project 1-454] Reading design checkpoint '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_100M_0/design_1_rst_clk_wiz_0_100M_0.dcp' for cell 'design_1_i/rst_clk_wiz_0_100M'
+INFO: [Project 1-454] Reading design checkpoint '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.dcp' for cell 'design_1_i/microblaze_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0.dcp' for cell 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0.dcp' for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10'
+INFO: [Project 1-454] Reading design checkpoint '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0.dcp' for cell 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0.dcp' for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10'
+INFO: [Project 1-454] Reading design checkpoint '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0.dcp' for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
+Netlist sorting complete. Time (s): cpu = 00:00:00.64 ; elapsed = 00:00:00.64 . Memory (MB): peak = 1882.617 ; gain = 4.000 ; free physical = 12242 ; free virtual = 22345
+INFO: [Netlist 29-17] Analyzing 2393 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2685.973 ; gain = 576.828 ; free physical = 11628 ; free virtual = 21748
+WARNING: [Vivado 12-2489] -input_jitter contains time 0.833330 which will be rounded to 0.833 to ensure it is an integer multiple of 1 picosecond [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+Finished Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_board.xdc] for cell 'design_1_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_board.xdc] for cell 'design_1_i/axi_uartlite_0/U0'
+Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.xdc] for cell 'design_1_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.xdc] for cell 'design_1_i/axi_uartlite_0/U0'
+Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_axi_emc_0_0/design_1_axi_emc_0_0_board.xdc] for cell 'design_1_i/axi_emc_0'
+Finished Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_axi_emc_0_0/design_1_axi_emc_0_0_board.xdc] for cell 'design_1_i/axi_emc_0'
+Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_axi_emc_0_0/design_1_axi_emc_0_0.xdc] for cell 'design_1_i/axi_emc_0'
+Finished Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_axi_emc_0_0/design_1_axi_emc_0_0.xdc] for cell 'design_1_i/axi_emc_0'
+Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0_board.xdc] for cell 'design_1_i/axi_quad_spi_0/U0'
+Finished Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0_board.xdc] for cell 'design_1_i/axi_quad_spi_0/U0'
+Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0.xdc] for cell 'design_1_i/axi_quad_spi_0/U0'
+Finished Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0.xdc] for cell 'design_1_i/axi_quad_spi_0/U0'
+Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Finished Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Finished Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/design_1_axi_iic_0_0_board.xdc] for cell 'design_1_i/axi_iic_0/U0'
+Finished Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/design_1_axi_iic_0_0_board.xdc] for cell 'design_1_i/axi_iic_0/U0'
+Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_1_0/design_1_axi_uartlite_1_0_board.xdc] for cell 'design_1_i/axi_uartlite_1/U0'
+Finished Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_1_0/design_1_axi_uartlite_1_0_board.xdc] for cell 'design_1_i/axi_uartlite_1/U0'
+Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_1_0/design_1_axi_uartlite_1_0.xdc] for cell 'design_1_i/axi_uartlite_1/U0'
+Finished Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_1_0/design_1_axi_uartlite_1_0.xdc] for cell 'design_1_i/axi_uartlite_1/U0'
+Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.xdc] for cell 'design_1_i/microblaze_0/U0'
+Finished Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.xdc] for cell 'design_1_i/microblaze_0/U0'
+Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10/U0'
+Finished Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10/U0'
+Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10/U0'
+Finished Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10/U0'
+Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0.xdc] for cell 'design_1_i/microblaze_0_axi_intc/U0'
+Finished Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0.xdc] for cell 'design_1_i/microblaze_0_axi_intc/U0'
+Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.xdc] for cell 'design_1_i/mdm_1/U0'
+Finished Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.xdc] for cell 'design_1_i/mdm_1/U0'
+Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_100M_0/design_1_rst_clk_wiz_0_100M_0_board.xdc] for cell 'design_1_i/rst_clk_wiz_0_100M/U0'
+Finished Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_100M_0/design_1_rst_clk_wiz_0_100M_0_board.xdc] for cell 'design_1_i/rst_clk_wiz_0_100M/U0'
+Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_100M_0/design_1_rst_clk_wiz_0_100M_0.xdc] for cell 'design_1_i/rst_clk_wiz_0_100M/U0'
+Finished Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_100M_0/design_1_rst_clk_wiz_0_100M_0.xdc] for cell 'design_1_i/rst_clk_wiz_0_100M/U0'
+Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr_aclk_0_board.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr_aclk_0_board.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr_aclk_0.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr_aclk_0.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_2_0/design_1_axi_uartlite_2_0_board.xdc] for cell 'design_1_i/axi_uartlite_2/U0'
+Finished Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_2_0/design_1_axi_uartlite_2_0_board.xdc] for cell 'design_1_i/axi_uartlite_2/U0'
+Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_2_0/design_1_axi_uartlite_2_0.xdc] for cell 'design_1_i/axi_uartlite_2/U0'
+Finished Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_2_0/design_1_axi_uartlite_2_0.xdc] for cell 'design_1_i/axi_uartlite_2/U0'
+Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/constrs_1/new/fprock_cmoda735t_const.xdc]
+Finished Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/constrs_1/new/fprock_cmoda735t_const.xdc]
+Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0_clocks.xdc] for cell 'design_1_i/axi_quad_spi_0/U0'
+Finished Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0_clocks.xdc] for cell 'design_1_i/axi_quad_spi_0/U0'
+Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0_clocks.xdc] for cell 'design_1_i/microblaze_0_axi_intc/U0'
+Finished Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0_clocks.xdc] for cell 'design_1_i/microblaze_0_axi_intc/U0'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'design_1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'design_1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'design_1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'design_1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'design_1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'design_1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'design_1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'design_1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s01_nodes/s01_r_node/inst/inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s01_nodes/s01_r_node/inst/inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_b_node/inst/inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_b_node/inst/inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.gen_node_prog_full.inst_node_prog_full/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[0].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[0].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[1].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[1].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s01_nodes/s01_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s01_nodes/s01_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s01_nodes/s01_ar_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s01_nodes/s01_ar_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s01_nodes/s01_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s01_nodes/s01_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+Finished Sourcing Tcl File [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s00_nodes/s00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+WARNING: [Constraints 18-5572] Instance design_1_i/axi_emc_0/U0/EMC_CTRL_I/IO_REGISTERS_I/mem_ben_reg_reg[0] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance design_1_i/axi_emc_0/U0/EMC_CTRL_I/IO_REGISTERS_I/mem_ce_reg_reg[0] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance design_1_i/axi_emc_0/U0/EMC_CTRL_I/IO_REGISTERS_I/mem_qwen_reg_reg[0] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance design_1_i/axi_emc_0/U0/EMC_CTRL_I/IO_REGISTERS_I/mem_rnw_reg_reg has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance design_1_i/axi_emc_0/U0/EMC_CTRL_I/IO_REGISTERS_I/mem_rpn_reg_reg has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance design_1_i/axi_emc_0/U0/mem_a_int_reg[19] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance design_1_i/axi_emc_0/U0/mem_a_int_reg[20] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance design_1_i/axi_emc_0/U0/mem_a_int_reg[21] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance design_1_i/axi_emc_0/U0/mem_a_int_reg[22] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance design_1_i/axi_emc_0/U0/mem_a_int_reg[23] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance design_1_i/axi_emc_0/U0/mem_a_int_reg[24] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance design_1_i/axi_emc_0/U0/mem_a_int_reg[25] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance design_1_i/axi_emc_0/U0/mem_a_int_reg[26] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance design_1_i/axi_emc_0/U0/mem_a_int_reg[27] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance design_1_i/axi_emc_0/U0/mem_a_int_reg[28] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance design_1_i/axi_emc_0/U0/mem_a_int_reg[29] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance design_1_i/axi_emc_0/U0/mem_a_int_reg[30] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance design_1_i/axi_emc_0/U0/mem_a_int_reg[31] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+Generating merged BMM file for the design top 'design_1_wrapper'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: /home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/data/mb_bootloop_le.elf 
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2934.094 ; gain = 0.000 ; free physical = 11657 ; free virtual = 21776
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 366 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 15 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 80 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 34 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 220 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 6 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 11 instances
+
+33 Infos, 19 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 2934.094 ; gain = 1363.953 ; free physical = 11657 ; free virtual = 21776
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2934.094 ; gain = 0.000 ; free physical = 11665 ; free virtual = 21785
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 12acc9595
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 2934.094 ; gain = 0.000 ; free physical = 11627 ; free virtual = 21748
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 19 inverter(s) to 104 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1148023ca
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2934.094 ; gain = 0.000 ; free physical = 11515 ; free virtual = 21636
+INFO: [Opt 31-389] Phase Retarget created 265 cells and removed 413 cells
+INFO: [Opt 31-1021] In phase Retarget, 41 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 5 inverter(s) to 7 load pin(s).
+Phase 2 Constant propagation | Checksum: f926dbbb
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 2934.094 ; gain = 0.000 ; free physical = 11515 ; free virtual = 21636
+INFO: [Opt 31-389] Phase Constant propagation created 325 cells and removed 1543 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 49 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: e91a9263
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2934.094 ; gain = 0.000 ; free physical = 11512 ; free virtual = 21633
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 3105 cells
+INFO: [Opt 31-1021] In phase Sweep, 61 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-194] Inserted BUFG design_1_i/mdm_1/U0/Use_E2.BSCAN_I/Ext_JTAG_UPDATE_BUFG_inst to drive 40 load(s) on clock net design_1_i/mdm_1/U0/Use_E2.BSCAN_I/Ext_JTAG_UPDATE_BUFG
+INFO: [Opt 31-193] Inserted 1 BUFG(s) on clock nets
+INFO: [Opt 31-1112] Starts optimizing BUFG(s) with a common MMCM/DPLL/XPLL driver.
+INFO: [Opt 31-1112] Starts optimizing BUFG(s) with a common driver.
+INFO: [Opt 31-1092] Phase BUFG optimization transformed 0 BUFG(s) to MBUFG(s).
+Phase 4 BUFG optimization | Checksum: 16a7c8c16
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2934.094 ; gain = 0.000 ; free physical = 11512 ; free virtual = 21633
+INFO: [Opt 31-662] Phase BUFG optimization created 1 cells of which 1 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 16a7c8c16
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2934.094 ; gain = 0.000 ; free physical = 11512 ; free virtual = 21633
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 16a7c8c16
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2934.094 ; gain = 0.000 ; free physical = 11512 ; free virtual = 21633
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 37 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             265  |             413  |                                             41  |
+|  Constant propagation         |             325  |            1543  |                                             49  |
+|  Sweep                        |               0  |            3105  |                                             61  |
+|  BUFG optimization            |               1  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                             37  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2934.094 ; gain = 0.000 ; free physical = 11508 ; free virtual = 21629
+Ending Logic Optimization Task | Checksum: 9a5f7523
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 2934.094 ; gain = 0.000 ; free physical = 11508 ; free virtual = 21629
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.155 | TNS=-2.211 |
+INFO: [Power 33-23] Power model is not available for STARTUP_7SERIES_GEN.STARTUP2_7SERIES_inst
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 36 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 16 newly gated: 9 Total Ports: 72
+Number of Flops added for Enable Generation: 3
+
+Ending PowerOpt Patch Enables Task | Checksum: 101654346
+
+Time (s): cpu = 00:00:00.28 ; elapsed = 00:00:00.27 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11439 ; free virtual = 21566
+Ending Power Optimization Task | Checksum: 101654346
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:07 . Memory (MB): peak = 3352.699 ; gain = 418.605 ; free physical = 11470 ; free virtual = 21597
+
+Starting Final Cleanup Task
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-1112] Starts optimizing BUFG(s) with a common MMCM/DPLL/XPLL driver.
+INFO: [Opt 31-1112] Starts optimizing BUFG(s) with a common driver.
+INFO: [Opt 31-1092] Phase BUFG optimization transformed 0 BUFG(s) to MBUFG(s).
+Ending Logic Optimization Task | Checksum: 60480f2f
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11475 ; free virtual = 21602
+Ending Final Cleanup Task | Checksum: 60480f2f
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11476 ; free virtual = 21603
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11476 ; free virtual = 21603
+Ending Netlist Obfuscation Task | Checksum: 60480f2f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11476 ; free virtual = 21603
+INFO: [Common 17-83] Releasing license: Implementation
+70 Infos, 19 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:22 . Memory (MB): peak = 3352.699 ; gain = 418.605 ; free physical = 11476 ; free virtual = 21603
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11442 ; free virtual = 21569
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11438 ; free virtual = 21565
+INFO: [Common 17-1381] The checkpoint '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/impl_1/design_1_wrapper_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11420 ; free virtual = 21558
+INFO: [runtcl-4] Executing : report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+Command: report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/impl_1/design_1_wrapper_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11406 ; free virtual = 21545
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 5c9ad162
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.05 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11406 ; free virtual = 21545
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11407 ; free virtual = 21545
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: b25bd9d5
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11397 ; free virtual = 21537
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 225eae743
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11368 ; free virtual = 21510
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 225eae743
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11368 ; free virtual = 21509
+Phase 1 Placer Initialization | Checksum: 225eae743
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11368 ; free virtual = 21509
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 224dfc222
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11343 ; free virtual = 21485
+
+Phase 2.2 Global Placement Core
+
+Phase 2.2.1 Physical Synthesis In Placer
+INFO: [Physopt 32-1018] Found 737 candidate LUT instances to create LUTNM shape
+INFO: [Physopt 32-775] End 1 Pass. Optimized 344 nets or cells. Created 46 new cells, deleted 298 existing cells and moved 0 existing cell
+INFO: [Physopt 32-76] Pass 1. Identified 1 candidate net for fanout optimization.
+INFO: [Physopt 32-81] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/sync_reset. Replicated 13 times.
+INFO: [Physopt 32-232] Optimized 1 net. Created 13 new instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 1 net or cell. Created 13 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.09 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11324 ; free virtual = 21468
+INFO: [Physopt 32-76] Pass 1. Identified 12 candidate nets for fanout optimization.
+INFO: [Physopt 32-81] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/Operand_Select_I/EX_Op2_reg[0]_0[0]. Replicated 4 times.
+INFO: [Physopt 32-81] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/Operand_Select_I/EX_Op2_reg[0]_0[1]. Replicated 4 times.
+INFO: [Physopt 32-81] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/Operand_Select_I/EX_Op2_reg[0]_0[2]. Replicated 5 times.
+INFO: [Physopt 32-81] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/Operand_Select_I/EX_Op2_reg[0]_0[6]. Replicated 3 times.
+INFO: [Physopt 32-81] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/Operand_Select_I/EX_Op2_reg[0]_0[4]. Replicated 3 times.
+INFO: [Physopt 32-81] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/Operand_Select_I/EX_Op2_reg[0]_0[3]. Replicated 3 times.
+INFO: [Physopt 32-81] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/Operand_Select_I/Q[0]. Replicated 3 times.
+INFO: [Physopt 32-81] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/Operand_Select_I/EX_Op2_reg[0]_0[9]. Replicated 3 times.
+INFO: [Physopt 32-81] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/Operand_Select_I/EX_Op2_reg[0]_0[10]. Replicated 3 times.
+INFO: [Physopt 32-81] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/Operand_Select_I/EX_Op2_reg[0]_0[8]. Replicated 3 times.
+INFO: [Physopt 32-81] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/Operand_Select_I/EX_Op2_reg[0]_0[7]. Replicated 3 times.
+INFO: [Physopt 32-81] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/Operand_Select_I/Q[31]. Replicated 4 times.
+INFO: [Physopt 32-232] Optimized 12 nets. Created 41 new instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 12 nets or cells. Created 41 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.05 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11324 ; free virtual = 21468
+INFO: [Physopt 32-117] Net design_1_i/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[15].ram.r/prim_noinit.ram/ENA_I could not be optimized because driver design_1_i/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[15].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram_i_1 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_TLBS.IB_Fetch_1_reg[8] could not be optimized because driver design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Instr_Addr[23]_INST_0 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_TLBS.IB_Fetch_1_reg[14] could not be optimized because driver design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Instr_Addr[17]_INST_0 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_TLBS.IB_Fetch_1_reg[12] could not be optimized because driver design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Instr_Addr[19]_INST_0 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_TLBS.IB_Fetch_1_reg[11] could not be optimized because driver design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Instr_Addr[20]_INST_0 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_TLBS.IB_Fetch_1_reg[10] could not be optimized because driver design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Instr_Addr[21]_INST_0 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_TLBS.IB_Fetch_1_reg[15] could not be optimized because driver design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Instr_Addr[16]_INST_0 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_TLBS.IB_Fetch_1_reg[9] could not be optimized because driver design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Instr_Addr[22]_INST_0 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_TLBS.IB_Fetch_1_reg[3] could not be optimized because driver design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Instr_Addr[28]_INST_0 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_TLBS.IB_Fetch_1_reg[6] could not be optimized because driver design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Instr_Addr[25]_INST_0 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_TLBS.IB_Fetch_1_reg[13] could not be optimized because driver design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Instr_Addr[18]_INST_0 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_TLBS.IB_Fetch_1_reg[7] could not be optimized because driver design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Instr_Addr[24]_INST_0 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_TLBS.IB_Fetch_1_reg[2] could not be optimized because driver design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Instr_Addr[29]_INST_0 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_TLBS.IB_Fetch_1_reg[5] could not be optimized because driver design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Instr_Addr[26]_INST_0 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_TLBS.IB_Fetch_1_reg[4] could not be optimized because driver design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Instr_Addr[27]_INST_0 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Cache_Interface_I1/ADDRBWRADDR[7] could not be optimized because driver design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Cache_Interface_I1/Using_FPGA.Native_i_6__6 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Cache_Line_WE[0].New_Data_Write_Gen[0].New_Data_Write_LUT/D[0] could not be optimized because driver design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Cache_Line_WE[0].New_Data_Write_Gen[0].New_Data_Write_LUT/Using_FPGA.Native could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_Virtual_Memory.last_Valid_Instr_Tag_Addr_reg[0][10] could not be optimized because driver design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_FPGA.Native_i_4__19 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Cache_Line_WE[0].New_Data_Write_Gen[1].New_Data_Write_LUT/WEB[0] could not be optimized because driver design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Cache_Line_WE[0].New_Data_Write_Gen[1].New_Data_Write_LUT/Using_FPGA.Native could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/Using_TLBS.IB_Addr_strobe_1_reg_0[8] could not be optimized because driver design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/Data_Addr[21]_INST_0 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Cache_Interface_I1/ADDRBWRADDR[2] could not be optimized because driver design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Cache_Interface_I1/Using_FPGA.Native_i_11__3 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/ALU_I/Using_FPGA.ALL_Bits[25].ALU_Bit_I1/Not_Last_Bit.MUXCY_XOR_I/ex_Write_DCache_decode_reg[0] could not be optimized because driver design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/ALU_I/Using_FPGA.ALL_Bits[25].ALU_Bit_I1/Not_Last_Bit.MUXCY_XOR_I/Data_Addr[25]_INST_0 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_Virtual_Memory.last_Valid_Instr_Tag_Addr_reg[0][2] could not be optimized because driver design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_FPGA.Native_i_1__173 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_Virtual_Memory.last_Valid_Instr_Tag_Addr_reg[0][1] could not be optimized because driver design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_FPGA.Native_i_2__107 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_Virtual_Memory.last_Valid_Instr_Tag_Addr_reg[0][3] could not be optimized because driver design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_FPGA.Native_i_11__4 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Cache_Interface_I1/ADDRBWRADDR[3] could not be optimized because driver design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_DCache.Using_WriteBack.DCache_wb_I1/Cache_Interface_I1/Using_FPGA.Native_i_10__4 could not be replicated
+INFO: [Physopt 32-46] Identified 40 candidate nets for critical-cell optimization.
+INFO: [Physopt 32-81] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/Operand_Select_I/Q[1]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/Operand_Select_I/Q[6]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net design_1_i/compensator_0/U0/p_fine_reg_1062[29]. Replicated 1 times.
+INFO: [Physopt 32-571] Net design_1_i/compensator_0/U0/p_fine_reg_1062[35] was not replicated.
+INFO: [Physopt 32-571] Net design_1_i/compensator_0/U0/p_fine_reg_1062[34] was not replicated.
+INFO: [Physopt 32-232] Optimized 3 nets. Created 3 new instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 3 nets or cells. Created 3 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11323 ; free virtual = 21467
+INFO: [Physopt 32-457] Pass 1. Identified 3 candidate cells for DSP register optimization.
+INFO: [Physopt 32-665] Processed cell design_1_i/compensator_0/U0/compensator_mul_mmb6_U15/compensator_mul_mmb6_DSP48_0_U/p_cvt. 13 registers were pushed out.
+INFO: [Physopt 32-457] Pass 2. Identified 1 candidate cell for DSP register optimization.
+INFO: [Physopt 32-457] Pass 2. Identified 1 candidate cell for DSP register optimization.
+INFO: [Physopt 32-666] Processed cell design_1_i/compensator_0/U0/compensator_mul_mmb6_U15/compensator_mul_mmb6_DSP48_0_U/p_cvt. No change.
+INFO: [Physopt 32-665] Processed cell design_1_i/compensator_0/U0/trunc_ln24_1_reg_922_reg__0. 15 registers were pushed out.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 2 nets or cells. Created 28 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11323 ; free virtual = 21467
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for HD net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11324 ; free virtual = 21468
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |           46  |            298  |                   344  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |           13  |              0  |                     1  |           0  |           1  |  00:00:01  |
+|  Fanout                                           |           41  |              0  |                    12  |           0  |           1  |  00:00:01  |
+|  Critical Cell                                    |            3  |              0  |                     3  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |           28  |              0  |                     2  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |          131  |            298  |                   362  |           0  |           9  |  00:00:02  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2.1 Physical Synthesis In Placer | Checksum: 1e165f735
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:20 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11323 ; free virtual = 21468
+Phase 2.2 Global Placement Core | Checksum: 248cb2243
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:20 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11320 ; free virtual = 21465
+Phase 2 Global Placement | Checksum: 248cb2243
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:20 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11328 ; free virtual = 21472
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 23a004fe2
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:21 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11322 ; free virtual = 21467
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 2668e2626
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:23 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11328 ; free virtual = 21473
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 2981ea93f
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:23 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11328 ; free virtual = 21473
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 1e45edd0d
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:23 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11328 ; free virtual = 21473
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 2ba7d58fe
+
+Time (s): cpu = 00:01:09 ; elapsed = 00:00:25 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11351 ; free virtual = 21495
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 26b5e584c
+
+Time (s): cpu = 00:01:13 ; elapsed = 00:00:29 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11339 ; free virtual = 21484
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 1fbc3e16c
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:00:30 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11339 ; free virtual = 21484
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 28f3c2acf
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:00:30 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11339 ; free virtual = 21484
+
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: 184c250fb
+
+Time (s): cpu = 00:01:21 ; elapsed = 00:00:33 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11335 ; free virtual = 21481
+Phase 3 Detail Placement | Checksum: 184c250fb
+
+Time (s): cpu = 00:01:21 ; elapsed = 00:00:33 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11335 ; free virtual = 21481
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 13ba6de86
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 13ba6de86
+
+Time (s): cpu = 00:01:31 ; elapsed = 00:00:36 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11329 ; free virtual = 21475
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-0.391. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: cba56c64
+
+Time (s): cpu = 00:01:48 ; elapsed = 00:00:47 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11318 ; free virtual = 21464
+Phase 4.1 Post Commit Optimization | Checksum: cba56c64
+
+Time (s): cpu = 00:01:49 ; elapsed = 00:00:47 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11318 ; free virtual = 21464
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: cba56c64
+
+Time (s): cpu = 00:01:49 ; elapsed = 00:00:47 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11317 ; free virtual = 21463
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: cba56c64
+
+Time (s): cpu = 00:01:49 ; elapsed = 00:00:47 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11318 ; free virtual = 21463
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11318 ; free virtual = 21463
+Phase 4.4 Final Placement Cleanup | Checksum: 607caf53
+
+Time (s): cpu = 00:01:49 ; elapsed = 00:00:48 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11318 ; free virtual = 21463
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 607caf53
+
+Time (s): cpu = 00:01:49 ; elapsed = 00:00:48 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11318 ; free virtual = 21463
+Ending Placer Task | Checksum: 4a860c26
+
+Time (s): cpu = 00:01:49 ; elapsed = 00:00:48 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11317 ; free virtual = 21463
+INFO: [Common 17-83] Releasing license: Implementation
+157 Infos, 19 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:01:52 ; elapsed = 00:00:49 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11338 ; free virtual = 21484
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11338 ; free virtual = 21484
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11261 ; free virtual = 21453
+INFO: [Common 17-1381] The checkpoint '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/impl_1/design_1_wrapper_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11312 ; free virtual = 21473
+INFO: [runtcl-4] Executing : report_io -file design_1_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.11 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11306 ; free virtual = 21467
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_placed.rpt -pb design_1_wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file design_1_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.15 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11310 ; free virtual = 21470
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11282 ; free virtual = 21443
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.667 | TNS=-13.279 |
+Phase 1 Physical Synthesis Initialization | Checksum: 1811961d5
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:02 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11265 ; free virtual = 21426
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.667 | TNS=-13.279 |
+
+Phase 2 DSP Register Optimization
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 2 DSP Register Optimization | Checksum: 1811961d5
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:02 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11262 ; free virtual = 21423
+
+Phase 3 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.667 | TNS=-13.279 |
+INFO: [Physopt 32-702] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/Using_TLBS.UTLB_I/MMU_UTLB_RAM_I/D[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/EX_ALU_Op_reg[0]_0[1]. Replicated 2 times.
+INFO: [Physopt 32-735] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/EX_ALU_Op_reg[0]_0[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.586 | TNS=-12.377 |
+INFO: [Physopt 32-702] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/Using_TLBS.UTLB_I/State__0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/Using_TLBS.UTLB_I/Hit_DirectA_carry/MUXCY_I/FSM_sequential_State_reg[3].  Did not re-place instance design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/Using_TLBS.UTLB_I/Hit_DirectA_carry/MUXCY_I/FSM_sequential_State[0]_i_4
+INFO: [Physopt 32-710] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/Using_TLBS.UTLB_I/eqa2_carry_compare_mask_I1/The_Compare[0].carry_and_I1/MUXCY_I/D[0]. Critical path length was reduced through logic transformation on cell design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/Using_TLBS.UTLB_I/eqa2_carry_compare_mask_I1/The_Compare[0].carry_and_I1/MUXCY_I/FSM_sequential_State[0]_i_1_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/Using_TLBS.UTLB_I/Hit_DirectA_carry/MUXCY_I/FSM_sequential_State_reg[3]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.562 | TNS=-11.791 |
+INFO: [Physopt 32-81] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/EX_ALU_Op_reg[0]_0[0]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/EX_ALU_Op_reg[0]_0[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.542 | TNS=-11.631 |
+INFO: [Physopt 32-663] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/Operand_Select_I/EX_Op2_reg[0]_0[0]_repN.  Re-placed instance design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/Operand_Select_I/EX_Op2_reg[31]_replica
+INFO: [Physopt 32-735] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/Operand_Select_I/EX_Op2_reg[0]_0[0]_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.533 | TNS=-11.447 |
+INFO: [Physopt 32-702] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/Using_TLBS.UTLB_I/data_Lookup_Wait_reg_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/Using_TLBS.UTLB_I/eqb2_carry_compare_mask/The_Compare[0].carry_and_I1/MUXCY_I/data_Lookup_Wait_i_2_n_0.  Re-placed instance design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/Using_TLBS.UTLB_I/eqb2_carry_compare_mask/The_Compare[0].carry_and_I1/MUXCY_I/data_Lookup_Wait_i_2
+INFO: [Physopt 32-735] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/Using_TLBS.UTLB_I/eqb2_carry_compare_mask/The_Compare[0].carry_and_I1/MUXCY_I/data_Lookup_Wait_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.519 | TNS=-10.914 |
+INFO: [Physopt 32-663] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/dDataRdy_Q.  Re-placed instance design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/Using_TLBS.dDataRdy_Q_reg
+INFO: [Physopt 32-735] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/dDataRdy_Q. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.490 | TNS=-10.682 |
+INFO: [Physopt 32-663] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/DDATALO_WR_Q.  Re-placed instance design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/Using_TLBS.DDATALO_WR_Q_reg
+INFO: [Physopt 32-735] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/DDATALO_WR_Q. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.473 | TNS=-10.546 |
+INFO: [Physopt 32-572] Net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/EX_ALU_Op_reg[0]_0[1]_repN was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/EX_ALU_Op_reg[0]_0[1]_repN.  Did not re-place instance design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/EX_ALU_Op_reg[0]_replica
+INFO: [Physopt 32-572] Net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/EX_ALU_Op_reg[0]_0[1]_repN was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/EX_ALU_Op_reg[0]_0[1]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_FPGA.Native_4.  Re-placed instance design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/RAM_reg_i_52
+INFO: [Physopt 32-735] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_FPGA.Native_4. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.459 | TNS=-10.397 |
+INFO: [Physopt 32-663] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_FPGA.Native_3.  Re-placed instance design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/RAM_reg_i_54
+INFO: [Physopt 32-735] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_FPGA.Native_3. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.445 | TNS=-10.383 |
+INFO: [Physopt 32-662] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_FPGA.Native_3.  Did not re-place instance design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/RAM_reg_i_54
+INFO: [Physopt 32-710] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/Using_TLBS.UTLB_I/MMU_UTLB_RAM_I/RAM_reg_i_8_n_0. Critical path length was reduced through logic transformation on cell design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/Using_TLBS.UTLB_I/MMU_UTLB_RAM_I/RAM_reg_i_8_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_FPGA.Native_3. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.391 | TNS=-9.938 |
+INFO: [Physopt 32-702] Processed net design_1_i/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[13].ram.r/prim_noinit.ram/doutb[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Tag_RAM_Module/Not_Using_XPM.Using_B36_S36.The_BRAMs[0].RAMB36_I1/D[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_MMU_Protect.ib_vmode_MMU_keep_reg was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_MMU_Protect.ib_vmode_MMU_keep_reg.  Did not re-place instance design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Instr_Addr[0]_INST_0_i_1
+INFO: [Physopt 32-710] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_TLBS.IB_Fetch_1_reg[4]. Critical path length was reduced through logic transformation on cell design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Instr_Addr[27]_INST_0_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_MMU_Protect.ib_vmode_MMU_keep_reg. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.368 | TNS=-8.616 |
+INFO: [Physopt 32-702] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Using_Stream.stream_cache_I1/stream_addr_reg_n_0_[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Using_Stream.stream_cache_I1/Addr_Handler[6].MUXCY_XOR_I/lopt_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Using_Stream.stream_cache_I1/Addr_Handler[10].MUXCY_XOR_I/lopt_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Using_Stream.stream_cache_I1/Addr_Handler[14].MUXCY_XOR_I/lopt_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Using_Stream.stream_cache_I1/Addr_Handler[18].MUXCY_XOR_I/lopt_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Using_Stream.stream_cache_I1/Addr_Handler[22].MUXCY_XOR_I/lopt_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Using_Stream.stream_cache_I1/Addr_Handler[26].MUXCY_XOR_I/lopt_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Using_Victim_Cache.victim_cache_I1/CI.  Did not re-place instance design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Using_Victim_Cache.victim_cache_I1/Using_FPGA.Native_I1_i_2__1
+INFO: [Physopt 32-702] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Using_Victim_Cache.victim_cache_I1/CI. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Using_Victim_Cache.victim_cache_I1/E[0].  Did not re-place instance design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Using_Victim_Cache.victim_cache_I1/Using_FPGA.Native_I1_i_2
+INFO: [Physopt 32-572] Net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Using_Victim_Cache.victim_cache_I1/E[0] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Using_Victim_Cache.victim_cache_I1/E[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Using_Victim_Cache.victim_cache_I1/in[1].  Did not re-place instance design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Using_Victim_Cache.victim_cache_I1/Using_AXI.M_AXI_ARADDR_I[31]_i_4
+INFO: [Physopt 32-710] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Using_Victim_Cache.victim_cache_I1/E[0]. Critical path length was reduced through logic transformation on cell design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Using_Victim_Cache.victim_cache_I1/Using_FPGA.Native_I1_i_2_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Using_Victim_Cache.victim_cache_I1/in[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.324 | TNS=-7.579 |
+INFO: [Physopt 32-662] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_FPGA.Native_4.  Did not re-place instance design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/RAM_reg_i_52
+INFO: [Physopt 32-710] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/Using_TLBS.UTLB_I/MMU_UTLB_RAM_I/RAM_reg_i_7_n_0. Critical path length was reduced through logic transformation on cell design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/Using_TLBS.UTLB_I/MMU_UTLB_RAM_I/RAM_reg_i_7_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_FPGA.Native_4. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.313 | TNS=-7.255 |
+INFO: [Physopt 32-663] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_FPGA.Native_6.  Re-placed instance design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/RAM_reg_i_46
+INFO: [Physopt 32-735] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_FPGA.Native_6. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.296 | TNS=-7.238 |
+INFO: [Physopt 32-662] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_FPGA.Native_6.  Did not re-place instance design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/RAM_reg_i_46
+INFO: [Physopt 32-710] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/Using_TLBS.UTLB_I/MMU_UTLB_RAM_I/RAM_reg_i_5_n_0. Critical path length was reduced through logic transformation on cell design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/Using_TLBS.UTLB_I/MMU_UTLB_RAM_I/RAM_reg_i_5_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_FPGA.Native_6. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.296 | TNS=-6.942 |
+INFO: [Physopt 32-662] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/Using_TLBS.UTLB_I/MMU_UTLB_RAM_I/RAM_reg_i_68_n_0.  Did not re-place instance design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/Using_TLBS.UTLB_I/MMU_UTLB_RAM_I/RAM_reg_i_68
+INFO: [Physopt 32-710] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/Using_TLBS.UTLB_I/MMU_UTLB_RAM_I/RAM_reg_i_17_n_0. Critical path length was reduced through logic transformation on cell design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/Using_TLBS.UTLB_I/MMU_UTLB_RAM_I/RAM_reg_i_17_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/Using_TLBS.UTLB_I/MMU_UTLB_RAM_I/RAM_reg_i_68_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.265 | TNS=-6.663 |
+INFO: [Physopt 32-662] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Using_Victim_Cache.victim_cache_I1/Using_Stream.clear_stream_cache_hold_reg_0.  Did not re-place instance design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Using_Victim_Cache.victim_cache_I1/Using_FPGA.Native_i_4__29
+INFO: [Physopt 32-710] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Using_Victim_Cache.victim_cache_I1/E[0]. Critical path length was reduced through logic transformation on cell design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Using_Victim_Cache.victim_cache_I1/Using_FPGA.Native_I1_i_2_comp_1.
+INFO: [Physopt 32-735] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Using_Victim_Cache.victim_cache_I1/Using_Stream.clear_stream_cache_hold_reg_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.247 | TNS=-5.603 |
+INFO: [Physopt 32-572] Net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_MMU_Protect.ib_vmode_MMU_keep_reg was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_MMU_Protect.ib_vmode_MMU_keep_reg.  Did not re-place instance design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Instr_Addr[0]_INST_0_i_1
+INFO: [Physopt 32-710] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_TLBS.IB_Fetch_1_reg[10]. Critical path length was reduced through logic transformation on cell design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Instr_Addr[21]_INST_0_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_MMU_Protect.ib_vmode_MMU_keep_reg. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.240 | TNS=-5.289 |
+INFO: [Physopt 32-572] Net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_MMU_Protect.ib_vmode_MMU_keep_reg was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_MMU_Protect.ib_vmode_MMU_keep_reg.  Did not re-place instance design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Instr_Addr[0]_INST_0_i_1
+INFO: [Physopt 32-710] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_TLBS.IB_Fetch_1_reg[7]. Critical path length was reduced through logic transformation on cell design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Instr_Addr[24]_INST_0_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_MMU_Protect.ib_vmode_MMU_keep_reg. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.235 | TNS=-4.888 |
+INFO: [Physopt 32-702] Processed net design_1_i/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/doutb[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_MMU_Protect.ib_vmode_MMU_keep_reg was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_MMU_Protect.ib_vmode_MMU_keep_reg.  Did not re-place instance design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Instr_Addr[0]_INST_0_i_1
+INFO: [Physopt 32-710] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_TLBS.IB_Fetch_1_reg[8]. Critical path length was reduced through logic transformation on cell design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Instr_Addr[23]_INST_0_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_MMU_Protect.ib_vmode_MMU_keep_reg. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.223 | TNS=-4.438 |
+INFO: [Physopt 32-662] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_MMU_Protect.ib_vmode_MMU_keep_reg.  Did not re-place instance design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Instr_Addr[0]_INST_0_i_1
+INFO: [Physopt 32-710] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_TLBS.IB_Fetch_1_reg[11]. Critical path length was reduced through logic transformation on cell design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Instr_Addr[20]_INST_0_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_MMU_Protect.ib_vmode_MMU_keep_reg. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.212 | TNS=-3.935 |
+INFO: [Physopt 32-702] Processed net design_1_i/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[11].ram.r/prim_noinit.ram/doutb[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_MMU_Protect.ib_vmode_MMU_keep_reg.  Did not re-place instance design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Instr_Addr[0]_INST_0_i_1
+INFO: [Physopt 32-710] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_TLBS.IB_Fetch_1_reg[13]. Critical path length was reduced through logic transformation on cell design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Instr_Addr[18]_INST_0_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_MMU_Protect.ib_vmode_MMU_keep_reg. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.197 | TNS=-3.407 |
+INFO: [Physopt 32-702] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/Using_TLBS.UTLB_I/Index_reg[5]_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/Using_TLBS.UTLB_I/eqb2_carry_compare_mask/The_Compare[0].carry_and_I1/MUXCY_I/FSM_sequential_State_reg[3].  Re-placed instance design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/Using_TLBS.UTLB_I/eqb2_carry_compare_mask/The_Compare[0].carry_and_I1/MUXCY_I/Index[5]_i_4
+INFO: [Physopt 32-735] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/Using_TLBS.UTLB_I/eqb2_carry_compare_mask/The_Compare[0].carry_and_I1/MUXCY_I/FSM_sequential_State_reg[3]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.194 | TNS=-3.209 |
+INFO: [Physopt 32-662] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_MMU_Protect.ib_vmode_MMU_keep_reg.  Did not re-place instance design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Instr_Addr[0]_INST_0_i_1
+INFO: [Physopt 32-702] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_MMU_Protect.ib_vmode_MMU_keep_reg. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/Using_ICache_Carry_Chain.ib_addr_strobe_i_carry_and/MUXCY_I/Using_FPGA.Native_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_Debug.Using_ICache.debug_combinded_carry_or_I/MUXCY_I/lopt_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/cache_valid_bit_detect_I1/Valid_check_with_8word_cacheline.valid_check_cacheline[0].valid_check_carry_and_I/MUXCY_I/lopt_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Using_FPGA_FSL_1.tag_hit_comparator/Comp_Carry_Chain[7].MUXCY_I/lopt_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Using_FPGA_FSL_1.tag_hit_comparator/Comp_Carry_Chain[3].MUXCY_I/lopt_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Using_FPGA_FSL_1.tag_hit_comparator/Using_Extra_Carry.MUXCY_EXTRA_I/lopt_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Tag_RAM_Module/Not_Using_XPM.Using_B36_S36.The_BRAMs[0].RAMB36_I1/S. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.179 | TNS=-2.815 |
+INFO: [Physopt 32-702] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Tag_RAM_Module/Not_Using_XPM.Using_B36_S36.The_BRAMs[0].RAMB36_I1/DOADO[18]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Tag_RAM_Module/Not_Using_XPM.Using_B36_S36.The_BRAMs[0].RAMB36_I1/Comp_Carry_Chain[7].carry_sel_reg. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.138 | TNS=-1.821 |
+INFO: [Physopt 32-662] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_FPGA.Native_5.  Did not re-place instance design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/RAM_reg_i_50
+INFO: [Physopt 32-710] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/Using_TLBS.UTLB_I/MMU_UTLB_RAM_I/RAM_reg_i_6_n_0. Critical path length was reduced through logic transformation on cell design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/Using_TLBS.UTLB_I/MMU_UTLB_RAM_I/RAM_reg_i_6_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_FPGA.Native_5. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.133 | TNS=-1.683 |
+INFO: [Physopt 32-702] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Tag_RAM_Module/Not_Using_XPM.Using_B36_S36.The_BRAMs[0].RAMB36_I1/DOADO[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Tag_RAM_Module/Not_Using_XPM.Using_B36_S36.The_BRAMs[0].RAMB36_I1/Comp_Carry_Chain[4].carry_sel_reg. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.107 | TNS=-1.255 |
+INFO: [Physopt 32-702] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Tag_RAM_Module/Not_Using_XPM.Using_B36_S36.The_BRAMs[0].RAMB36_I1/Valid_Data_Bits[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Tag_RAM_Module/Not_Using_XPM.Using_B36_S36.The_BRAMs[0].RAMB36_I1/Using_FPGA.Native_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.106 | TNS=-1.241 |
+INFO: [Physopt 32-702] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Tag_RAM_Module/Not_Using_XPM.Using_B36_S36.The_BRAMs[0].RAMB36_I1/DOADO[6]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Tag_RAM_Module/Not_Using_XPM.Using_B36_S36.The_BRAMs[0].RAMB36_I1/Comp_Carry_Chain[3].carry_sel_reg. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.093 | TNS=-1.057 |
+INFO: [Physopt 32-663] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/Using_TLBS.UTLB_I/eqb2_carry_compare_mask/The_Compare[0].carry_and_I1/MUXCY_I/FSM_sequential_State[4]_i_4_n_0.  Re-placed instance design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/Using_TLBS.UTLB_I/eqb2_carry_compare_mask/The_Compare[0].carry_and_I1/MUXCY_I/FSM_sequential_State[4]_i_4
+INFO: [Physopt 32-735] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/Using_TLBS.UTLB_I/eqb2_carry_compare_mask/The_Compare[0].carry_and_I1/MUXCY_I/FSM_sequential_State[4]_i_4_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.092 | TNS=-0.870 |
+INFO: [Physopt 32-702] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Tag_RAM_Module/Not_Using_XPM.Using_B36_S36.The_BRAMs[0].RAMB36_I1/S. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_TLBS.IB_Fetch_1_reg[3].  Did not re-place instance design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Instr_Addr[28]_INST_0
+INFO: [Physopt 32-572] Net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_TLBS.IB_Fetch_1_reg[3] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-735] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_TLBS.IB_Fetch_1_reg[3]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.092 | TNS=-0.747 |
+INFO: [Physopt 32-702] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Using_ICache.ICache_I1/Tag_RAM_Module/Not_Using_XPM.Using_B36_S36.The_BRAMs[0].RAMB36_I1/D[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_TLBS.IB_Fetch_1_reg[9].  Re-placed instance design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Instr_Addr[22]_INST_0
+INFO: [Physopt 32-735] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_TLBS.IB_Fetch_1_reg[9]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.090 | TNS=-0.717 |
+INFO: [Physopt 32-662] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_TLBS.IB_Fetch_1_reg[5].  Did not re-place instance design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Instr_Addr[26]_INST_0
+INFO: [Physopt 32-572] Net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_TLBS.IB_Fetch_1_reg[5] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-735] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_TLBS.IB_Fetch_1_reg[5]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.088 | TNS=-0.627 |
+INFO: [Physopt 32-663] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_TLBS.IB_Fetch_1_reg[2].  Re-placed instance design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Instr_Addr[29]_INST_0
+INFO: [Physopt 32-735] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_TLBS.IB_Fetch_1_reg[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.084 | TNS=-0.514 |
+INFO: [Physopt 32-662] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/Using_TLBS.UTLB_I/MMU_UTLB_RAM_I/RAM_reg_i_64_n_0.  Did not re-place instance design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/Using_TLBS.UTLB_I/MMU_UTLB_RAM_I/RAM_reg_i_64
+INFO: [Physopt 32-710] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/Using_TLBS.UTLB_I/MMU_UTLB_RAM_I/RAM_reg_i_15_n_0. Critical path length was reduced through logic transformation on cell design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/Using_TLBS.UTLB_I/MMU_UTLB_RAM_I/RAM_reg_i_15_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/Using_TLBS.UTLB_I/MMU_UTLB_RAM_I/RAM_reg_i_64_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.073 | TNS=-0.430 |
+INFO: [Physopt 32-662] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_TLBS.IB_Fetch_1_reg[2].  Did not re-place instance design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Instr_Addr[29]_INST_0
+INFO: [Physopt 32-572] Net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_TLBS.IB_Fetch_1_reg[2] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-735] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_TLBS.IB_Fetch_1_reg[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.072 | TNS=-0.315 |
+INFO: [Physopt 32-662] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_TLBS.IB_Fetch_1_reg[14].  Did not re-place instance design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Instr_Addr[17]_INST_0
+INFO: [Physopt 32-572] Net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_TLBS.IB_Fetch_1_reg[14] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-735] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_TLBS.IB_Fetch_1_reg[14]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.067 | TNS=-0.243 |
+INFO: [Physopt 32-662] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_TLBS.IB_Fetch_1_reg[12].  Did not re-place instance design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Instr_Addr[19]_INST_0
+INFO: [Physopt 32-572] Net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_TLBS.IB_Fetch_1_reg[12] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-735] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_TLBS.IB_Fetch_1_reg[12]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.054 | TNS=-0.148 |
+INFO: [Physopt 32-662] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_TLBS.IB_Fetch_1_reg[9].  Did not re-place instance design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Instr_Addr[22]_INST_0
+INFO: [Physopt 32-572] Net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_TLBS.IB_Fetch_1_reg[9] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-735] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_TLBS.IB_Fetch_1_reg[9]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.028 | TNS=-0.086 |
+INFO: [Physopt 32-662] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/data0[1].  Did not re-place instance design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/RAM_reg_i_58
+INFO: [Physopt 32-710] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/Using_TLBS.UTLB_I/MMU_UTLB_RAM_I/RAM_reg_i_12_n_0. Critical path length was reduced through logic transformation on cell design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/Using_TLBS.UTLB_I/MMU_UTLB_RAM_I/RAM_reg_i_12_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/data0[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.022 | TNS=-0.058 |
+INFO: [Physopt 32-662] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_TLBS.IB_Fetch_1_reg[6].  Did not re-place instance design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Instr_Addr[25]_INST_0
+INFO: [Physopt 32-572] Net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_TLBS.IB_Fetch_1_reg[6] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-735] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/jump_logic_I1/MUXCY_JUMP_CARRY6/Using_TLBS.IB_Fetch_1_reg[6]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.019 | TNS=-0.036 |
+INFO: [Physopt 32-662] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/Using_TLBS.UTLB_I/MMU_UTLB_RAM_I/RAM_reg_i_62_n_0.  Did not re-place instance design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/Using_TLBS.UTLB_I/MMU_UTLB_RAM_I/RAM_reg_i_62
+INFO: [Physopt 32-710] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/Using_TLBS.UTLB_I/MMU_UTLB_RAM_I/RAM_reg_i_14_n_0. Critical path length was reduced through logic transformation on cell design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/Using_TLBS.UTLB_I/MMU_UTLB_RAM_I/RAM_reg_i_14_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/Using_TLBS.UTLB_I/MMU_UTLB_RAM_I/RAM_reg_i_62_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.017 | TNS=-0.017 |
+INFO: [Physopt 32-663] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/Using_TLBS.DTLB_I/Lookup_Shadow_Reg[1].No_C_STORE_TID.direct_en_carry/MUXCY_I/Using_FPGA.Native_1.  Re-placed instance design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/Using_TLBS.DTLB_I/Lookup_Shadow_Reg[1].No_C_STORE_TID.direct_en_carry/MUXCY_I/RAM_reg_i_44
+INFO: [Physopt 32-735] Processed net design_1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/MMU_I/Using_TLBS.DTLB_I/Lookup_Shadow_Reg[1].No_C_STORE_TID.direct_en_carry/MUXCY_I/Using_FPGA.Native_1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.060 | TNS=0.000 |
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.060 | TNS=0.000 |
+Phase 3 Critical Path Optimization | Checksum: 1811961d5
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:09 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11256 ; free virtual = 21417
+
+Phase 4 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.060 | TNS=0.000 |
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.060 | TNS=0.000 |
+Phase 4 Critical Path Optimization | Checksum: 1811961d5
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:09 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11256 ; free virtual = 21417
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11256 ; free virtual = 21417
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=0.060 | TNS=0.000 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  DSP Register   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Path  |          0.727  |         13.279  |            3  |              0  |                    43  |           0  |           2  |  00:00:07  |
+|  Total          |          0.727  |         13.279  |            3  |              0  |                    43  |           0  |           3  |  00:00:07  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11256 ; free virtual = 21417
+Ending Physical Synthesis Task | Checksum: 1811961d5
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:10 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11256 ; free virtual = 21418
+INFO: [Common 17-83] Releasing license: Implementation
+364 Infos, 19 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:12 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11272 ; free virtual = 21433
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11272 ; free virtual = 21434
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11208 ; free virtual = 21413
+INFO: [Common 17-1381] The checkpoint '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/impl_1/design_1_wrapper_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+Checksum: PlaceDB: e535d852 ConstDB: 0 ShapeSum: 433c28dc RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: bb41295b
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11142 ; free virtual = 21316
+Post Restoration Checksum: NetGraph: 6b246973 NumContArr: 501cbfe8 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: bb41295b
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11148 ; free virtual = 21323
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: bb41295b
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11113 ; free virtual = 21288
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: bb41295b
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11113 ; free virtual = 21288
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 1d65f433f
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:13 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11072 ; free virtual = 21248
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.059  | TNS=0.000  | WHS=-0.240 | THS=-297.055|
+
+
+Phase 2.5 Update Timing for Bus Skew
+
+Phase 2.5.1 Update Timing
+Phase 2.5.1 Update Timing | Checksum: 17a942831
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:15 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11064 ; free virtual = 21240
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.059  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 2.5 Update Timing for Bus Skew | Checksum: 1f74d03be
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:15 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11062 ; free virtual = 21239
+Phase 2 Router Initialization | Checksum: 1f8b6a9e3
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:15 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11062 ; free virtual = 21239
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 27282
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 27282
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 19523d6bd
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:18 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11048 ; free virtual = 21225
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 3394
+ Number of Nodes with overlaps = 757
+ Number of Nodes with overlaps = 286
+ Number of Nodes with overlaps = 118
+ Number of Nodes with overlaps = 42
+ Number of Nodes with overlaps = 24
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.273 | TNS=-2.122 | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 86d80f25
+
+Time (s): cpu = 00:01:41 ; elapsed = 00:00:48 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11049 ; free virtual = 21225
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 125
+ Number of Nodes with overlaps = 40
+ Number of Nodes with overlaps = 21
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.368 | TNS=-2.367 | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 17679cd4a
+
+Time (s): cpu = 00:01:55 ; elapsed = 00:01:00 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11057 ; free virtual = 21234
+Phase 4 Rip-up And Reroute | Checksum: 17679cd4a
+
+Time (s): cpu = 00:01:55 ; elapsed = 00:01:00 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11057 ; free virtual = 21234
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 10a4a6499
+
+Time (s): cpu = 00:01:58 ; elapsed = 00:01:00 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11057 ; free virtual = 21234
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.265 | TNS=-1.795 | WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 1e3624c40
+
+Time (s): cpu = 00:01:59 ; elapsed = 00:01:01 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11043 ; free virtual = 21221
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 1e3624c40
+
+Time (s): cpu = 00:01:59 ; elapsed = 00:01:01 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11043 ; free virtual = 21221
+Phase 5 Delay and Skew Optimization | Checksum: 1e3624c40
+
+Time (s): cpu = 00:01:59 ; elapsed = 00:01:01 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11043 ; free virtual = 21221
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 12b30363f
+
+Time (s): cpu = 00:02:03 ; elapsed = 00:01:02 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11042 ; free virtual = 21219
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.253 | TNS=-1.496 | WHS=0.014  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 16afb2949
+
+Time (s): cpu = 00:02:03 ; elapsed = 00:01:02 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11041 ; free virtual = 21218
+Phase 6 Post Hold Fix | Checksum: 16afb2949
+
+Time (s): cpu = 00:02:03 ; elapsed = 00:01:02 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11040 ; free virtual = 21218
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 14.1828 %
+  Global Horizontal Routing Utilization  = 12.8166 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 83.7838%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 83.7838%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 92.6471%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X24Y117 -> INT_L_X24Y117
+   INT_R_X19Y115 -> INT_R_X19Y115
+   INT_R_X23Y114 -> INT_R_X23Y114
+   INT_R_X19Y110 -> INT_R_X19Y110
+   INT_L_X20Y110 -> INT_L_X20Y110
+West Dir 1x1 Area, Max Cong = 91.1765%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X26Y121 -> INT_L_X26Y121
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 1 Aspect Ratio: 0.5 Sparse Ratio: 0.5
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 1
+
+Phase 7 Route finalize | Checksum: 17f976521
+
+Time (s): cpu = 00:02:03 ; elapsed = 00:01:02 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11040 ; free virtual = 21218
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 17f976521
+
+Time (s): cpu = 00:02:03 ; elapsed = 00:01:02 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11040 ; free virtual = 21218
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 181d68d45
+
+Time (s): cpu = 00:02:04 ; elapsed = 00:01:04 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11041 ; free virtual = 21219
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-0.253 | TNS=-1.496 | WHS=0.014  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 181d68d45
+
+Time (s): cpu = 00:02:04 ; elapsed = 00:01:04 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11041 ; free virtual = 21218
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:02:04 ; elapsed = 00:01:04 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11103 ; free virtual = 21281
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+383 Infos, 20 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:02:07 ; elapsed = 00:01:05 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11103 ; free virtual = 21281
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11103 ; free virtual = 21281
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11024 ; free virtual = 21255
+INFO: [Common 17-1381] The checkpoint '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/impl_1/design_1_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 3352.699 ; gain = 0.000 ; free physical = 11078 ; free virtual = 21272
+INFO: [runtcl-4] Executing : report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
+Command: report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/impl_1/design_1_wrapper_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/impl_1/design_1_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:19 ; elapsed = 00:00:05 . Memory (MB): peak = 3424.715 ; gain = 0.000 ; free physical = 11045 ; free virtual = 21240
+INFO: [runtcl-4] Executing : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
+Command: report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
+INFO: [Power 33-23] Power model is not available for STARTUP_7SERIES_GEN.STARTUP2_7SERIES_inst
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+396 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:16 ; elapsed = 00:00:06 . Memory (MB): peak = 3424.715 ; gain = 0.000 ; free physical = 10991 ; free virtual = 21199
+INFO: [runtcl-4] Executing : report_route_status -file design_1_wrapper_route_status.rpt -pb design_1_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file design_1_wrapper_timing_summary_routed.rpt -pb design_1_wrapper_timing_summary_routed.pb -rpx design_1_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file design_1_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file design_1_wrapper_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file design_1_wrapper_bus_skew_routed.rpt -pb design_1_wrapper_bus_skew_routed.pb -rpx design_1_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 17 01:38:59 2021...

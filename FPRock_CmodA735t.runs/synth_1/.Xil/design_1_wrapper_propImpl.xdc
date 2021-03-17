@@ -7,3 +7,7 @@ set_property src_info {type:XDC file:1 line:9 export:INPUT save:INPUT read:READ}
 set_property PACKAGE_PIN V8 [get_ports uart_rtl_rxd]
 set_property src_info {type:XDC file:1 line:10 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN U8 [get_ports uart_rtl_txd]
+set_property src_info {type:XDC file:1 line:16 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN W7 [get_ports uart_rtl_0_rxd]
+set_property src_info {type:XDC file:1 line:17 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN U7 [get_ports uart_rtl_0_txd]

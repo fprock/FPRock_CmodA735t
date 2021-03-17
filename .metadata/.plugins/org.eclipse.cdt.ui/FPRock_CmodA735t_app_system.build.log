@@ -1,6 +1,6 @@
-01:00:46 **** Incremental Build of configuration Release for project FPRock_CmodA735t_app_system ****
+01:47:08 **** Incremental Build of configuration Release for project FPRock_CmodA735t_app_system ****
 make all 
 Skipping SD card image generation. Reason: The system project only has applications for microblaze processors.
 
-01:00:46 Build Finished (took 115ms)
+01:47:08 Build Finished (took 116ms)
 

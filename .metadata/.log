@@ -8978,3 +8978,2054 @@ org.eclipse.swt.SWTException: Invalid thread access
 	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1499)
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:46)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY com.xilinx.sdk.utils 1 0 2021-03-17 01:44:05.337
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: scw_hwspec_file_selection, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2021-03-17 01:44:05.337
+!MESSAGE Preference loaded using local preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2021-03-17 01:44:05.337
+!MESSAGE Workspace path used is: /home/chrispy/workspace/FPRock_CmodA735t
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:44:09.574
+!MESSAGE XSCT Command: [platform config -updatehw {/home/chrispy/workspace/FPRock_CmodA735t/design_2_wrapper.xsa}], Thread: Worker-56: Updating hardware platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:44:09.731
+!MESSAGE XSCT command with result: [platform config -updatehw {/home/chrispy/workspace/FPRock_CmodA735t/design_2_wrapper.xsa}], Result: [null, ]. Thread: Worker-56: Updating hardware platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:44:10.845
+!MESSAGE XSCT Command: [platform read {/home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/platform.spr}], Thread: Worker-64: Initializing the platform to enable editing
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:44:10.845
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa], Thread: Worker-66: Initializing hardware specification UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:44:10.923
+!MESSAGE XSCT Command: [::scw::get_hw_path], Thread: Worker-62: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:44:10.947
+!MESSAGE XSCT command with result: [platform read {/home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/platform.spr}], Result: [null, ]. Thread: Worker-64: Initializing the platform to enable editing
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:44:10.947
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa], Result: [null, ]. Thread: Worker-66: Initializing hardware specification UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:44:10.947
+!MESSAGE XSCT command with result: [::scw::get_hw_path], Result: [null, /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa]. Thread: Worker-62: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:44:10.947
+!MESSAGE XSCT Command: [::scw::regenerate_psinit /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa], Thread: Worker-62: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:44:10.948
+!MESSAGE XSCT command with result: [::scw::regenerate_psinit /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa], Result: [null, ]. Thread: Worker-62: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:44:10.948
+!MESSAGE XSCT Command: [::scw::get_mss_path], Thread: Worker-62: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:44:10.949
+!MESSAGE XSCT command with result: [::scw::get_mss_path], Result: [null, /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss]. Thread: Worker-62: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:44:10.949
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss ], Thread: Worker-62: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:44:10.950
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss ], Result: [null, ]. Thread: Worker-62: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:44:10.950
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss], Thread: Worker-62: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:44:10.950
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-62: Initializing 'standalone_domain' bsp settings UI...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:44:11.088
+!MESSAGE XSCT Command: [hsi::utils::get_supported_os -json /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:44:11.094
+!MESSAGE XSCT command with result: [hsi::utils::get_supported_os -json /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa], Result: [null, {"microblaze_0": {"freertos10_xilinx_v1_4": {"name": "freertos10_xilinx",
+"version": "1.4",
+"desc": "This Xilinx FreeRTOS port is based on FreeRTOS kernel version 10.1.1",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/ThirdParty/bsp/freertos10_xilinx_v1_4",
+},
+"standalone_v7_1": {"name": "standalone",
+"version": "7.1",
+"desc": "Standalone is a simple, low-level software layer. It provides access to basic processor features such as caches, interrupts and exceptions as well as the basic features of a hosted environment, such as standard input and output, profiling, abort and exit.",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lgcc,-lc,--end-group",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/lib/bsp/standalone_v7_1",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:44:11.102
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa microblaze_0], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:44:11.102
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa microblaze_0], Result: [null, axi_emc_0 axi_gpio_0 axi_iic_0 axi_quad_spi_0 axi_uartlite_0 axi_uartlite_1 axi_uartlite_2 compensator_0 microblaze_0_axi_intc microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:44:11.103
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:44:11.105
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss], Result: [null, {"axi_emc_0": {"name": "emc",
+"ver": "4.0",
+},
+"axi_gpio_0": {"name": "gpio",
+"ver": "4.5",
+},
+"axi_iic_0": {"name": "iic",
+"ver": "3.5",
+},
+"axi_quad_spi_0": {"name": "spi",
+"ver": "4.5",
+},
+"axi_uartlite_0": {"name": "uartlite",
+"ver": "3.3",
+},
+"axi_uartlite_1": {"name": "uartlite",
+"ver": "3.3",
+},
+"microblaze_0_axi_intc": {"name": "intc",
+"ver": "3.10",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.3",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.3",
+},
+"axi_uartlite_2": {"name": "uartlite",
+"ver": "3.3",
+},
+"compensator_0": {"name": "compensator",
+"ver": "1.0",
+},
+"microblaze_0": {"name": "cpu",
+"ver": "2.10",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:44:11.105
+!MESSAGE XSCT Command: [hsi::utils::get_drivers_for_hw -json /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:44:11.154
+!MESSAGE XSCT command with result: [hsi::utils::get_drivers_for_hw -json /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa], Result: [null, {"axi_emc_0": {"version": "3.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"emc_v4_0": {"name": "emc",
+"version": "4.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/emc_v4_0",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"axi_gpio_0": {"version": "2.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"gpio_v4_5": {"name": "gpio",
+"version": "4.5",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/gpio_v4_5",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"axi_iic_0": {"version": "2.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"iic_v3_5": {"name": "iic",
+"version": "3.5",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/iic_v3_5",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"axi_quad_spi_0": {"version": "3.2",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"spi_v4_5": {"name": "spi",
+"version": "4.5",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/spi_v4_5",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"axi_smc": {"version": "1.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"axi_uartlite_0": {"version": "2.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"uartlite_v3_3": {"name": "uartlite",
+"version": "3.3",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/uartlite_v3_3",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"axi_uartlite_1": {"version": "2.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"uartlite_v3_3": {"name": "uartlite",
+"version": "3.3",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/uartlite_v3_3",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"axi_uartlite_2": {"version": "2.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"uartlite_v3_3": {"name": "uartlite",
+"version": "3.3",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/uartlite_v3_3",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"clk_wiz_0": {"version": "6.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"clk_wiz_v1_2": {"name": "clk_wiz",
+"version": "1.2",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/clk_wiz_v1_2",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"compensator_0": {"version": "1.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"compensator_v1_0": {"name": "compensator",
+"version": "1.0",
+"repo": "/home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/drivers/compensator_v1_0",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"mdm_1": {"version": "3.2",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"uartlite_v3_3": {"name": "uartlite",
+"version": "3.3",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/uartlite_v3_3",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"microblaze_0": {"version": "11.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"cpu_v2_10": {"name": "cpu",
+"version": "2.10",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/cpu_v2_10",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"microblaze_0_axi_intc": {"version": "4.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"intc_v3_10": {"name": "intc",
+"version": "3.10",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/intc_v3_10",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"microblaze_0_axi_periph": {"version": "2.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"version": "4.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"bram_v4_3": {"name": "bram",
+"version": "4.3",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/bram_v4_3",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"microblaze_0_local_memory_dlmb_v10": {"version": "3.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"version": "4.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"bram_v4_3": {"name": "bram",
+"version": "4.3",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/bram_v4_3",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"microblaze_0_local_memory_ilmb_v10": {"version": "3.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"microblaze_0_local_memory_lmb_bram": {"version": "8.4",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"rst_clk_wiz_0_100M": {"version": "5.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"xlconcat_0": {"version": "2.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:44:11.173
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:44:11.174
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss], Result: [null, xilisf]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:44:11.175
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:44:11.176
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss], Result: [null, {"xilisf": "5.14",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:44:11.193
+!MESSAGE XSCT Command: [::scw::sdx_reload_mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:44:11.210
+!MESSAGE XSCT command with result: [::scw::sdx_reload_mss], Result: [null, ]. Thread: main
+
+!ENTRY org.eclipse.ui.workbench 4 0 2021-03-17 01:44:29.287
+!MESSAGE Invalid thread access
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4552)
+	at org.eclipse.swt.SWT.error(SWT.java:4467)
+	at org.eclipse.swt.SWT.error(SWT.java:4438)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:503)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:441)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:529)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:36)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:58)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:100)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:51)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:75)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:65)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:22)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:98)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:293)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:45)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:107)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:119)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor.access$2(LscriptEditor.java:1)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor$ResourceChangeListener.resourceChanged(LscriptEditor.java:188)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:297)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:287)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:150)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:376)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1499)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2302)
+	at org.eclipse.core.internal.events.NotificationManager$NotifyJob.run(NotificationManager.java:41)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2021-03-17 01:44:32.237
+!MESSAGE Invalid thread access
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4552)
+	at org.eclipse.swt.SWT.error(SWT.java:4467)
+	at org.eclipse.swt.SWT.error(SWT.java:4438)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:503)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:441)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:529)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:36)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:58)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:100)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:51)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:75)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:65)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:22)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:98)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:293)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:45)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:107)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:119)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor.access$2(LscriptEditor.java:1)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor$ResourceChangeListener.resourceChanged(LscriptEditor.java:188)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:297)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:287)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:150)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:376)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1499)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:46)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2021-03-17 01:44:43.635
+!MESSAGE Invalid thread access
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4552)
+	at org.eclipse.swt.SWT.error(SWT.java:4467)
+	at org.eclipse.swt.SWT.error(SWT.java:4438)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:503)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:441)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:529)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:36)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:58)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:100)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:51)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:75)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:65)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:22)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:98)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:293)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:45)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:107)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:119)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor.access$2(LscriptEditor.java:1)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor$ResourceChangeListener.resourceChanged(LscriptEditor.java:188)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:297)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:287)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:150)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:376)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1499)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2302)
+	at org.eclipse.core.internal.events.NotificationManager$NotifyJob.run(NotificationManager.java:41)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2021-03-17 01:44:46.159
+!MESSAGE Invalid thread access
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4552)
+	at org.eclipse.swt.SWT.error(SWT.java:4467)
+	at org.eclipse.swt.SWT.error(SWT.java:4438)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:503)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:441)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:529)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:36)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:58)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:100)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:51)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:75)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:65)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:22)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:98)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:293)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:45)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:107)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:119)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor.access$2(LscriptEditor.java:1)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor$ResourceChangeListener.resourceChanged(LscriptEditor.java:188)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:297)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:287)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:150)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:376)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1499)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2302)
+	at org.eclipse.core.internal.events.NotificationManager$NotifyJob.run(NotificationManager.java:41)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2021-03-17 01:44:49.249
+!MESSAGE Invalid thread access
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4552)
+	at org.eclipse.swt.SWT.error(SWT.java:4467)
+	at org.eclipse.swt.SWT.error(SWT.java:4438)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:503)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:441)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:529)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:36)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:58)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:100)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:51)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:75)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:65)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:22)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:98)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:293)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:45)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:107)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:119)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor.access$2(LscriptEditor.java:1)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor$ResourceChangeListener.resourceChanged(LscriptEditor.java:188)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:297)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:287)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:150)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:376)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1499)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:46)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:45:00.355
+!MESSAGE XSCT Command: [::scw::get_hw_path], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:45:00.356
+!MESSAGE XSCT command with result: [::scw::get_hw_path], Result: [null, /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:45:00.356
+!MESSAGE XSCT Command: [::scw::regenerate_psinit /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:45:00.357
+!MESSAGE XSCT command with result: [::scw::regenerate_psinit /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:45:00.357
+!MESSAGE XSCT Command: [::scw::get_mss_path], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:45:00.359
+!MESSAGE XSCT command with result: [::scw::get_mss_path], Result: [null, /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:45:00.359
+!MESSAGE XSCT Command: [::scw::get_target], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:45:00.359
+!MESSAGE XSCT command with result: [::scw::get_target], Result: [null, microblaze_0]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:45:00.386
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:45:00.387
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:45:00.387
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:45:00.388
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:45:00.388
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:45:00.390
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:45:00.417
+!MESSAGE XSCT Command: [::hsi::utils::get_config_params_for_sw -json /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:45:00.428
+!MESSAGE XSCT command with result: [::hsi::utils::get_config_params_for_sw -json /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss], Result: [null, {"microblaze_0": {"archiver": {"category": "",
+"value": "mb-ar",
+"default": "mb-ar",
+"type": "string",
+"desc": "Archiver used to archive libraries for both BSP generation as well as for applications",
+"permit": "",
+"options": {},
+"range": "",
+},
+"assembler": {"category": "",
+"value": "mb-as",
+"default": "mb-as",
+"type": "string",
+"desc": "Assembler used to assemble both BSP/Libraries and Applications.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler": {"category": "",
+"value": "mb-gcc",
+"default": "mb-gcc",
+"type": "string",
+"desc": "Compiler used to compile both BSP/Libraries and Applications.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler_flags": {"category": "",
+"value": "-O2 -c",
+"default": "-O2 -c",
+"type": "string",
+"desc": "Compiler flags used in BSP and library generation. '-c' flag stands for 'compile and assemble, but do not link'. Without this flag, gcc tries to link the code, which will fail because there is no application involved during libgen. '-O2' can be overwritten by extra compiler flags",
+"permit": "none",
+"options": {},
+"range": "",
+},
+"extra_compiler_flags": {"category": "",
+"value": "-g -ffunction-sections -fdata-sections -Wall -Wextra",
+"default": "-g -ffunction-sections -fdata-sections -Wall -Wextra",
+"type": "string",
+"desc": "Extra compiler flags used in BSP and library generation.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"xmdstub_peripheral": {"category": "",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Debug peripheral to be used with xmdstub",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+"standalone": {"enable_sw_intrusive_profiling": {"category": "sw_intrusive_profiling",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable S/W Intrusive Profiling on Hardware Targets",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"hypervisor_guest": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable hypervisor guest support for A53 64bit EL1 Non-Secure. If hypervisor_guest is not selected, BSP will be built for EL3.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"lockstep_mode_debug": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable debug logic in non-JTAG boot mode, when Cortex R5 is configured in lockstep mode",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"microblaze_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable MicroBlaze Exceptions",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"predecode_fpu_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "(MicroBlaze) Predecode FPU exceptions and save operand info before invoking user registered exception handler.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"profile_timer": {"category": "sw_intrusive_profiling",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Specify the Timer to use for Profiling. For PowerPC system, specify none to use PIT timer. For ARM system, specify none to use SCU timer",
+"permit": "",
+"options": {},
+"range": "",
+},
+"sleep_timer": {"category": "",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "This parameter is used to select specific timer for sleep functionality",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"stdin": {"category": "",
+"value": "axi_uartlite_0",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdin peripheral",
+"permit": "",
+"options": {},
+"range": "axi_uartlite_0 axi_uartlite_1 axi_uartlite_2",
+},
+"stdout": {"category": "",
+"value": "axi_uartlite_0",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdout peripheral",
+"permit": "",
+"options": {},
+"range": "axi_uartlite_0 axi_uartlite_1 axi_uartlite_2",
+},
+"ttc_select_cntr": {"category": "",
+"value": "2",
+"default": "2",
+"type": "enum",
+"desc": "Selects the counter to be used in the respective module. Allowed range is 0-2",
+"permit": "user",
+"options": {"0": "0",
+"1": "1",
+"2": "2",
+},
+"range": "",
+},
+"zynqmp_fsbl_bsp": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Disable or Enable Optimization for FSBL's BSP. ZynqMP FSBL will set this to true",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+"xilisf": {"serial_flash_family": {"category": "",
+"value": "5",
+"default": "1",
+"type": "int",
+"desc": "Indicates the Serial Flash family type.  Enter 1 for ATMEL.  2 for INTEL.  3 for STM (M25PXX). 4 for Winbond. 5 for Spansion/ Cypress, Micron, Macronix and ISSI. 6 for SST Flash",
+"permit": "",
+"options": {},
+"range": "",
+},
+"serial_flash_interface": {"category": "",
+"value": "1",
+"default": "1",
+"type": "int",
+"desc": "Indicates the Serial Flash Interface. Enter 1 for AXI SPI. 2 for PS SPI. 3 for PS QSPI(supported families are Winbond(4), Spansion/Cypress and Micron(5)). 4 for OSPI(supported families are Micron(5))",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:45:00.480
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:45:00.486
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa], Result: [null, {"axi_emc_0": {"hier_name": "axi_emc_0",
+"type": "axi_emc",
+"version": "3.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"axi_gpio_0": {"hier_name": "axi_gpio_0",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_iic_0": {"hier_name": "axi_iic_0",
+"type": "axi_iic",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_quad_spi_0": {"hier_name": "axi_quad_spi_0",
+"type": "axi_quad_spi",
+"version": "3.2",
+"ip_type": "MEMORY_CNTLR",
+},
+"axi_smc": {"hier_name": "axi_smc",
+"type": "smartconnect",
+"version": "1.0",
+"ip_type": "BUS",
+},
+"axi_uartlite_0": {"hier_name": "axi_uartlite_0",
+"type": "axi_uartlite",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_uartlite_1": {"hier_name": "axi_uartlite_1",
+"type": "axi_uartlite",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_uartlite_2": {"hier_name": "axi_uartlite_2",
+"type": "axi_uartlite",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"clk_wiz_0": {"hier_name": "clk_wiz_0",
+"type": "clk_wiz",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"compensator_0": {"hier_name": "compensator_0",
+"type": "compensator",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"mdm_1": {"hier_name": "mdm_1",
+"type": "mdm",
+"version": "3.2",
+"ip_type": "DEBUG",
+},
+"microblaze_0": {"hier_name": "microblaze_0",
+"type": "microblaze",
+"version": "11.0",
+"ip_type": "PROCESSOR",
+},
+"microblaze_0_axi_intc": {"hier_name": "microblaze_0_axi_intc",
+"type": "axi_intc",
+"version": "4.1",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"microblaze_0_axi_periph": {"hier_name": "microblaze_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_dlmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_dlmb_v10": {"hier_name": "microblaze_0_local_memory_dlmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_ilmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_ilmb_v10": {"hier_name": "microblaze_0_local_memory_ilmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_lmb_bram": {"hier_name": "microblaze_0_local_memory_lmb_bram",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"rst_clk_wiz_0_100M": {"hier_name": "rst_clk_wiz_0_100M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"xlconcat_0": {"hier_name": "xlconcat_0",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:45:00.486
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:45:00.487
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss], Result: [null, xilisf]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:45:00.487
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:45:00.489
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss], Result: [null, {"xilisf": "5.14",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:45:00.531
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:45:00.533
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss], Result: [null, {"axi_emc_0": {"name": "emc",
+"ver": "4.0",
+},
+"axi_gpio_0": {"name": "gpio",
+"ver": "4.5",
+},
+"axi_iic_0": {"name": "iic",
+"ver": "3.5",
+},
+"axi_quad_spi_0": {"name": "spi",
+"ver": "4.5",
+},
+"axi_uartlite_0": {"name": "uartlite",
+"ver": "3.3",
+},
+"axi_uartlite_1": {"name": "uartlite",
+"ver": "3.3",
+},
+"microblaze_0_axi_intc": {"name": "intc",
+"ver": "3.10",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.3",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.3",
+},
+"axi_uartlite_2": {"name": "uartlite",
+"ver": "3.3",
+},
+"compensator_0": {"name": "compensator",
+"ver": "1.0",
+},
+"microblaze_0": {"name": "cpu",
+"ver": "2.10",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:45:00.541
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa microblaze_0], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:45:00.541
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa microblaze_0], Result: [null, axi_emc_0 axi_gpio_0 axi_iic_0 axi_quad_spi_0 axi_uartlite_0 axi_uartlite_1 axi_uartlite_2 compensator_0 microblaze_0_axi_intc microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:45:05.013
+!MESSAGE XSCT Command: [::scw::sdx_write_mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:45:05.017
+!MESSAGE XSCT command with result: [::scw::sdx_write_mss], Result: [null, Successfully saved  the platform at "/home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/platform.spr"]. Thread: main
+
+!ENTRY org.eclipse.ui.workbench 4 0 2021-03-17 01:46:19.009
+!MESSAGE Invalid thread access
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4552)
+	at org.eclipse.swt.SWT.error(SWT.java:4467)
+	at org.eclipse.swt.SWT.error(SWT.java:4438)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:503)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:441)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:529)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:36)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:58)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:100)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:51)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:75)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:65)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:22)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:98)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:293)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:45)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:107)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:119)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor.access$2(LscriptEditor.java:1)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor$ResourceChangeListener.resourceChanged(LscriptEditor.java:188)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:297)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:287)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:150)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:376)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1499)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2302)
+	at org.eclipse.core.internal.events.NotificationManager$NotifyJob.run(NotificationManager.java:41)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2021-03-17 01:46:21.426
+!MESSAGE Invalid thread access
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4552)
+	at org.eclipse.swt.SWT.error(SWT.java:4467)
+	at org.eclipse.swt.SWT.error(SWT.java:4438)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:503)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:441)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:529)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:36)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:58)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:100)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:51)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:75)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:65)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:22)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:98)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:293)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:45)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:107)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:119)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor.access$2(LscriptEditor.java:1)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor$ResourceChangeListener.resourceChanged(LscriptEditor.java:188)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:297)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:287)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:150)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:376)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1499)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2302)
+	at org.eclipse.core.internal.events.NotificationManager$NotifyJob.run(NotificationManager.java:41)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2021-03-17 01:46:24.274
+!MESSAGE Invalid thread access
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4552)
+	at org.eclipse.swt.SWT.error(SWT.java:4467)
+	at org.eclipse.swt.SWT.error(SWT.java:4438)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:503)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:441)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:529)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:36)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:58)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:100)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:51)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:75)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:65)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:22)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:98)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:293)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:45)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:107)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:119)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor.access$2(LscriptEditor.java:1)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor$ResourceChangeListener.resourceChanged(LscriptEditor.java:188)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:297)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:287)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:150)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:376)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1499)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:46)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:46:40.297
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/hw/design_2_wrapper.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:46:40.369
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/hw/design_2_wrapper.xsa], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:46:40.369
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/hw/design_2_wrapper.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:46:40.370
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/hw/design_2_wrapper.xsa], Result: [null, {"device": "7a35t",
+"family": "artix7",
+"timestamp": "Wed Mar 17 01:21:30 2021",
+"vivado_version": "2019.2",
+"part": "xc7a35tcpg236-1",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:46:40.370
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/hw/design_2_wrapper.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:46:40.373
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/hw/design_2_wrapper.xsa], Result: [null, {"axi_emc_0": {"hier_name": "axi_emc_0",
+"type": "axi_emc",
+"version": "3.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"axi_gpio_0": {"hier_name": "axi_gpio_0",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_iic_0": {"hier_name": "axi_iic_0",
+"type": "axi_iic",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_quad_spi_0": {"hier_name": "axi_quad_spi_0",
+"type": "axi_quad_spi",
+"version": "3.2",
+"ip_type": "MEMORY_CNTLR",
+},
+"axi_smc": {"hier_name": "axi_smc",
+"type": "smartconnect",
+"version": "1.0",
+"ip_type": "BUS",
+},
+"axi_uartlite_0": {"hier_name": "axi_uartlite_0",
+"type": "axi_uartlite",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_uartlite_1": {"hier_name": "axi_uartlite_1",
+"type": "axi_uartlite",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_uartlite_2": {"hier_name": "axi_uartlite_2",
+"type": "axi_uartlite",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"clk_wiz_0": {"hier_name": "clk_wiz_0",
+"type": "clk_wiz",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"compensator_0": {"hier_name": "compensator_0",
+"type": "compensator",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"mdm_1": {"hier_name": "mdm_1",
+"type": "mdm",
+"version": "3.2",
+"ip_type": "DEBUG",
+},
+"microblaze_0": {"hier_name": "microblaze_0",
+"type": "microblaze",
+"version": "11.0",
+"ip_type": "PROCESSOR",
+},
+"microblaze_0_axi_intc": {"hier_name": "microblaze_0_axi_intc",
+"type": "axi_intc",
+"version": "4.1",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"microblaze_0_axi_periph": {"hier_name": "microblaze_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_dlmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_dlmb_v10": {"hier_name": "microblaze_0_local_memory_dlmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_ilmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_ilmb_v10": {"hier_name": "microblaze_0_local_memory_ilmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_lmb_bram": {"hier_name": "microblaze_0_local_memory_lmb_bram",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"rst_clk_wiz_0_100M": {"hier_name": "rst_clk_wiz_0_100M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"xlconcat_0": {"hier_name": "xlconcat_0",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:46:49.179
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/hw/design_2_wrapper.xsa /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/sw/FPRock_Platform/standalone_domain/system.mss ], Thread: Worker-65: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:46:49.181
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/hw/design_2_wrapper.xsa /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/sw/FPRock_Platform/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-65: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:46:49.181
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/hw/design_2_wrapper.xsa /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/sw/FPRock_Platform/standalone_domain/system.mss], Thread: Worker-65: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:46:49.183
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/hw/design_2_wrapper.xsa /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/sw/FPRock_Platform/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-65: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2021-03-17 01:46:49.183
+!MESSAGE Generating MD5 hash for file: /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/sw/FPRock_Platform/standalone_domain/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:46:49.184
+!MESSAGE XSCT Command: [hsi::utils::get_supported_os -json /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/hw/design_2_wrapper.xsa], Thread: Worker-65: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:46:49.189
+!MESSAGE XSCT command with result: [hsi::utils::get_supported_os -json /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/hw/design_2_wrapper.xsa], Result: [null, {"microblaze_0": {"freertos10_xilinx_v1_4": {"name": "freertos10_xilinx",
+"version": "1.4",
+"desc": "This Xilinx FreeRTOS port is based on FreeRTOS kernel version 10.1.1",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/ThirdParty/bsp/freertos10_xilinx_v1_4",
+},
+"standalone_v7_1": {"name": "standalone",
+"version": "7.1",
+"desc": "Standalone is a simple, low-level software layer. It provides access to basic processor features such as caches, interrupts and exceptions as well as the basic features of a hosted environment, such as standard input and output, profiling, abort and exit.",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lgcc,-lc,--end-group",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/lib/bsp/standalone_v7_1",
+},
+},
+}]. Thread: Worker-65: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:46:49.190
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/hw/design_2_wrapper.xsa /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/sw/FPRock_Platform/standalone_domain/system.mss], Thread: Worker-65: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:46:49.190
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/hw/design_2_wrapper.xsa /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/sw/FPRock_Platform/standalone_domain/system.mss], Result: [null, xilisf]. Thread: Worker-65: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:46:49.190
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/hw/design_2_wrapper.xsa /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/sw/FPRock_Platform/standalone_domain/system.mss], Thread: Worker-65: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:46:49.191
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/hw/design_2_wrapper.xsa /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/sw/FPRock_Platform/standalone_domain/system.mss], Result: [null, {"xilisf": "5.14",
+}]. Thread: Worker-65: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:46:49.191
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/hw/design_2_wrapper.xsa microblaze_0], Thread: Worker-65: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:46:49.192
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/hw/design_2_wrapper.xsa microblaze_0], Result: [null, axi_emc_0 axi_gpio_0 axi_iic_0 axi_quad_spi_0 axi_uartlite_0 axi_uartlite_1 axi_uartlite_2 compensator_0 microblaze_0_axi_intc microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: Worker-65: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:46:49.192
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/hw/design_2_wrapper.xsa /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/sw/FPRock_Platform/standalone_domain/system.mss], Thread: Worker-65: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:46:49.194
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/hw/design_2_wrapper.xsa /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/sw/FPRock_Platform/standalone_domain/system.mss], Result: [null, {"axi_emc_0": {"name": "emc",
+"ver": "4.0",
+},
+"axi_gpio_0": {"name": "gpio",
+"ver": "4.5",
+},
+"axi_iic_0": {"name": "iic",
+"ver": "3.5",
+},
+"axi_quad_spi_0": {"name": "spi",
+"ver": "4.5",
+},
+"axi_uartlite_0": {"name": "uartlite",
+"ver": "3.3",
+},
+"axi_uartlite_1": {"name": "uartlite",
+"ver": "3.3",
+},
+"microblaze_0_axi_intc": {"name": "intc",
+"ver": "3.10",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.3",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.3",
+},
+"axi_uartlite_2": {"name": "uartlite",
+"ver": "3.3",
+},
+"compensator_0": {"name": "compensator",
+"ver": "1.0",
+},
+"microblaze_0": {"name": "cpu",
+"ver": "2.10",
+},
+}]. Thread: Worker-65: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:46:49.194
+!MESSAGE XSCT Command: [hsi::utils::get_drivers_for_hw -json /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/hw/design_2_wrapper.xsa], Thread: Worker-65: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:46:49.243
+!MESSAGE XSCT command with result: [hsi::utils::get_drivers_for_hw -json /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/hw/design_2_wrapper.xsa], Result: [null, {"axi_emc_0": {"version": "3.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"emc_v4_0": {"name": "emc",
+"version": "4.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/emc_v4_0",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"axi_gpio_0": {"version": "2.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"gpio_v4_5": {"name": "gpio",
+"version": "4.5",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/gpio_v4_5",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"axi_iic_0": {"version": "2.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"iic_v3_5": {"name": "iic",
+"version": "3.5",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/iic_v3_5",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"axi_quad_spi_0": {"version": "3.2",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"spi_v4_5": {"name": "spi",
+"version": "4.5",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/spi_v4_5",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"axi_smc": {"version": "1.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"axi_uartlite_0": {"version": "2.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"uartlite_v3_3": {"name": "uartlite",
+"version": "3.3",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/uartlite_v3_3",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"axi_uartlite_1": {"version": "2.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"uartlite_v3_3": {"name": "uartlite",
+"version": "3.3",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/uartlite_v3_3",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"axi_uartlite_2": {"version": "2.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"uartlite_v3_3": {"name": "uartlite",
+"version": "3.3",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/uartlite_v3_3",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"clk_wiz_0": {"version": "6.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"clk_wiz_v1_2": {"name": "clk_wiz",
+"version": "1.2",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/clk_wiz_v1_2",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"compensator_0": {"version": "1.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"compensator_v1_0": {"name": "compensator",
+"version": "1.0",
+"repo": "/home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/hw/drivers/compensator_v1_0",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"mdm_1": {"version": "3.2",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"uartlite_v3_3": {"name": "uartlite",
+"version": "3.3",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/uartlite_v3_3",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"microblaze_0": {"version": "11.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"cpu_v2_10": {"name": "cpu",
+"version": "2.10",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/cpu_v2_10",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"microblaze_0_axi_intc": {"version": "4.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"intc_v3_10": {"name": "intc",
+"version": "3.10",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/intc_v3_10",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"microblaze_0_axi_periph": {"version": "2.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"version": "4.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"bram_v4_3": {"name": "bram",
+"version": "4.3",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/bram_v4_3",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"microblaze_0_local_memory_dlmb_v10": {"version": "3.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"version": "4.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"bram_v4_3": {"name": "bram",
+"version": "4.3",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/bram_v4_3",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"microblaze_0_local_memory_ilmb_v10": {"version": "3.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"microblaze_0_local_memory_lmb_bram": {"version": "8.4",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"rst_clk_wiz_0_100M": {"version": "5.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"xlconcat_0": {"version": "2.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/tools/Xilinx/Vitis/2019.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+}]. Thread: Worker-65: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:46:49.244
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/hw/design_2_wrapper.xsa /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/sw/FPRock_Platform/standalone_domain/system.mss], Thread: Worker-65: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:46:49.245
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/hw/design_2_wrapper.xsa /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/sw/FPRock_Platform/standalone_domain/system.mss], Result: [null, xilisf]. Thread: Worker-65: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:46:49.328
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/sw/FPRock_Platform/standalone_domain/system.mss], Thread: Worker-65: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:46:49.328
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/sw/FPRock_Platform/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-65: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:46:49.930
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/hw/design_2_wrapper.xsa], Thread: Worker-65: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:46:49.931
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/hw/design_2_wrapper.xsa], Result: [null, ]. Thread: Worker-65: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:46:49.932
+!MESSAGE XSCT Command: [hsi::internal::extract_hw_files -quiet bit mmi bmm -dir {/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_bootloader/_ide/bitstream}], Thread: Worker-65: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:46:49.944
+!MESSAGE XSCT command with result: [hsi::internal::extract_hw_files -quiet bit mmi bmm -dir {/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_bootloader/_ide/bitstream}], Result: [null, ]. Thread: Worker-65: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2021-03-17 01:46:50.068
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '7'
+
+!ENTRY org.eclipse.ui.workbench 4 0 2021-03-17 01:46:50.264
+!MESSAGE Invalid thread access
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4552)
+	at org.eclipse.swt.SWT.error(SWT.java:4467)
+	at org.eclipse.swt.SWT.error(SWT.java:4438)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:503)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:441)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:529)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:36)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:58)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:100)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:51)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:75)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:65)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:22)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:98)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:293)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:45)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:107)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:119)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor.access$2(LscriptEditor.java:1)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor$ResourceChangeListener.resourceChanged(LscriptEditor.java:188)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:297)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:287)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:150)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:376)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1499)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:46)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2021-03-17 01:46:50.312
+!MESSAGE Invalid thread access
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4552)
+	at org.eclipse.swt.SWT.error(SWT.java:4467)
+	at org.eclipse.swt.SWT.error(SWT.java:4438)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:503)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:441)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:529)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:36)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:58)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:100)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:51)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:75)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:65)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:22)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:98)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:293)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:45)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:107)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:119)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor.access$2(LscriptEditor.java:1)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor$ResourceChangeListener.resourceChanged(LscriptEditor.java:188)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:297)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:287)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:150)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:376)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1499)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2302)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2316)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:638)
+	at org.eclipse.cdt.internal.core.settings.model.AbstractCProjectDescriptionStorage.setProjectDescription(AbstractCProjectDescriptionStorage.java:203)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionStorageManager.setProjectDescription(CProjectDescriptionStorageManager.java:149)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.setProjectDescription(CProjectDescriptionManager.java:853)
+	at org.eclipse.cdt.managedbuilder.internal.core.BuildSettingsUtil.checkApplyDescription(BuildSettingsUtil.java:211)
+	at org.eclipse.cdt.managedbuilder.internal.core.BuildSettingsUtil.checkApplyDescription(BuildSettingsUtil.java:198)
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.updateBuildInfo(ManagedBuildManager.java:1407)
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.saveBuildInfo(ManagedBuildManager.java:1366)
+	at com.xilinx.sdx.core.SDXCoreActivator.lambda$1(SDXCoreActivator.java:134)
+	at org.eclipse.core.runtime.jobs.Job$2.run(Job.java:182)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2021-03-17 01:46:50.399
+!MESSAGE Invalid thread access
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4552)
+	at org.eclipse.swt.SWT.error(SWT.java:4467)
+	at org.eclipse.swt.SWT.error(SWT.java:4438)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:503)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:441)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:529)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:36)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:58)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:100)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:51)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:75)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:65)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:22)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:98)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:293)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:45)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:107)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:119)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor.access$2(LscriptEditor.java:1)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor$ResourceChangeListener.resourceChanged(LscriptEditor.java:188)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:297)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:287)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:150)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:376)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1499)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:46)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:47:07.626
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/hw/design_2_wrapper.xsa /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/sw/FPRock_Platform/standalone_domain/system.mss ], Thread: Worker-56: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:47:07.627
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/hw/design_2_wrapper.xsa /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/sw/FPRock_Platform/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-56: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:47:07.628
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/hw/design_2_wrapper.xsa /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/sw/FPRock_Platform/standalone_domain/system.mss], Thread: Worker-56: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:47:07.629
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/hw/design_2_wrapper.xsa /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/sw/FPRock_Platform/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-56: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2021-03-17 01:47:07.629
+!MESSAGE Generating MD5 hash for file: /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/sw/FPRock_Platform/standalone_domain/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:47:07.630
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/hw/design_2_wrapper.xsa /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/sw/FPRock_Platform/standalone_domain/system.mss], Thread: Worker-56: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:47:07.630
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/hw/design_2_wrapper.xsa /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/sw/FPRock_Platform/standalone_domain/system.mss], Result: [null, xilisf]. Thread: Worker-56: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:47:07.631
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/hw/design_2_wrapper.xsa /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/sw/FPRock_Platform/standalone_domain/system.mss], Thread: Worker-56: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:47:07.632
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/hw/design_2_wrapper.xsa /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/sw/FPRock_Platform/standalone_domain/system.mss], Result: [null, {"xilisf": "5.14",
+}]. Thread: Worker-56: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:47:07.632
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/hw/design_2_wrapper.xsa /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/sw/FPRock_Platform/standalone_domain/system.mss], Thread: Worker-56: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:47:07.634
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/hw/design_2_wrapper.xsa /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/sw/FPRock_Platform/standalone_domain/system.mss], Result: [null, {"axi_emc_0": {"name": "emc",
+"ver": "4.0",
+},
+"axi_gpio_0": {"name": "gpio",
+"ver": "4.5",
+},
+"axi_iic_0": {"name": "iic",
+"ver": "3.5",
+},
+"axi_quad_spi_0": {"name": "spi",
+"ver": "4.5",
+},
+"axi_uartlite_0": {"name": "uartlite",
+"ver": "3.3",
+},
+"axi_uartlite_1": {"name": "uartlite",
+"ver": "3.3",
+},
+"microblaze_0_axi_intc": {"name": "intc",
+"ver": "3.10",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.3",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.3",
+},
+"axi_uartlite_2": {"name": "uartlite",
+"ver": "3.3",
+},
+"compensator_0": {"name": "compensator",
+"ver": "1.0",
+},
+"microblaze_0": {"name": "cpu",
+"ver": "2.10",
+},
+}]. Thread: Worker-56: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:47:07.634
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/hw/design_2_wrapper.xsa /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/sw/FPRock_Platform/standalone_domain/system.mss], Thread: Worker-56: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:47:07.635
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/hw/design_2_wrapper.xsa /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/sw/FPRock_Platform/standalone_domain/system.mss], Result: [null, xilisf]. Thread: Worker-56: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:47:07.712
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/sw/FPRock_Platform/standalone_domain/system.mss], Thread: Worker-56: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:47:07.713
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/sw/FPRock_Platform/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-56: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:47:08.414
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/hw/design_2_wrapper.xsa], Thread: Worker-56: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:47:08.415
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/hw/design_2_wrapper.xsa], Result: [null, ]. Thread: Worker-56: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:47:08.416
+!MESSAGE XSCT Command: [hsi::internal::extract_hw_files -quiet bit mmi bmm -dir {/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/_ide/bitstream}], Thread: Worker-56: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 01:47:08.431
+!MESSAGE XSCT command with result: [hsi::internal::extract_hw_files -quiet bit mmi bmm -dir {/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/_ide/bitstream}], Result: [null, ]. Thread: Worker-56: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2021-03-17 01:47:08.558
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '8'
+
+!ENTRY org.eclipse.ui.workbench 4 0 2021-03-17 01:47:08.726
+!MESSAGE Invalid thread access
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4552)
+	at org.eclipse.swt.SWT.error(SWT.java:4467)
+	at org.eclipse.swt.SWT.error(SWT.java:4438)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:503)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:441)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:529)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:36)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:58)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:100)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:51)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:75)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:65)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:22)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:98)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:293)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:45)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:107)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:119)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor.access$2(LscriptEditor.java:1)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor$ResourceChangeListener.resourceChanged(LscriptEditor.java:188)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:297)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:287)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:150)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:376)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1499)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:46)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2021-03-17 01:47:08.750
+!MESSAGE Invalid thread access
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4552)
+	at org.eclipse.swt.SWT.error(SWT.java:4467)
+	at org.eclipse.swt.SWT.error(SWT.java:4438)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:503)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:441)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:529)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:36)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:58)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:100)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:51)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:75)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:65)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:22)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:98)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:293)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:45)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:107)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:119)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor.access$2(LscriptEditor.java:1)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor$ResourceChangeListener.resourceChanged(LscriptEditor.java:188)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:297)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:287)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:150)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:376)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1499)
+	at org.eclipse.core.internal.resources.File.setContents(File.java:344)
+	at org.eclipse.core.internal.resources.File.setContents(File.java:434)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.flush(PlatformResourceURIHandlerImpl.java:133)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.writeAscii(XMLSaveImpl.java:1023)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.save(XMLSaveImpl.java:255)
+	at org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl.doSave(XMLResourceImpl.java:389)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.save(ResourceImpl.java:1475)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.save(ResourceImpl.java:1044)
+	at com.xilinx.sdx.core.project.SDXProjectManager.saveProjectSettings(SDXProjectManager.java:379)
+	at com.xilinx.sdx.core.ui.editor.SDXProjectDescriptionHandler.lambda$1(SDXProjectDescriptionHandler.java:195)
+	at org.eclipse.core.runtime.jobs.Job$2.run(Job.java:182)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2021-03-17 01:47:08.767
+!MESSAGE Invalid thread access
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4552)
+	at org.eclipse.swt.SWT.error(SWT.java:4467)
+	at org.eclipse.swt.SWT.error(SWT.java:4438)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:503)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:441)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:529)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:36)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:58)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:100)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:51)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:75)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:65)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:22)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:98)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:293)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:45)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:107)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:119)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor.access$2(LscriptEditor.java:1)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor$ResourceChangeListener.resourceChanged(LscriptEditor.java:188)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:297)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:287)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:150)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:376)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1499)
+	at org.eclipse.core.internal.resources.File.setContents(File.java:344)
+	at org.eclipse.core.internal.resources.File.setContents(File.java:434)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.flush(PlatformResourceURIHandlerImpl.java:133)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.writeAscii(XMLSaveImpl.java:1023)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.save(XMLSaveImpl.java:255)
+	at org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl.doSave(XMLResourceImpl.java:389)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.save(ResourceImpl.java:1475)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.save(ResourceImpl.java:1044)
+	at com.xilinx.sdx.core.SDXCoreActivator._saveLastBuildSettings(SDXCoreActivator.java:413)
+	at com.xilinx.sdx.core.SDXCoreActivator.lambda$1(SDXCoreActivator.java:133)
+	at org.eclipse.core.runtime.jobs.Job$2.run(Job.java:182)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2021-03-17 01:47:08.794
+!MESSAGE Invalid thread access
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4552)
+	at org.eclipse.swt.SWT.error(SWT.java:4467)
+	at org.eclipse.swt.SWT.error(SWT.java:4438)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:503)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:441)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:529)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:36)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:58)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:100)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:51)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:75)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:65)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:22)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:98)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:293)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:45)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:107)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:119)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor.access$2(LscriptEditor.java:1)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor$ResourceChangeListener.resourceChanged(LscriptEditor.java:188)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:297)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:287)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:150)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:376)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1499)
+	at org.eclipse.core.internal.resources.File.setContents(File.java:344)
+	at org.eclipse.core.internal.resources.File.setContents(File.java:434)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.flush(PlatformResourceURIHandlerImpl.java:133)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.writeAscii(XMLSaveImpl.java:1023)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.save(XMLSaveImpl.java:255)
+	at org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl.doSave(XMLResourceImpl.java:389)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.save(ResourceImpl.java:1475)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.save(ResourceImpl.java:1044)
+	at com.xilinx.sdx.core.project.SDXProjectManager.saveProjectSettings(SDXProjectManager.java:379)
+	at com.xilinx.sdx.core.ui.editor.SDXProjectDescriptionHandler.lambda$1(SDXProjectDescriptionHandler.java:195)
+	at org.eclipse.core.runtime.jobs.Job$2.run(Job.java:182)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2021-03-17 01:47:08.818
+!MESSAGE Invalid thread access
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4552)
+	at org.eclipse.swt.SWT.error(SWT.java:4467)
+	at org.eclipse.swt.SWT.error(SWT.java:4438)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:503)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:441)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:529)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:36)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:58)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:100)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:51)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:75)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:65)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:22)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:98)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:293)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:45)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:107)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:119)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor.access$2(LscriptEditor.java:1)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor$ResourceChangeListener.resourceChanged(LscriptEditor.java:188)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:297)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:287)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:150)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:376)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1499)
+	at org.eclipse.core.internal.resources.File.setContents(File.java:344)
+	at org.eclipse.core.internal.resources.File.setContents(File.java:434)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$PlatformResourceOutputStream.flush(PlatformResourceURIHandlerImpl.java:133)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.writeAscii(XMLSaveImpl.java:1023)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.save(XMLSaveImpl.java:255)
+	at org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl.doSave(XMLResourceImpl.java:389)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.save(ResourceImpl.java:1475)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.save(ResourceImpl.java:1044)
+	at com.xilinx.sdx.core.project.SDXProjectManager.saveProjectSettings(SDXProjectManager.java:379)
+	at com.xilinx.sdx.core.ui.editor.SDXProjectDescriptionHandler.lambda$1(SDXProjectDescriptionHandler.java:195)
+	at org.eclipse.core.runtime.jobs.Job$2.run(Job.java:182)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2021-03-17 01:47:08.873
+!MESSAGE Invalid thread access
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4552)
+	at org.eclipse.swt.SWT.error(SWT.java:4467)
+	at org.eclipse.swt.SWT.error(SWT.java:4438)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:503)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:441)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:529)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:36)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:58)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:100)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:51)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:75)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:65)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:22)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:71)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:98)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:293)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:45)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:107)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:119)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor.access$2(LscriptEditor.java:1)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor$ResourceChangeListener.resourceChanged(LscriptEditor.java:188)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:297)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:287)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:150)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:376)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1499)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2302)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2316)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:638)
+	at org.eclipse.cdt.internal.core.settings.model.AbstractCProjectDescriptionStorage.setProjectDescription(AbstractCProjectDescriptionStorage.java:203)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionStorageManager.setProjectDescription(CProjectDescriptionStorageManager.java:149)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.setProjectDescription(CProjectDescriptionManager.java:853)
+	at org.eclipse.cdt.managedbuilder.internal.core.BuildSettingsUtil.checkApplyDescription(BuildSettingsUtil.java:211)
+	at org.eclipse.cdt.managedbuilder.internal.core.BuildSettingsUtil.checkApplyDescription(BuildSettingsUtil.java:198)
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.updateBuildInfo(ManagedBuildManager.java:1407)
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.saveBuildInfo(ManagedBuildManager.java:1366)
+	at com.xilinx.sdx.core.SDXCoreActivator.lambda$1(SDXCoreActivator.java:134)
+	at org.eclipse.core.runtime.jobs.Job$2.run(Job.java:182)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY com.xilinx.sdk.utils 1 0 2021-03-17 01:54:45.337
+!MESSAGE Executing command: /tools/Xilinx/Vitis/2019.2/bin/wbtcv -mode batch -source vitis_webtalk.tcl
+
+!ENTRY com.xilinx.sdk.utils 1 0 2021-03-17 01:54:45.350
+!MESSAGE Executed Webtalk command
