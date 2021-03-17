@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="FPRock_CmodA735t_app_system" key="programflash.hwplatform"/>
+	<item value="Auto Detect" key="FPRock_CmodA735t_app_system-device"/>
+	<item value="true" key="FPRock_CmodA735t_app_system-blankCheck"/>
+	<item value="true" key="FPRock_CmodA735t_app_system-verifyFlash"/>
+	<item value="mx25l3233f-spi-x1_x2_x4" key="FPRock_CmodA735t_app_system-flashType"/>
+	<item value="Local" key="FPRock_CmodA735t_app_system-target"/>
+	<item value="/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/_ide/bitstream/download.bit" key="FPRock_CmodA735t_app_system-imgFile"/>
+	<item value="0x0" key="FPRock_CmodA735t_app_system-offSet"/>
+	<item value="" key="FPRock_CmodA735t_app_system-fsblFile"/>
+</section>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="xuartlite_polled_example_1" location="/home/chrispy/workspace/FPRock_CmodA735t/xuartlite_polled_example_1" platform="/home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/FPRock_Platform.xpfm" platformUID="xilinx:cmod_a7-35t::0.0(custom)" systemProject="system_bsp_example_1" sysConfig="FPRock_Platform" runtime="C/C++" cpu="standalone_domain" cpuInstance="microblaze_0" os="standalone" mssSignature="ae10d5a16084c2ec7bf69d9ebb01693d">
+  <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.434729021" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.mb.exe.release.1783465500" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>

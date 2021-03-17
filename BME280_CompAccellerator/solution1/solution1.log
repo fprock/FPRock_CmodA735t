@@ -1,0 +1,176 @@
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7a35t-cpg236-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+WARNING: [HLS 200-40] Skipped source file 'BME280_comp_vals_h.dat'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+INFO: [HLS 200-10] Analyzing design file 'hls_src/BME280_Compensation.c' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 927.980 ; gain = 523.035 ; free physical = 13721 ; free virtual = 24650
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 927.980 ; gain = 523.035 ; free physical = 13721 ; free virtual = 24650
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 927.980 ; gain = 523.035 ; free physical = 13714 ; free virtual = 24643
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 927.980 ; gain = 523.035 ; free physical = 13714 ; free virtual = 24643
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 927.980 ; gain = 523.035 ; free physical = 13695 ; free virtual = 24624
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 927.980 ; gain = 523.035 ; free physical = 13701 ; free virtual = 24630
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'compensator' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'compensator' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-21] Estimated clock period (9.882ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns).
+WARNING: [SCHED 204-21] The critical path in module 'compensator' consists of the following:
+	'mul' operation of DSP[109] ('mul_ln48', hls_src/BME280_Compensation.c:48) [107]  (3.36 ns)
+	'add' operation of DSP[109] ('add_ln48', hls_src/BME280_Compensation.c:48) [109]  (3.82 ns)
+	'add' operation ('add_ln48_1', hls_src/BME280_Compensation.c:48) [111]  (2.7 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 7.37 seconds; current allocated memory: 115.479 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.12 seconds; current allocated memory: 116.416 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'compensator' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'compensator/temp_comp' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'compensator/pres_comp' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'compensator/hum_comp' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'compensator/temp_raw' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'compensator/pres_raw' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'compensator/hum_raw' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'compensator' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return', 'pres_comp', 'hum_comp', 'temp_raw', 'pres_raw' and 'hum_raw' to AXI-Lite port compensator_io.
+INFO: [SYN 201-210] Renamed object name 'compensator_fptrunc_64ns_32_2_1' to 'compensator_fptrubkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compensator_dmul_64ns_64ns_64_6_max_dsp_1' to 'compensator_dmul_cud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compensator_ddiv_64ns_64ns_64_31_1' to 'compensator_ddiv_dEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compensator_sitodp_64s_64_6_1' to 'compensator_sitodeOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compensator_sitodp_32ns_64_6_1' to 'compensator_sitodfYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compensator_mul_13ns_64s_64_5_1' to 'compensator_mul_1g8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compensator_mul_17ns_48s_63_2_1' to 'compensator_mul_1hbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compensator_sdiv_64ns_31ns_64_68_seq_1' to 'compensator_sdiv_ibs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compensator_mul_14ns_51s_64_2_1' to 'compensator_mul_1jbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compensator_mul_51s_64s_64_5_1' to 'compensator_mul_5kbM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compensator_mul_15s_64s_64_5_1' to 'compensator_mul_1lbW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compensator_mul_mul_7ns_20s_27_1_1' to 'compensator_mul_mmb6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compensator_mac_muladd_7s_22s_30s_30_1_1' to 'compensator_mac_mncg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compensator_mac_muladd_10ns_22ns_15ns_31_1_1' to 'compensator_mac_mocq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compensator_mul_mul_13ns_22s_35_1_1' to 'compensator_mul_mpcA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compensator_mul_mul_17s_17ns_32_1_1' to 'compensator_mul_mqcK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compensator_mul_mul_17s_17s_32_1_1' to 'compensator_mul_mrcU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compensator_mul_mul_8ns_25s_32_1_1' to 'compensator_mul_msc4' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'compensator_ddiv_dEe': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'compensator_dmul_cud': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'compensator_fptrubkb': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'compensator_mac_mncg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'compensator_mac_mocq': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'compensator_mul_1g8j': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'compensator_mul_1hbi': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'compensator_mul_1jbC': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'compensator_mul_1lbW': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'compensator_mul_5kbM': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'compensator_mul_mmb6': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'compensator_mul_mpcA': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'compensator_mul_mqcK': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'compensator_mul_mrcU': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'compensator_mul_msc4': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'compensator_sdiv_ibs': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'compensator_sitodeOg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'compensator_sitodfYi': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'compensator'.
+INFO: [HLS 200-111]  Elapsed time: 0.19 seconds; current allocated memory: 118.538 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7a35t-cpg236-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+WARNING: [HLS 200-40] Skipped source file 'BME280_comp_vals_h.dat'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+INFO: [HLS 200-10] Analyzing design file 'hls_src/BME280_Compensation.c' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 927.980 ; gain = 523.035 ; free physical = 15024 ; free virtual = 24341
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 927.980 ; gain = 523.035 ; free physical = 15024 ; free virtual = 24341
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 927.980 ; gain = 523.035 ; free physical = 15009 ; free virtual = 24326
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 927.980 ; gain = 523.035 ; free physical = 15009 ; free virtual = 24326
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 927.980 ; gain = 523.035 ; free physical = 14990 ; free virtual = 24307
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 927.980 ; gain = 523.035 ; free physical = 14997 ; free virtual = 24314
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'compensator' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'compensator' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-21] Estimated clock period (9.882ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns).
+WARNING: [SCHED 204-21] The critical path in module 'compensator' consists of the following:
+	'mul' operation of DSP[109] ('mul_ln48', hls_src/BME280_Compensation.c:48) [107]  (3.36 ns)
+	'add' operation of DSP[109] ('add_ln48', hls_src/BME280_Compensation.c:48) [109]  (3.82 ns)
+	'add' operation ('add_ln48_1', hls_src/BME280_Compensation.c:48) [111]  (2.7 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 7.51 seconds; current allocated memory: 115.436 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.11 seconds; current allocated memory: 116.420 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'compensator' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'compensator/temp_comp' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'compensator/pres_comp' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'compensator/hum_comp' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'compensator/temp_raw' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'compensator/pres_raw' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'compensator/hum_raw' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'compensator' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return', 'pres_comp', 'hum_comp', 'temp_raw', 'pres_raw' and 'hum_raw' to AXI-Lite port compensator_io.
+INFO: [SYN 201-210] Renamed object name 'compensator_fptrunc_64ns_32_2_1' to 'compensator_fptrubkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compensator_dmul_64ns_64ns_64_6_max_dsp_1' to 'compensator_dmul_cud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compensator_ddiv_64ns_64ns_64_31_1' to 'compensator_ddiv_dEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compensator_sitodp_64s_64_6_1' to 'compensator_sitodeOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compensator_sitodp_32ns_64_6_1' to 'compensator_sitodfYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compensator_mul_13ns_64s_64_5_1' to 'compensator_mul_1g8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compensator_mul_17ns_48s_63_2_1' to 'compensator_mul_1hbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compensator_sdiv_64ns_31ns_64_68_seq_1' to 'compensator_sdiv_ibs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compensator_mul_14ns_51s_64_2_1' to 'compensator_mul_1jbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compensator_mul_51s_64s_64_5_1' to 'compensator_mul_5kbM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compensator_mul_15s_64s_64_5_1' to 'compensator_mul_1lbW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compensator_mul_mul_7ns_20s_27_1_1' to 'compensator_mul_mmb6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compensator_mac_muladd_7s_22s_30s_30_1_1' to 'compensator_mac_mncg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compensator_mac_muladd_10ns_22ns_15ns_31_1_1' to 'compensator_mac_mocq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compensator_mul_mul_13ns_22s_35_1_1' to 'compensator_mul_mpcA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compensator_mul_mul_17s_17ns_32_1_1' to 'compensator_mul_mqcK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compensator_mul_mul_17s_17s_32_1_1' to 'compensator_mul_mrcU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compensator_mul_mul_8ns_25s_32_1_1' to 'compensator_mul_msc4' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'compensator_ddiv_dEe': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'compensator_dmul_cud': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'compensator_fptrubkb': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'compensator_mac_mncg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'compensator_mac_mocq': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'compensator_mul_1g8j': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'compensator_mul_1hbi': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'compensator_mul_1jbC': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'compensator_mul_1lbW': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'compensator_mul_5kbM': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'compensator_mul_mmb6': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'compensator_mul_mpcA': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'compensator_mul_mqcK': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'compensator_mul_mrcU': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'compensator_mul_msc4': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'compensator_sdiv_ibs': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'compensator_sitodeOg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'compensator_sitodfYi': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'compensator'.
+INFO: [HLS 200-111]  Elapsed time: 0.19 seconds; current allocated memory: 118.588 MB.
+INFO: [HLS 200-789] **** Estimated Fmax: 101.19 MHz
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================

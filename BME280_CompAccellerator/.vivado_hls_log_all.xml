@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SCHED 204-21] The critical path in module 'compensator' consists of the following:&#xA;&#x9;'mul' operation of DSP[109] ('mul_ln48', hls_src/BME280_Compensation.c:48) [107]  (3.36 ns)&#xA;&#x9;'add' operation of DSP[109] ('add_ln48', hls_src/BME280_Compensation.c:48) [109]  (3.82 ns)&#xA;&#x9;'add' operation ('add_ln48_1', hls_src/BME280_Compensation.c:48) [111]  (2.7 ns)" projectName="BME280_CompAccellerator" solutionName="solution1" date="2021-03-17T00:22:10.173-0400" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-21] Estimated clock period (9.882ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns)." projectName="BME280_CompAccellerator" solutionName="solution1" date="2021-03-17T00:22:10.168-0400" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Skipped source file 'BME280_comp_vals_h.dat'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx." projectName="BME280_CompAccellerator" solutionName="solution1" date="2021-03-17T00:22:04.160-0400" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-21] The critical path in module 'compensator' consists of the following:&#xA;&#x9;'mul' operation of DSP[125] ('mul_ln50', hls_src/BME280_Compensation.c:50) [123]  (3.36 ns)&#xA;&#x9;'add' operation of DSP[125] ('add_ln50', hls_src/BME280_Compensation.c:50) [125]  (3.82 ns)&#xA;&#x9;'add' operation ('add_ln50_1', hls_src/BME280_Compensation.c:50) [127]  (2.7 ns)" projectName="BME280_CompAccellerator" solutionName="solution2" date="2021-03-17T00:21:22.080-0400" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-21] Estimated clock period (9.882ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns)." projectName="BME280_CompAccellerator" solutionName="solution2" date="2021-03-17T00:21:22.075-0400" type="Warning"/>
+        <logs message="WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'DSP_Macro' (hls_src/BME280_Compensation.c:57) on 'fptrunc' operation ('hum_comp_var', hls_src/BME280_Compensation.c:56) due to incompatible operation sets." projectName="BME280_CompAccellerator" solutionName="solution2" date="2021-03-17T00:21:21.907-0400" type="Warning"/>
+        <logs message="WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'DSP_Macro' (hls_src/BME280_Compensation.c:42) on 'sub' operation ('sub_ln41', hls_src/BME280_Compensation.c:41) due to incompatible operation sets." projectName="BME280_CompAccellerator" solutionName="solution2" date="2021-03-17T00:21:21.905-0400" type="Warning"/>
+        <logs message="WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'DSP_Macro' (hls_src/BME280_Compensation.c:33) on 'mul' operation ('var2_s64', hls_src/BME280_Compensation.c:32) due to incompatible operation sets." projectName="BME280_CompAccellerator" solutionName="solution2" date="2021-03-17T00:21:21.903-0400" type="Warning"/>
+        <logs message="WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'DSP_Macro' (hls_src/BME280_Compensation.c:32) on 'add' operation ('add_ln31', hls_src/BME280_Compensation.c:31) due to incompatible operation sets." projectName="BME280_CompAccellerator" solutionName="solution2" date="2021-03-17T00:21:21.900-0400" type="Warning"/>
+        <logs message="WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'DSP_Macro' (hls_src/BME280_Compensation.c:29) on 'fptrunc' operation ('temp_comp_var', hls_src/BME280_Compensation.c:28) due to incompatible operation sets." projectName="BME280_CompAccellerator" solutionName="solution2" date="2021-03-17T00:21:21.899-0400" type="Warning"/>
+        <logs message="WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'DSP_Macro' (hls_src/BME280_Compensation.c:26) on 'ashr' operation ('var1_s32', hls_src/BME280_Compensation.c:25) due to incompatible operation sets." projectName="BME280_CompAccellerator" solutionName="solution2" date="2021-03-17T00:21:21.895-0400" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Skipped source file 'BME280_comp_vals_h.dat'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx." projectName="BME280_CompAccellerator" solutionName="solution2" date="2021-03-17T00:21:15.786-0400" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'compensator_ap_sitodp_4_no_dsp_64' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="BME280_CompAccellerator" solutionName="solution1" date="2021-03-17T00:23:46.606-0400" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'compensator_ap_sitodp_4_no_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="BME280_CompAccellerator" solutionName="solution1" date="2021-03-17T00:23:44.724-0400" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'compensator_ap_fptrunc_0_no_dsp_64' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="BME280_CompAccellerator" solutionName="solution1" date="2021-03-17T00:23:42.862-0400" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'compensator_ap_dmul_4_max_dsp_64' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="BME280_CompAccellerator" solutionName="solution1" date="2021-03-17T00:23:41.120-0400" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'compensator_ap_ddiv_29_no_dsp_64' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="BME280_CompAccellerator" solutionName="solution1" date="2021-03-17T00:23:38.571-0400" type="Warning"/>
+      </packageLog>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

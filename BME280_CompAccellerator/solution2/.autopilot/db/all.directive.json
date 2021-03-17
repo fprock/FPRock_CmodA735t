@@ -1,0 +1,200 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "compensator",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "RESOURCE",
+            "option": [
+              {
+                "name": "variable",
+                "value": "t_fine",
+                "positionalBoolean": "4"
+              },
+              {
+                "name": "core",
+                "value": "DSP_Macro"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "compensator",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "RESOURCE",
+            "option": [
+              {
+                "name": "variable",
+                "value": "var1_s32",
+                "positionalBoolean": "4"
+              },
+              {
+                "name": "core",
+                "value": "DSP_Macro"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "compensator",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "RESOURCE",
+            "option": [
+              {
+                "name": "variable",
+                "value": "var2_s32",
+                "positionalBoolean": "4"
+              },
+              {
+                "name": "core",
+                "value": "DSP_Macro"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "compensator",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "RESOURCE",
+            "option": [
+              {
+                "name": "variable",
+                "value": "var1_s64",
+                "positionalBoolean": "4"
+              },
+              {
+                "name": "core",
+                "value": "DSP_Macro"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "compensator",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "RESOURCE",
+            "option": [
+              {
+                "name": "variable",
+                "value": "var2_s64",
+                "positionalBoolean": "4"
+              },
+              {
+                "name": "core",
+                "value": "DSP_Macro"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "compensator",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "RESOURCE",
+            "option": [
+              {
+                "name": "variable",
+                "value": "p_fine",
+                "positionalBoolean": "4"
+              },
+              {
+                "name": "core",
+                "value": "DSP_Macro"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "compensator",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "RESOURCE",
+            "option": [
+              {
+                "name": "variable",
+                "value": "pres_comp_var",
+                "positionalBoolean": "4"
+              },
+              {
+                "name": "core",
+                "value": "DSP_Macro"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "compensator",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "RESOURCE",
+            "option": [
+              {
+                "name": "variable",
+                "value": "hum_comp_var",
+                "positionalBoolean": "4"
+              },
+              {
+                "name": "core",
+                "value": "DSP_Macro"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "compensator",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "RESOURCE",
+            "option": [
+              {
+                "name": "variable",
+                "value": "temp_comp_var",
+                "positionalBoolean": "4"
+              },
+              {
+                "name": "core",
+                "value": "DSP_Macro"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "compensator",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "ALLOCATION",
+            "option": [
+              {
+                "name": "instances",
+                "value": "DSP_Macro",
+                "positionalBoolean": "4"
+              },
+              {
+                "name": "limit",
+                "value": "25"
+              },
+              {
+                "name": "core",
+                "value": "",
+                "positionalBoolean": "type"
+              }
+            ]
+          }
+        }
+      ]
+    }]}

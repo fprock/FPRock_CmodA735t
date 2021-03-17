@@ -1,0 +1,238 @@
+
+
+================================================================
+== Vivado HLS Report for 'compensator'
+================================================================
+* Date:           Wed Mar 17 00:21:22 2021
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        BME280_CompAccellerator
+* Solution:       solution2
+* Product family: artix7
+* Target device:  xc7a35t-cpg236-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 10.00 ns | 9.882 ns |   1.25 ns  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      101|      101| 1.010 us | 1.010 us |  101|  101|   none  |
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+-------+-------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF  |  LUT  | URAM|
++-----------------+---------+-------+-------+-------+-----+
+|DSP              |        -|      7|      -|      -|    -|
+|Expression       |        -|     14|      0|   1290|    -|
+|FIFO             |        -|      -|      -|      -|    -|
+|Instance         |        0|     45|   7894|   6743|    -|
+|Memory           |        -|      -|      -|      -|    -|
+|Multiplexer      |        -|      -|      -|    468|    -|
+|Register         |        -|      -|   1824|      -|    -|
++-----------------+---------+-------+-------+-------+-----+
+|Total            |        0|     66|   9718|   8501|    0|
++-----------------+---------+-------+-------+-------+-----+
+|Available        |      100|     90|  41600|  20800|    0|
++-----------------+---------+-------+-------+-------+-----+
+|Utilization (%)  |        0|     73|     23|     40|    0|
++-----------------+---------+-------+-------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +------------------------------------+----------------------------------+---------+-------+------+------+-----+
+    |              Instance              |              Module              | BRAM_18K| DSP48E|  FF  |  LUT | URAM|
+    +------------------------------------+----------------------------------+---------+-------+------+------+-----+
+    |compensator_compensator_io_s_axi_U  |compensator_compensator_io_s_axi  |        0|      0|   264|   424|    0|
+    |compensator_ddiv_dEe_U6             |compensator_ddiv_dEe              |        0|      0|  3211|  3270|    0|
+    |compensator_dmul_cud_U4             |compensator_dmul_cud              |        0|     11|   317|   204|    0|
+    |compensator_dmul_cud_U5             |compensator_dmul_cud              |        0|     11|   317|   204|    0|
+    |compensator_fptrubkb_U1             |compensator_fptrubkb              |        0|      0|   128|   103|    0|
+    |compensator_fptrubkb_U2             |compensator_fptrubkb              |        0|      0|   128|   103|    0|
+    |compensator_fptrubkb_U3             |compensator_fptrubkb              |        0|      0|   128|   103|    0|
+    |compensator_mul_1g8j_U9             |compensator_mul_1g8j              |        0|      4|   441|   256|    0|
+    |compensator_mul_1hbi_U10            |compensator_mul_1hbi              |        0|      3|   229|    83|    0|
+    |compensator_mul_1jbC_U12            |compensator_mul_1jbC              |        0|      3|   246|   108|    0|
+    |compensator_mul_1lbW_U14            |compensator_mul_1lbW              |        0|      4|   441|   256|    0|
+    |compensator_mul_5kbM_U13            |compensator_mul_5kbM              |        0|      9|   441|   256|    0|
+    |compensator_sdiv_ibs_U11            |compensator_sdiv_ibs              |        0|      0|   779|   469|    0|
+    |compensator_sitodeOg_U7             |compensator_sitodeOg              |        0|      0|   412|   452|    0|
+    |compensator_sitodfYi_U8             |compensator_sitodfYi              |        0|      0|   412|   452|    0|
+    +------------------------------------+----------------------------------+---------+-------+------+------+-----+
+    |Total                               |                                  |        0|     45|  7894|  6743|    0|
+    +------------------------------------+----------------------------------+---------+-------+------+------+-----+
+
+    * DSP48E: 
+    +--------------------------+----------------------+--------------+
+    |         Instance         |        Module        |  Expression  |
+    +--------------------------+----------------------+--------------+
+    |compensator_mac_mncg_U16  |compensator_mac_mncg  | i0 + i1 * i2 |
+    |compensator_mac_mocq_U17  |compensator_mac_mocq  | i0 + i1 * i2 |
+    |compensator_mul_mmb6_U15  |compensator_mul_mmb6  |    i0 * i1   |
+    |compensator_mul_mpcA_U18  |compensator_mul_mpcA  |    i0 * i1   |
+    |compensator_mul_mqcK_U19  |compensator_mul_mqcK  |    i0 * i1   |
+    |compensator_mul_mrcU_U20  |compensator_mul_mrcU  |    i0 * i0   |
+    |compensator_mul_msc4_U21  |compensator_mul_msc4  |    i0 * i1   |
+    +--------------------------+----------------------+--------------+
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------------+----------+-------+---+----+------------+------------+
+    |     Variable Name     | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------+----------+-------+---+----+------------+------------+
+    |empty_20_fu_452_p2     |     *    |      2|  0|  48|          25|          22|
+    |mul_ln25_fu_292_p2     |     *    |      2|  0|  33|          15|          29|
+    |mul_ln26_fu_336_p2     |     *    |      4|  0|  33|          29|          29|
+    |mul_ln35_1_fu_622_p2   |     *    |      2|  0|  24|          22|          35|
+    |mul_ln35_2_fu_638_p2   |     *    |      2|  0|  41|          27|          22|
+    |var2_s64_fu_446_p2     |     *    |      2|  0|  45|          26|          22|
+    |add_ln25_fu_318_p2     |     +    |      0|  0|  39|          32|          32|
+    |add_ln26_fu_312_p2     |     +    |      0|  0|  36|          16|          29|
+    |add_ln28_1_fu_384_p2   |     +    |      0|  0|  64|           8|          24|
+    |add_ln28_fu_390_p2     |     +    |      0|  0|  64|          24|          24|
+    |add_ln31_fu_406_p2     |     +    |      0|  0|  29|          22|          18|
+    |add_ln34_fu_542_p2     |     +    |      0|  0|  57|          49|          50|
+    |add_ln36_fu_737_p2     |     +    |      0|  0|  70|          63|          63|
+    |add_ln45_1_fu_829_p2   |     +    |      0|  0|  71|          64|          64|
+    |add_ln45_2_fu_847_p2   |     +    |      0|  0|  64|          18|          57|
+    |add_ln45_fu_819_p2     |     +    |      0|  0|  53|          46|          46|
+    |add_ln50_1_fu_469_p2   |     +    |      0|  0|  39|          32|          32|
+    |t_fine_fu_367_p2       |     +    |      0|  0|  29|          22|          22|
+    |var1_s32_1_fu_434_p2   |     +    |      0|  0|  29|          18|          22|
+    |var1_s64_fu_659_p2     |     +    |      0|  0|  55|          48|          48|
+    |var2_s64_2_fu_552_p2   |     +    |      0|  0|  64|          64|          64|
+    |sub_ln32_fu_428_p2     |     -    |      0|  0|  33|          26|          26|
+    |sub_ln41_fu_522_p2     |     -    |      0|  0|  39|          21|          32|
+    |sub_ln42_fu_558_p2     |     -    |      0|  0|  64|          64|          64|
+    |sub_ln50_fu_503_p2     |     -    |      0|  0|  39|          32|          32|
+    |var1_s32_3_fu_688_p2   |     -    |      0|  0|  39|          32|          32|
+    |icmp_ln55_fu_713_p2    |   icmp   |      0|  0|  18|          31|          29|
+    |select_ln55_fu_729_p3  |  select  |      0|  0|  17|           1|          16|
+    |var1_s32_4_fu_705_p3   |  select  |      0|  0|  31|           1|           1|
+    |xor_ln50_fu_571_p2     |    xor   |      0|  0|  23|          23|          22|
+    +-----------------------+----------+-------+---+----+------------+------------+
+    |Total                  |          |     14|  0|1290|         901|        1008|
+    +-----------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +---------------+-----+-----------+-----+-----------+
+    |      Name     | LUT | Input Size| Bits| Total Bits|
+    +---------------+-----+-----------+-----+-----------+
+    |ap_NS_fsm      |  453|        103|    1|        103|
+    |grp_fu_272_p0  |   15|          3|   64|        192|
+    +---------------+-----+-----------+-----+-----------+
+    |Total          |  468|        106|   65|        295|
+    +---------------+-----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------+-----+----+-----+-----------+
+    |          Name         |  FF | LUT| Bits| Const Bits|
+    +-----------------------+-----+----+-----+-----------+
+    |add_ln26_reg_928       |   29|   0|   29|          0|
+    |add_ln31_reg_953       |   22|   0|   22|          0|
+    |add_ln45_2_reg_1115    |   57|   0|   57|          0|
+    |ap_CS_fsm              |  102|   0|  102|          0|
+    |empty_20_reg_978       |   48|   0|   48|          0|
+    |hum_raw_read_reg_913   |   32|   0|   32|          0|
+    |mul_ln25_reg_923       |   32|   0|   32|          0|
+    |mul_ln35_2_reg_1023    |   48|   0|   48|          0|
+    |mul_ln35_reg_1003      |   35|   0|   35|          0|
+    |mul_ln36_reg_1053      |   63|   0|   63|          0|
+    |mul_ln42_reg_1058      |   64|   0|   64|          0|
+    |mul_ln43_reg_1095      |   64|   0|   64|          0|
+    |p_fine_reg_1078        |   64|   0|   64|          0|
+    |pres_raw_read_reg_918  |   32|   0|   32|          0|
+    |select_ln55_reg_1048   |   17|   0|   17|          0|
+    |sext_ln43_reg_1089     |   64|   0|   64|          0|
+    |sub_ln32_reg_961       |   26|   0|   26|          0|
+    |sub_ln42_reg_993       |   64|   0|   64|          0|
+    |tmp_10_reg_1018        |   45|   0|   45|          0|
+    |tmp_14_reg_988         |   17|   0|   17|          0|
+    |tmp_15_reg_998         |   17|   0|   17|          0|
+    |tmp_1_reg_1140         |   64|   0|   64|          0|
+    |tmp_3_reg_1130         |   64|   0|   64|          0|
+    |tmp_4_reg_1145         |   64|   0|   64|          0|
+    |tmp_6_reg_1135         |   64|   0|   64|          0|
+    |tmp_7_reg_1150         |   64|   0|   64|          0|
+    |tmp_reg_1073           |   64|   0|   64|          0|
+    |trunc_ln25_reg_933     |   22|   0|   22|          0|
+    |trunc_ln26_1_reg_938   |   20|   0|   20|          0|
+    |trunc_ln26_2_reg_943   |   12|   0|   12|          0|
+    |trunc_ln2_reg_948      |   16|   0|   16|          0|
+    |trunc_ln43_1_reg_1100  |   39|   0|   39|          0|
+    |trunc_ln53_1_reg_1028  |   25|   0|   25|          0|
+    |trunc_ln53_2_reg_1038  |   28|   0|   28|          0|
+    |trunc_ln5_reg_1084     |   51|   0|   51|          0|
+    |trunc_ln6_reg_1105     |   45|   0|   45|          0|
+    |trunc_ln7_reg_1110     |   56|   0|   56|          0|
+    |trunc_ln8_reg_983      |   17|   0|   17|          0|
+    |trunc_ln9_reg_1013     |   17|   0|   17|          0|
+    |var1_s32_1_reg_966     |   22|   0|   22|          0|
+    |var1_s32_2_reg_1008    |   32|   0|   32|          0|
+    |var1_s64_reg_1033      |   48|   0|   48|          0|
+    |var2_s64_reg_973       |   48|   0|   48|          0|
+    +-----------------------+-----+----+-----+-----------+
+    |Total                  | 1824|   0| 1824|          0|
+    +-----------------------+-----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------------+-----+-----+------------+----------------+--------------+
+|           RTL Ports          | Dir | Bits|  Protocol  |  Source Object |    C Type    |
++------------------------------+-----+-----+------------+----------------+--------------+
+|s_axi_compensator_io_AWVALID  |  in |    1|    s_axi   | compensator_io |    scalar    |
+|s_axi_compensator_io_AWREADY  | out |    1|    s_axi   | compensator_io |    scalar    |
+|s_axi_compensator_io_AWADDR   |  in |    6|    s_axi   | compensator_io |    scalar    |
+|s_axi_compensator_io_WVALID   |  in |    1|    s_axi   | compensator_io |    scalar    |
+|s_axi_compensator_io_WREADY   | out |    1|    s_axi   | compensator_io |    scalar    |
+|s_axi_compensator_io_WDATA    |  in |   32|    s_axi   | compensator_io |    scalar    |
+|s_axi_compensator_io_WSTRB    |  in |    4|    s_axi   | compensator_io |    scalar    |
+|s_axi_compensator_io_ARVALID  |  in |    1|    s_axi   | compensator_io |    scalar    |
+|s_axi_compensator_io_ARREADY  | out |    1|    s_axi   | compensator_io |    scalar    |
+|s_axi_compensator_io_ARADDR   |  in |    6|    s_axi   | compensator_io |    scalar    |
+|s_axi_compensator_io_RVALID   | out |    1|    s_axi   | compensator_io |    scalar    |
+|s_axi_compensator_io_RREADY   |  in |    1|    s_axi   | compensator_io |    scalar    |
+|s_axi_compensator_io_RDATA    | out |   32|    s_axi   | compensator_io |    scalar    |
+|s_axi_compensator_io_RRESP    | out |    2|    s_axi   | compensator_io |    scalar    |
+|s_axi_compensator_io_BVALID   | out |    1|    s_axi   | compensator_io |    scalar    |
+|s_axi_compensator_io_BREADY   |  in |    1|    s_axi   | compensator_io |    scalar    |
+|s_axi_compensator_io_BRESP    | out |    2|    s_axi   | compensator_io |    scalar    |
+|ap_clk                        |  in |    1| ap_ctrl_hs |   compensator  | return value |
+|ap_rst_n                      |  in |    1| ap_ctrl_hs |   compensator  | return value |
+|interrupt                     | out |    1| ap_ctrl_hs |   compensator  | return value |
++------------------------------+-----+-----+------------+----------------+--------------+
+

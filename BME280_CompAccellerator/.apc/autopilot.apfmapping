@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="BME280_comp_vals_h.dat" path="/home/chrispy/workspace/FPRock_CmodA735t/hls_src/BME280_comp_vals_h.dat"/>
+    <originFiles name="BME280_Compensation.h" path="/home/chrispy/workspace/FPRock_CmodA735t/hls_src/BME280_Compensation.h"/>
+    <originFiles name="BME280_Compensation.c" path="/home/chrispy/workspace/FPRock_CmodA735t/hls_src/BME280_Compensation.c"/>
+  </source>
+  <testbench/>
+</autopilotfilemapping:AutoPilotFileMapping>

@@ -1,0 +1,100 @@
+Nothing to build in platform 'FPRock_Platform'
+
+01:00:45 **** Incremental Build of configuration Release for project FPRock_CmodA735t_app ****
+make all 
+Building file: ../src/testperiph.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/testperiph.o" -I/home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/sw/FPRock_Platform/standalone_domain/bspinclude/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.o" -o "src/testperiph.o" "../src/testperiph.c"
+../src/testperiph.c: In function 'BME280_RegSet':
+../src/testperiph.c:65:66: warning: passing argument 3 of 'XIic_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  byteCount = XIic_Send(XPAR_AXI_IIC_0_BASEADDR, BME280_IIC_ADDR, &sendArray, 2, XIIC_STOP);
+                                                                  ^~~~~~~~~~
+In file included from ../src/testperiph.c:44:
+/home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/sw/FPRock_Platform/standalone_domain/bspinclude/include/xiic_l.h:573:10: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'u8 (*)[2]' {aka 'unsigned char (*)[2]'}
+      u8 *BufferPtr, unsigned ByteCount, u8 Option);
+      ~~~~^~~~~~~~~
+../src/testperiph.c: At top level:
+../src/testperiph.c:73:16: warning: pointer targets in initialization of 'u8 *' {aka 'unsigned char *'} from 'char *' differ in signedness [-Wpointer-sign]
+ u8 *testbuff = "hello!\n\r";
+                ^~~~~~~~~~~~
+../src/testperiph.c: In function 'main':
+../src/testperiph.c:112:7: warning: unsigned conversion from 'int' to 'u8' {aka 'unsigned char'} changes value from '-256' to '0' [-Woverflow]
+       ~(BME280_RESET_MASK),
+       ^~~~~~~~~~~~~~~~~~~~
+../src/testperiph.c:122:7: warning: unsigned conversion from 'int' to 'u8' {aka 'unsigned char'} changes value from '-253' to '3' [-Woverflow]
+       ~(BME280_CONFIG_T_SB_MASK | BME280_CONFIG_FILTER_MASK),
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/testperiph.c:142:7: warning: unsigned conversion from 'int' to 'u8' {aka 'unsigned char'} changes value from '-256' to '0' [-Woverflow]
+       ~(BME280_CTRL_MEAS_MODE_MASK | BME280_CTRL_MEAS_OSRS_P_MASK | BME280_CTRL_MEAS_OSRS_T_MASK),
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/testperiph.c:171:70: warning: passing argument 3 of 'XIic_Recv' from incompatible pointer type [-Wincompatible-pointer-types]
+      ByteCount = XIic_Recv(XPAR_AXI_IIC_0_BASEADDR, BME280_IIC_ADDR, &data, 8, XIIC_STOP);
+                                                                      ^~~~~
+In file included from ../src/testperiph.c:44:
+/home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/sw/FPRock_Platform/standalone_domain/bspinclude/include/xiic_l.h:570:10: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint8_t (*)[6]' {aka 'unsigned char (*)[6]'}
+      u8 *BufferPtr, unsigned ByteCount, u8 Option);
+      ~~~~^~~~~~~~~
+../src/testperiph.c:101:8: warning: variable 'ByteCount' set but not used [-Wunused-but-set-variable]
+    int ByteCount;
+        ^~~~~~~~~
+../src/testperiph.c:87:8: warning: unused variable 'Busy' [-Wunused-variable]
+    u32 Busy;
+        ^~~~
+../src/testperiph.c:77:17: warning: unused variable 'intc' [-Wunused-variable]
+    static XIntc intc;
+                 ^~~~
+At top level:
+../src/testperiph.c:77:17: warning: 'intc' defined but not used [-Wunused-variable]
+../src/testperiph.c: In function 'main':
+../src/testperiph.c:176:27: warning: array subscript 6 is above array bounds of 'uint8_t[6]' {aka 'unsigned char[6]'} [-Warray-bounds]
+      hum_data = ((u32)data[6] << 8) | ((u32)data[7]);
+                       ~~~~^~~
+../src/testperiph.c:176:49: warning: array subscript 7 is above array bounds of 'uint8_t[6]' {aka 'unsigned char[6]'} [-Warray-bounds]
+      hum_data = ((u32)data[6] << 8) | ((u32)data[7]);
+                                             ~~~~^~~
+Finished building: ../src/testperiph.c
+ 
+Building file: ../src/xgpio_tapp_example.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/xgpio_tapp_example.o" -I/home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/sw/FPRock_Platform/standalone_domain/bspinclude/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/xgpio_tapp_example.d" -MT"src/xgpio_tapp_example.o" -o "src/xgpio_tapp_example.o" "../src/xgpio_tapp_example.c"
+Finished building: ../src/xgpio_tapp_example.c
+ 
+Building file: ../src/xiic_selftest_example.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/xiic_selftest_example.o" -I/home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/sw/FPRock_Platform/standalone_domain/bspinclude/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/xiic_selftest_example.d" -MT"src/xiic_selftest_example.o" -o "src/xiic_selftest_example.o" "../src/xiic_selftest_example.c"
+Finished building: ../src/xiic_selftest_example.c
+ 
+Building file: ../src/xintc_tapp_example.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/xintc_tapp_example.o" -I/home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/sw/FPRock_Platform/standalone_domain/bspinclude/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/xintc_tapp_example.d" -MT"src/xintc_tapp_example.o" -o "src/xintc_tapp_example.o" "../src/xintc_tapp_example.c"
+Finished building: ../src/xintc_tapp_example.c
+ 
+Building file: ../src/xspi_selftest_example.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/xspi_selftest_example.o" -I/home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/sw/FPRock_Platform/standalone_domain/bspinclude/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/xspi_selftest_example.d" -MT"src/xspi_selftest_example.o" -o "src/xspi_selftest_example.o" "../src/xspi_selftest_example.c"
+Finished building: ../src/xspi_selftest_example.c
+ 
+Building file: ../src/xuartlite_intr_tapp_example.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/xuartlite_intr_tapp_example.o" -I/home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/sw/FPRock_Platform/standalone_domain/bspinclude/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/xuartlite_intr_tapp_example.d" -MT"src/xuartlite_intr_tapp_example.o" -o "src/xuartlite_intr_tapp_example.o" "../src/xuartlite_intr_tapp_example.c"
+Finished building: ../src/xuartlite_intr_tapp_example.c
+ 
+Building file: ../src/xuartlite_selftest_example.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/xuartlite_selftest_example.o" -I/home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/sw/FPRock_Platform/standalone_domain/bspinclude/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/xuartlite_selftest_example.d" -MT"src/xuartlite_selftest_example.o" -o "src/xuartlite_selftest_example.o" "../src/xuartlite_selftest_example.c"
+Finished building: ../src/xuartlite_selftest_example.c
+ 
+Building target: FPRock_CmodA735t_app.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L/home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/sw/FPRock_Platform/standalone_domain/bsplib/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -Wl,--no-relax -Wl,--gc-sections -o "FPRock_CmodA735t_app.elf"  ./src/testperiph.o ./src/xgpio_tapp_example.o ./src/xiic_selftest_example.o ./src/xintc_tapp_example.o ./src/xspi_selftest_example.o ./src/xuartlite_intr_tapp_example.o ./src/xuartlite_selftest_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilisf,-lxil,-lgcc,-lc,--end-group
+Finished building target: FPRock_CmodA735t_app.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size FPRock_CmodA735t_app.elf  |tee "FPRock_CmodA735t_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27708	    800	   2172	  30680	   77d8	FPRock_CmodA735t_app.elf
+Finished building: FPRock_CmodA735t_app.elf.size
+ 
+01:00:46 **** Incremental Build of configuration Release for project FPRock_CmodA735t_app_system ****
+make all 
+Skipping SD card image generation. Reason: The system project only has applications for microblaze processors.

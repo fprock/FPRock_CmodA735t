@@ -1,0 +1,463 @@
+17:40:00 INFO  : Launching XSCT server: xsct -n  -interactive /home/chrispy/workspace/FPRock_CmodA735t/temp_xsdb_launch_script.tcl
+17:40:02 INFO  : Registering command handlers for Vitis TCF services
+17:40:02 INFO  : XSCT server has started successfully.
+17:40:02 INFO  : Successfully done setting XSCT server connection channel  
+17:40:02 INFO  : plnx-install-location is set to ''
+17:40:02 INFO  : Successfully done setting workspace for the tool. 
+17:40:02 INFO  : Successfully done query RDI_DATADIR 
+17:46:00 INFO  : Checking for BSP changes to sync application flags for project 'FPRock_CmodA735t_app'...
+17:48:03 INFO  : Inferring section assignments and sizes from elf file: /home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/Debug/FPRock_CmodA735t_app.elf
+17:49:03 INFO  : Checking for BSP changes to sync application flags for project 'FPRock_CmodA735t_app'...
+17:49:37 INFO  : Bit file '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/_ide/bitstream/download.bit' is generated.
+17:49:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:49:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328AFE28AA" && level==0} -index 0' command is executed.
+17:49:38 INFO  : FPGA configured successfully with bitstream "/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/_ide/bitstream/download.bit"
+17:50:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:50:26 INFO  : Jtag cable 'Digilent Cmod A7 - 35T 210328AFE28AA' is selected.
+17:50:26 INFO  : 'jtag frequency' command is executed.
+17:50:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328AFE28AA" && level==0} -index 0' command is executed.
+17:50:26 INFO  : FPGA configured successfully with bitstream "/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/_ide/bitstream/download.bit"
+17:50:26 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:50:26 INFO  : Context for processor 'microblaze_0' is selected.
+17:50:26 INFO  : System reset is completed.
+17:50:29 INFO  : 'after 3000' command is executed.
+17:50:29 INFO  : Context for processor 'microblaze_0' is selected.
+17:50:30 INFO  : The application '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/Debug/FPRock_CmodA735t_app.elf' is downloaded to processor 'microblaze_0'.
+17:50:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328AFE28AA" && level==0} -index 0
+fpga -file /home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow /home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/Debug/FPRock_CmodA735t_app.elf
+----------------End of Script----------------
+
+17:50:30 INFO  : Memory regions updated for context PA
+17:50:30 INFO  : Memory regions updated for context PA
+17:50:30 INFO  : Context for processor 'microblaze_0' is selected.
+17:50:30 INFO  : 'con' command is executed.
+17:50:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:50:30 INFO  : Launch script is exported to file '/home/chrispy/workspace/FPRock_CmodA735t/.sdk/launch_scripts/single_application_debug/systemdebugger_fprock_cmoda735t_app_system_standalone.tcl'
+17:53:03 INFO  : Disconnected from the channel tcfchan#2.
+18:04:01 INFO  : Checking for BSP changes to sync application flags for project 'FPRock_CmodA735t_app'...
+18:06:22 INFO  : Checking for BSP changes to sync application flags for project 'FPRock_CmodA735t_app'...
+18:07:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328AFE28AA" && level==0} -index 0' command is executed.
+18:07:34 INFO  : 'fpga -state' command is executed.
+18:07:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:07:34 INFO  : Jtag cable 'Digilent Cmod A7 - 35T 210328AFE28AA' is selected.
+18:07:34 INFO  : 'jtag frequency' command is executed.
+18:07:34 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:07:34 INFO  : Context for processor 'microblaze_0' is selected.
+18:07:34 INFO  : System reset is completed.
+18:07:37 INFO  : 'after 3000' command is executed.
+18:07:37 INFO  : Context for processor 'microblaze_0' is selected.
+18:07:37 INFO  : The application '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/Debug/FPRock_CmodA735t_app.elf' is downloaded to processor 'microblaze_0'.
+18:07:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow /home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/Debug/FPRock_CmodA735t_app.elf
+----------------End of Script----------------
+
+18:07:37 INFO  : Memory regions updated for context PA
+18:07:37 INFO  : Memory regions updated for context PA
+18:07:37 INFO  : Context for processor 'microblaze_0' is selected.
+18:07:37 INFO  : 'con' command is executed.
+18:07:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+18:07:37 INFO  : Launch script is exported to file '/home/chrispy/workspace/FPRock_CmodA735t/.sdk/launch_scripts/single_application_debug/systemdebugger_fprock_cmoda735t_app_system_standalone.tcl'
+18:12:54 INFO  : Checking for BSP changes to sync application flags for project 'FPRock_CmodA735t_app'...
+18:13:37 INFO  : Bit file '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/_ide/bitstream/download.bit' is generated.
+18:14:27 INFO  : Inferring section assignments and sizes from elf file: /home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/Debug/FPRock_CmodA735t_app.elf
+18:14:47 INFO  : Successfully generated /home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/src/lscript.ld.
+18:14:47 INFO  : Applying linker script to all configurations of project FPRock_CmodA735t_app.
+18:14:47 INFO  : Setting rebuild state to true for all configurations of project FPRock_CmodA735t_app.
+18:14:51 INFO  : Checking for BSP changes to sync application flags for project 'FPRock_CmodA735t_app'...
+18:15:38 INFO  : Bit file '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/_ide/bitstream/download.bit' is generated.
+18:15:54 INFO  : Checking for BSP changes to sync application flags for project 'FPRock_CmodA735t_app'...
+18:16:51 ERROR : Failed to openhw "/home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/hw/design_1_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+18:17:01 INFO  : Checking for BSP changes to sync application flags for project 'FPRock_CmodA735t_app'...
+18:19:45 INFO  : Bit file '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/_ide/bitstream/download.bit' is generated.
+18:20:01 INFO  : Inferring section assignments and sizes from elf file: /home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/Debug/FPRock_CmodA735t_app.elf
+18:20:11 INFO  : Successfully generated /home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/src/lscript.ld.
+18:20:11 INFO  : Applying linker script to all configurations of project FPRock_CmodA735t_app.
+18:20:11 INFO  : Setting rebuild state to true for all configurations of project FPRock_CmodA735t_app.
+18:20:14 INFO  : Checking for BSP changes to sync application flags for project 'FPRock_CmodA735t_app'...
+18:21:05 INFO  : Checking for BSP changes to sync application flags for project 'FPRock_CmodA735t_app'...
+18:21:37 INFO  : Bit file '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/_ide/bitstream/download.bit' is generated.
+18:23:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:23:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:24:48 INFO  : Invoking Bootgen: bootgen -arch fpga -image /home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app_system/_ide/flash/bootimage.bif -w -o /home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app_system/_ide/flash/BOOT.bin  -interface spi
+18:24:49 INFO  : Bootgen command execution is done.
+18:27:58 INFO  : Disconnected from the channel tcfchan#3.
+23:00:18 INFO  : Launching XSCT server: xsct -n  -interactive /home/chrispy/workspace/FPRock_CmodA735t/temp_xsdb_launch_script.tcl
+23:00:19 INFO  : Registering command handlers for Vitis TCF services
+23:00:20 INFO  : XSCT server has started successfully.
+23:00:20 INFO  : Successfully done setting XSCT server connection channel  
+23:00:20 INFO  : plnx-install-location is set to ''
+23:00:20 INFO  : Successfully done setting workspace for the tool. 
+23:00:20 INFO  : Successfully done query RDI_DATADIR 
+23:20:00 INFO  : Successfully done sdx_reload_mss "/home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss"
+23:20:19 INFO  : Example project xuartlite_polled_example_1 has been created successfully.
+23:21:59 INFO  : Checking for BSP changes to sync application flags for project 'FPRock_CmodA735t_app'...
+23:23:24 INFO  : Checking for BSP changes to sync application flags for project 'FPRock_CmodA735t_app'...
+23:26:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328AFE28AA" && level==0} -index 0' command is executed.
+23:26:42 INFO  : 'fpga -state' command is executed.
+23:26:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:26:42 INFO  : Jtag cable 'Digilent Cmod A7 - 35T 210328AFE28AA' is selected.
+23:26:42 INFO  : 'jtag frequency' command is executed.
+23:26:42 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:26:42 INFO  : Context for processor 'microblaze_0' is selected.
+23:26:42 INFO  : System reset is completed.
+23:26:45 INFO  : 'after 3000' command is executed.
+23:26:45 INFO  : Context for processor 'microblaze_0' is selected.
+23:26:45 INFO  : The application '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/Debug/FPRock_CmodA735t_app.elf' is downloaded to processor 'microblaze_0'.
+23:26:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow /home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/Debug/FPRock_CmodA735t_app.elf
+----------------End of Script----------------
+
+23:26:45 INFO  : Memory regions updated for context PA
+23:26:45 INFO  : Memory regions updated for context PA
+23:26:45 INFO  : Context for processor 'microblaze_0' is selected.
+23:26:45 INFO  : 'con' command is executed.
+23:26:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+23:26:45 INFO  : Launch script is exported to file '/home/chrispy/workspace/FPRock_CmodA735t/.sdk/launch_scripts/single_application_debug/systemdebugger_fprock_cmoda735t_app_system_standalone.tcl'
+23:29:48 INFO  : Checking for BSP changes to sync application flags for project 'FPRock_CmodA735t_app'...
+23:30:01 INFO  : Disconnected from the channel tcfchan#2.
+23:30:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328AFE28AA" && level==0} -index 0' command is executed.
+23:30:01 INFO  : 'fpga -state' command is executed.
+23:30:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:30:01 INFO  : Jtag cable 'Digilent Cmod A7 - 35T 210328AFE28AA' is selected.
+23:30:01 INFO  : 'jtag frequency' command is executed.
+23:30:01 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:30:01 INFO  : Context for processor 'microblaze_0' is selected.
+23:30:01 INFO  : System reset is completed.
+23:30:04 INFO  : 'after 3000' command is executed.
+23:30:04 INFO  : Context for processor 'microblaze_0' is selected.
+23:30:04 INFO  : The application '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/Debug/FPRock_CmodA735t_app.elf' is downloaded to processor 'microblaze_0'.
+23:30:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow /home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/Debug/FPRock_CmodA735t_app.elf
+----------------End of Script----------------
+
+23:30:04 INFO  : Memory regions updated for context PA
+23:30:04 INFO  : Memory regions updated for context PA
+23:30:04 INFO  : Context for processor 'microblaze_0' is selected.
+23:30:04 INFO  : 'con' command is executed.
+23:30:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+23:30:04 INFO  : Launch script is exported to file '/home/chrispy/workspace/FPRock_CmodA735t/.sdk/launch_scripts/single_application_debug/systemdebugger_fprock_cmoda735t_app_system_standalone.tcl'
+23:34:14 INFO  : Checking for BSP changes to sync application flags for project 'FPRock_CmodA735t_app'...
+23:34:19 INFO  : Disconnected from the channel tcfchan#3.
+23:34:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328AFE28AA" && level==0} -index 0' command is executed.
+23:34:19 INFO  : 'fpga -state' command is executed.
+23:34:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:34:19 INFO  : Jtag cable 'Digilent Cmod A7 - 35T 210328AFE28AA' is selected.
+23:34:19 INFO  : 'jtag frequency' command is executed.
+23:34:19 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:34:19 INFO  : Context for processor 'microblaze_0' is selected.
+23:34:19 INFO  : System reset is completed.
+23:34:22 INFO  : 'after 3000' command is executed.
+23:34:22 INFO  : Context for processor 'microblaze_0' is selected.
+23:34:22 INFO  : The application '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/Debug/FPRock_CmodA735t_app.elf' is downloaded to processor 'microblaze_0'.
+23:34:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow /home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/Debug/FPRock_CmodA735t_app.elf
+----------------End of Script----------------
+
+23:34:22 INFO  : Memory regions updated for context PA
+23:34:22 INFO  : Memory regions updated for context PA
+23:34:22 INFO  : Context for processor 'microblaze_0' is selected.
+23:34:22 INFO  : 'con' command is executed.
+23:34:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+23:34:22 INFO  : Launch script is exported to file '/home/chrispy/workspace/FPRock_CmodA735t/.sdk/launch_scripts/single_application_debug/systemdebugger_fprock_cmoda735t_app_system_standalone.tcl'
+23:36:10 INFO  : Checking for BSP changes to sync application flags for project 'FPRock_CmodA735t_app'...
+23:36:31 INFO  : Disconnected from the channel tcfchan#4.
+23:36:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328AFE28AA" && level==0} -index 0' command is executed.
+23:36:31 INFO  : 'fpga -state' command is executed.
+23:36:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:36:31 INFO  : Jtag cable 'Digilent Cmod A7 - 35T 210328AFE28AA' is selected.
+23:36:31 INFO  : 'jtag frequency' command is executed.
+23:36:31 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:36:31 INFO  : Context for processor 'microblaze_0' is selected.
+23:36:31 INFO  : System reset is completed.
+23:36:34 INFO  : 'after 3000' command is executed.
+23:36:34 INFO  : Context for processor 'microblaze_0' is selected.
+23:36:34 INFO  : The application '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/Debug/FPRock_CmodA735t_app.elf' is downloaded to processor 'microblaze_0'.
+23:36:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow /home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/Debug/FPRock_CmodA735t_app.elf
+----------------End of Script----------------
+
+23:36:34 INFO  : Memory regions updated for context PA
+23:36:34 INFO  : Memory regions updated for context PA
+23:36:34 INFO  : Context for processor 'microblaze_0' is selected.
+23:36:34 INFO  : 'con' command is executed.
+23:36:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+23:36:34 INFO  : Launch script is exported to file '/home/chrispy/workspace/FPRock_CmodA735t/.sdk/launch_scripts/single_application_debug/systemdebugger_fprock_cmoda735t_app_system_standalone.tcl'
+23:37:12 INFO  : Checking for BSP changes to sync application flags for project 'FPRock_CmodA735t_app'...
+23:37:14 INFO  : Disconnected from the channel tcfchan#5.
+23:37:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328AFE28AA" && level==0} -index 0' command is executed.
+23:37:14 INFO  : 'fpga -state' command is executed.
+23:37:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:37:15 INFO  : Jtag cable 'Digilent Cmod A7 - 35T 210328AFE28AA' is selected.
+23:37:15 INFO  : 'jtag frequency' command is executed.
+23:37:15 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:37:15 INFO  : Context for processor 'microblaze_0' is selected.
+23:37:15 INFO  : System reset is completed.
+23:37:18 INFO  : 'after 3000' command is executed.
+23:37:18 INFO  : Context for processor 'microblaze_0' is selected.
+23:37:18 INFO  : The application '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/Debug/FPRock_CmodA735t_app.elf' is downloaded to processor 'microblaze_0'.
+23:37:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow /home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/Debug/FPRock_CmodA735t_app.elf
+----------------End of Script----------------
+
+23:37:18 INFO  : Memory regions updated for context PA
+23:37:18 INFO  : Memory regions updated for context PA
+23:37:18 INFO  : Context for processor 'microblaze_0' is selected.
+23:37:18 INFO  : 'con' command is executed.
+23:37:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+23:37:18 INFO  : Launch script is exported to file '/home/chrispy/workspace/FPRock_CmodA735t/.sdk/launch_scripts/single_application_debug/systemdebugger_fprock_cmoda735t_app_system_standalone.tcl'
+23:38:39 INFO  : Checking for BSP changes to sync application flags for project 'FPRock_CmodA735t_app'...
+23:38:46 INFO  : Disconnected from the channel tcfchan#6.
+23:38:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328AFE28AA" && level==0} -index 0' command is executed.
+23:38:46 INFO  : 'fpga -state' command is executed.
+23:38:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:38:46 INFO  : Jtag cable 'Digilent Cmod A7 - 35T 210328AFE28AA' is selected.
+23:38:46 INFO  : 'jtag frequency' command is executed.
+23:38:46 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:38:46 INFO  : Context for processor 'microblaze_0' is selected.
+23:38:46 INFO  : System reset is completed.
+23:38:49 INFO  : 'after 3000' command is executed.
+23:38:49 INFO  : Context for processor 'microblaze_0' is selected.
+23:38:49 INFO  : The application '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/Debug/FPRock_CmodA735t_app.elf' is downloaded to processor 'microblaze_0'.
+23:38:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow /home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/Debug/FPRock_CmodA735t_app.elf
+----------------End of Script----------------
+
+23:38:49 INFO  : Memory regions updated for context PA
+23:38:49 INFO  : Memory regions updated for context PA
+23:38:49 INFO  : Context for processor 'microblaze_0' is selected.
+23:38:49 INFO  : 'con' command is executed.
+23:38:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+23:38:49 INFO  : Launch script is exported to file '/home/chrispy/workspace/FPRock_CmodA735t/.sdk/launch_scripts/single_application_debug/systemdebugger_fprock_cmoda735t_app_system_standalone.tcl'
+00:00:04 INFO  : Checking for BSP changes to sync application flags for project 'FPRock_CmodA735t_app'...
+00:00:19 INFO  : Checking for BSP changes to sync application flags for project 'FPRock_CmodA735t_app'...
+00:00:34 INFO  : Disconnected from the channel tcfchan#7.
+00:00:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328AFE28AA" && level==0} -index 0' command is executed.
+00:00:34 INFO  : 'fpga -state' command is executed.
+00:00:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:00:34 INFO  : Jtag cable 'Digilent Cmod A7 - 35T 210328AFE28AA' is selected.
+00:00:34 INFO  : 'jtag frequency' command is executed.
+00:00:34 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+00:00:34 INFO  : Context for processor 'microblaze_0' is selected.
+00:00:34 INFO  : System reset is completed.
+00:00:37 INFO  : 'after 3000' command is executed.
+00:00:37 INFO  : Context for processor 'microblaze_0' is selected.
+00:00:37 INFO  : The application '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/Debug/FPRock_CmodA735t_app.elf' is downloaded to processor 'microblaze_0'.
+00:00:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow /home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/Debug/FPRock_CmodA735t_app.elf
+----------------End of Script----------------
+
+00:00:37 INFO  : Memory regions updated for context PA
+00:00:37 INFO  : Memory regions updated for context PA
+00:00:38 INFO  : Context for processor 'microblaze_0' is selected.
+00:00:38 INFO  : 'con' command is executed.
+00:00:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+00:00:38 INFO  : Launch script is exported to file '/home/chrispy/workspace/FPRock_CmodA735t/.sdk/launch_scripts/single_application_debug/systemdebugger_fprock_cmoda735t_app_system_standalone.tcl'
+00:01:49 INFO  : Checking for BSP changes to sync application flags for project 'FPRock_CmodA735t_app'...
+00:01:53 INFO  : Disconnected from the channel tcfchan#8.
+00:02:07 INFO  : Checking for BSP changes to sync application flags for project 'FPRock_CmodA735t_app'...
+00:02:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328AFE28AA" && level==0} -index 0' command is executed.
+00:02:09 INFO  : 'fpga -state' command is executed.
+00:02:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:02:09 INFO  : Jtag cable 'Digilent Cmod A7 - 35T 210328AFE28AA' is selected.
+00:02:09 INFO  : 'jtag frequency' command is executed.
+00:02:09 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+00:02:09 INFO  : Context for processor 'microblaze_0' is selected.
+00:02:09 INFO  : System reset is completed.
+00:02:12 INFO  : 'after 3000' command is executed.
+00:02:12 INFO  : Context for processor 'microblaze_0' is selected.
+00:02:13 INFO  : The application '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/Debug/FPRock_CmodA735t_app.elf' is downloaded to processor 'microblaze_0'.
+00:02:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow /home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/Debug/FPRock_CmodA735t_app.elf
+----------------End of Script----------------
+
+00:02:13 INFO  : Memory regions updated for context PA
+00:02:13 INFO  : Memory regions updated for context PA
+00:02:13 INFO  : Context for processor 'microblaze_0' is selected.
+00:02:13 INFO  : 'con' command is executed.
+00:02:13 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+00:02:13 INFO  : Launch script is exported to file '/home/chrispy/workspace/FPRock_CmodA735t/.sdk/launch_scripts/single_application_debug/systemdebugger_fprock_cmoda735t_app_system_standalone.tcl'
+00:04:23 INFO  : Checking for BSP changes to sync application flags for project 'FPRock_CmodA735t_app'...
+00:04:42 INFO  : Disconnected from the channel tcfchan#9.
+00:04:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Cmod A7 - 35T 210328AFE28AA" && level==0} -index 0' command is executed.
+00:04:42 INFO  : 'fpga -state' command is executed.
+00:04:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:04:42 INFO  : Jtag cable 'Digilent Cmod A7 - 35T 210328AFE28AA' is selected.
+00:04:42 INFO  : 'jtag frequency' command is executed.
+00:04:42 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+00:04:42 INFO  : Context for processor 'microblaze_0' is selected.
+00:04:42 INFO  : System reset is completed.
+00:04:45 INFO  : 'after 3000' command is executed.
+00:04:45 INFO  : Context for processor 'microblaze_0' is selected.
+00:04:45 INFO  : The application '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/Debug/FPRock_CmodA735t_app.elf' is downloaded to processor 'microblaze_0'.
+00:04:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow /home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/Debug/FPRock_CmodA735t_app.elf
+----------------End of Script----------------
+
+00:04:45 INFO  : Memory regions updated for context PA
+00:04:45 INFO  : Memory regions updated for context PA
+00:04:45 INFO  : Context for processor 'microblaze_0' is selected.
+00:04:45 INFO  : 'con' command is executed.
+00:04:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+00:04:45 INFO  : Launch script is exported to file '/home/chrispy/workspace/FPRock_CmodA735t/.sdk/launch_scripts/single_application_debug/systemdebugger_fprock_cmoda735t_app_system_standalone.tcl'
+00:29:58 INFO  : Disconnected from the channel tcfchan#10.
+00:31:47 INFO  : Successfully done sdx_reload_mss "/home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss"
+00:31:53 INFO  : (SwPlatform)  Successfully done add_library 
+00:32:33 INFO  : (SwPlaform) Successfully done setParamInSpec 
+00:32:33 INFO  : (SwPlatform) Successfully done update_mss 
+00:32:33 INFO  : Successfully done sdx_reload_mss "/home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss"
+00:34:34 INFO  : Checking for BSP changes to sync application flags for project 'FPRock_CmodA735t_app'...
+00:34:34 INFO  : Updating application flags with new BSP settings...
+00:34:34 INFO  : Successfully updated application flags for project FPRock_CmodA735t_app.
+00:35:33 INFO  : Checking for BSP changes to sync application flags for project 'FPRock_CmodA735t_bootloader'...
+00:41:13 INFO  : Checking for BSP changes to sync application flags for project 'FPRock_CmodA735t_bootloader'...
+00:41:24 INFO  : Checking for BSP changes to sync application flags for project 'FPRock_CmodA735t_bootloader'...
+00:42:35 INFO  : Bit file '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_bootloader/_ide/bitstream/download.bit' is generated.
+00:43:13 INFO  : Inferring section assignments and sizes from elf file: /home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/Debug/FPRock_CmodA735t_app.elf
+00:43:28 INFO  : Successfully generated /home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/src/lscript.ld.
+00:43:28 INFO  : Applying linker script to all configurations of project FPRock_CmodA735t_app.
+00:43:28 INFO  : Setting rebuild state to true for all configurations of project FPRock_CmodA735t_app.
+00:43:56 INFO  : Checking for BSP changes to sync application flags for project 'FPRock_CmodA735t_app'...
+00:44:03 INFO  : Checking for BSP changes to sync application flags for project 'FPRock_CmodA735t_app'...
+00:44:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:45:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:45:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:45:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:45:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:46:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:47:09 INFO  : Invoking Bootgen: bootgen -arch fpga -image /home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_bootloader/_ide/flash/bootimage.bif -w -o /home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_bootloader/_ide/flash/BOOT.bin  -interface spi
+00:47:10 INFO  : Bootgen command execution is done.
+00:49:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:49:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:50:36 INFO  : Converting 'microblaze' ELF file '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/Release/FPRock_CmodA735t_app.elf' into bootable SREC format.
+00:50:36 INFO  : Caching converted image as '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/_ide/flash/FPRock_CmodA735t_app.elf.srec'.
+00:50:42 INFO  : Invoking Bootgen: bootgen -arch fpga -image /home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/_ide/flash/bootimage.bif -w -o /home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/_ide/flash/BOOT.bin  -interface spi
+00:50:43 INFO  : Bootgen command execution is done.
+00:58:21 INFO  : (SwPlatform) Successfully done update_mss 
+00:58:21 INFO  : No changes in MSS file content so sources will not be generated.
+00:59:02 INFO  : Checking for BSP changes to sync application flags for project 'FPRock_CmodA735t_bootloader'...
+01:00:21 INFO  : Bit file '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_bootloader/_ide/bitstream/download.bit' is generated.
+01:00:45 INFO  : Checking for BSP changes to sync application flags for project 'FPRock_CmodA735t_app'...
+01:00:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:01:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:01:52 INFO  : Invoking Bootgen: bootgen -arch fpga -image /home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_bootloader/_ide/flash/bootimage.bif -w -o /home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_bootloader/_ide/flash/BOOT.bin  -interface spi
+01:01:53 INFO  : Bootgen command execution is done.
+01:02:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:02:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:02:56 INFO  : Converting 'microblaze' ELF file '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/Release/FPRock_CmodA735t_app.elf' into bootable SREC format.
+01:02:56 INFO  : Caching converted image as '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/_ide/flash/FPRock_CmodA735t_app.elf.srec'.
+01:03:54 INFO  : Invoking Bootgen: bootgen -arch fpga -image /home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/_ide/flash/bootimage.bif -w -o /home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/_ide/flash/BOOT.bin  -interface spi
+01:03:55 INFO  : Bootgen command execution is done.

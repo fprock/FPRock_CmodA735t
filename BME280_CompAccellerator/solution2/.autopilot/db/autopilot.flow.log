@@ -1,0 +1,721 @@
+INFO-FLOW: Workspace /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2 opened at Wed Mar 17 00:21:14 EDT 2021
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/artix7/artix7 
+Execute       source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.lib 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.lib 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.lib 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.lib 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.lib 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.lib 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.lib 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.lib 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.lib 
+Execute       source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/artix7/dsp48e1.hlp 
+Execute       source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/artix7/artix7.gen 
+Execute       source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.gen 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/util.gen 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.gen 
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/artix7/artix7_fpv6 
+Execute       source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/artix7/artix7_fpv6.gen 
+Execute       source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7a35t-cpg236-1 
+Execute       ap_part_info -name xc7a35t-cpg236-1 -data single -quiet 
+Command       ap_part_info done; 1 sec.
+Execute       ap_part_info -name xc7a35t-cpg236-1 -data info 
+Execute       add_library xilinx/artix7/artix7:xc7a35t:-cpg236:-1 
+Execute         get_default_platform 
+Execute         ap_part_info -data single -name xc7a35t-cpg236-1 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data resources 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data info 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data info 
+Execute         config_chip_info -quiet -resource {SLICE 8150} {LUT 20800} {FF 41600} {DSP48E 90} {BRAM 100} {URAM 0} 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data info 
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/artix7/artix7_fpv6 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         import_lib /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/artix7/artix7_fpv6 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.lib 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute             source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute               source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute               source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute                 source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute                 source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute               source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/artix7/artix7_fpv6.gen 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+INFO: [HLS 200-10] Setting target device to 'xc7a35t-cpg236-1'
+Execute       ap_part_info -name xc7a35t-cpg236-1 -data info 
+Execute       get_default_platform 
+Command     set_part done; 1.1 sec.
+Execute     ap_part_info -data single -name xc7a35t-cpg236-1 
+Execute     ap_part_info -name xc7a35t-cpg236-1 -data resources 
+Execute     ap_part_info -name xc7a35t-cpg236-1 -data info 
+Execute     ap_part_info -name xc7a35t-cpg236-1 -data info 
+Execute     config_chip_info -quiet -resource {SLICE 8150} {LUT 20800} {FF 41600} {DSP48E 90} {BRAM 100} {URAM 0} 
+Execute     ap_part_info -name xc7a35t-cpg236-1 -data info 
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 1.23 sec.
+Execute   set_part xc7a35t-cpg236-1 
+Execute     ap_part_info -name xc7a35t-cpg236-1 -data single -quiet 
+Execute     ap_part_info -name xc7a35t-cpg236-1 -data info 
+Execute     add_library xilinx/artix7/artix7:xc7a35t:-cpg236:-1 
+Execute       get_default_platform 
+Execute       ap_part_info -data single -name xc7a35t-cpg236-1 
+Execute       ap_part_info -name xc7a35t-cpg236-1 -data resources 
+Execute       ap_part_info -name xc7a35t-cpg236-1 -data info 
+Execute       ap_part_info -name xc7a35t-cpg236-1 -data info 
+Execute       config_chip_info -quiet -resource {SLICE 8150} {LUT 20800} {FF 41600} {DSP48E 90} {BRAM 100} {URAM 0} 
+Execute       ap_part_info -name xc7a35t-cpg236-1 -data info 
+Execute       config_chip_info -quiet -speed slow 
+Execute     add_library xilinx/artix7/artix7_fpv6 
+Execute       get_default_platform 
+Execute       open_platform DefaultPlatform 
+Execute       import_lib /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/artix7/artix7_fpv6 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.lib 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute             source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute             source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute               source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/artix7/artix7_fpv6.gen 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     ap_part_info -name xc7a35t-cpg236-1 -data info 
+Execute     get_default_platform 
+Execute   create_clock -period 10 -name default 
+Execute   source ./BME280_CompAccellerator/solution2/directives.tcl 
+Execute     set_directive_resource -core DSP_Macro compensator t_fine 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredt_fine core=DSP_Macro 
+Execute     set_directive_resource -core DSP_Macro compensator var1_s32 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredt_fine core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredvar1_s32 core=DSP_Macro 
+Execute     set_directive_resource -core DSP_Macro compensator var2_s32 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredt_fine core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredvar1_s32 core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredvar2_s32 core=DSP_Macro 
+Execute     set_directive_resource -core DSP_Macro compensator var1_s64 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredt_fine core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredvar1_s32 core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredvar2_s32 core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredvar1_s64 core=DSP_Macro 
+Execute     set_directive_resource -core DSP_Macro compensator var2_s64 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredt_fine core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredvar1_s32 core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredvar2_s32 core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredvar1_s64 core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredvar2_s64 core=DSP_Macro 
+Execute     set_directive_resource -core DSP_Macro compensator p_fine 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredt_fine core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredvar1_s32 core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredvar2_s32 core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredvar1_s64 core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredvar2_s64 core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredp_fine core=DSP_Macro 
+Execute     set_directive_resource -core DSP_Macro compensator pres_comp_var 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredt_fine core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredvar1_s32 core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredvar2_s32 core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredvar1_s64 core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredvar2_s64 core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredp_fine core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredpres_comp_var core=DSP_Macro 
+Execute     set_directive_resource -core DSP_Macro compensator hum_comp_var 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredt_fine core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredvar1_s32 core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredvar2_s32 core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredvar1_s64 core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredvar2_s64 core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredp_fine core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredpres_comp_var core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredhum_comp_var core=DSP_Macro 
+Execute     set_directive_resource -core DSP_Macro compensator temp_comp_var 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredt_fine core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredvar1_s32 core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredvar2_s32 core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredvar1_s64 core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredvar2_s64 core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredp_fine core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredpres_comp_var core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredhum_comp_var core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredtemp_comp_var core=DSP_Macro 
+Execute     set_directive_allocation -limit 25 -type core compensator DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredt_fine core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredvar1_s32 core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredvar2_s32 core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredvar1_s64 core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredvar2_s64 core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredp_fine core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredpres_comp_var core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredhum_comp_var core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredtemp_comp_var core=DSP_Macro 
+INFO-FLOW: Setting directive 'ALLOCATION' instances=positionBooleanTextRequiredDSP_Macro limit=25 core=positionBoolean0type 
+Execute   csynth_design 
+Execute     get_config_compile -dump_cfg 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+Execute       get_config_schedule -relax_ii_for_timing 
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+Execute       get_config_schedule -suppress_dependence_error_break 
+WARNING: [HLS 200-40] Skipped source file 'BME280_comp_vals_h.dat'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+INFO: [HLS 200-10] Analyzing design file 'hls_src/BME280_Compensation.c' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling hls_src/BME280_Compensation.c as C
+Execute       ap_part_info -name xc7a35t-cpg236-1 -data info 
+Execute       is_encrypted hls_src/BME280_Compensation.c 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "/tools/Xilinx/Vivado/2019.2/lnx64/tools/gcc" -hls  -fno-exceptions  -D__llvm__  -E "hls_src/BME280_Compensation.c"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/tools/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "/tools/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "/home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/BME280_Compensation.pp.0.c" 
+INFO-FLOW: exec /tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vivado/2019.2/lnx64/tools/gcc -hls -fno-exceptions -D__llvm__ -E hls_src/BME280_Compensation.c -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vivado/2019.2/common/technology/autopilot -I /tools/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/BME280_Compensation.pp.0.c
+Command       clang done; 1.3 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/BME280_Compensation.pp.0.c std=gnu89 
+INFO-FLOW: exec /tools/Xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/BME280_Compensation.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang -syntaxcheck -src /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/BME280_Compensation.pp.0.c  -fno-limit-debug-info -gcc-toolchain "/tools/Xilinx/Vivado/2019.2/lnx64/tools/gcc" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/tools/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "/tools/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "/home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/BME280_Compensation.pp.0.c"  -o "/home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/useless.bc"  
+INFO-FLOW: exec /tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vivado/2019.2/lnx64/tools/gcc -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vivado/2019.2/common/technology/autopilot -I /tools/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/BME280_Compensation.pp.0.c -o /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/useless.bc
+Command       clang done; 1.29 sec.
+INFO-FLOW: Done: GCC PP time: 2.6 seconds per iteration
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredt_fine core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredvar1_s32 core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredvar2_s32 core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredvar1_s64 core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredvar2_s64 core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredp_fine core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredpres_comp_var core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredhum_comp_var core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredtemp_comp_var core=DSP_Macro 
+INFO-FLOW: Setting directive 'ALLOCATION' instances=positionBooleanTextRequiredDSP_Macro limit=25 core=positionBoolean0type 
+Execute       source /tools/Xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute       source /tools/Xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute         source /tools/Xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/try/try.tcl 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredt_fine core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredvar1_s32 core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredvar2_s32 core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredvar1_s64 core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredvar2_s64 core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredp_fine core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredpres_comp_var core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredhum_comp_var core=DSP_Macro 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredtemp_comp_var core=DSP_Macro 
+INFO-FLOW: Setting directive 'ALLOCATION' instances=positionBooleanTextRequiredDSP_Macro limit=25 core=positionBoolean0type 
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/BME280_Compensation.pp.0.c std=gnu89 -directive=/home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec /tools/Xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=/home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/.systemc_flag -quiet -fix-errors /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/BME280_Compensation.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+INFO-FLOW: Running: tidy-3.1 CDT preprocess
+Execute       tidy_31 xilinx-directive2pragma /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/BME280_Compensation.pp.0.c std=gnu89 -directive=/home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/all.directive.json 
+INFO-FLOW: exec /tools/Xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=/home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/all.directive.json -quiet -fix-errors /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/BME280_Compensation.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr /tools/Xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/xilinx-dataflow-lawyer.BME280_Compensation.pp.0.c.diag.yml /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/BME280_Compensation.pp.0.c -- -std=gnu99 -fhls -ferror-limit=0 -fstrict-dataflow > /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/xilinx-dataflow-lawyer.BME280_Compensation.pp.0.c.out.log 2> /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/xilinx-dataflow-lawyer.BME280_Compensation.pp.0.c.err.log 
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/BME280_Compensation.pp.0.c std=gnu89 
+Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=/home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/tidy-3.1.BME280_Compensation.pp.0.c.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/BME280_Compensation.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0 > /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/tidy-3.1.BME280_Compensation.pp.0.c.out.log 2> /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/tidy-3.1.BME280_Compensation.pp.0.c.err.log 
+Execute         source /tools/Xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Execute           source /tools/Xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
+Execute         ap_eval exec -ignorestderr /tools/Xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/BME280_Compensation.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0 > /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/xilinx-legacy-rewriter.BME280_Compensation.pp.0.c.out.log 2> /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/xilinx-legacy-rewriter.BME280_Compensation.pp.0.c.err.log 
+Command       tidy_31 done; 0.17 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 0.3 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/BME280_Compensation.pragma.1.c std=gnu89 
+INFO-FLOW: exec /tools/Xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/BME280_Compensation.pragma.1.c -- -std=gnu89 -fhls -ferror-limit=0
+Execute       ap_part_info -name xc7a35t-cpg236-1 -data info 
+INFO-FLOW: Processing labels
+Execute       clang -src /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/BME280_Compensation.pragma.2.c  -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vivado/2019.2/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "/home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/BME280_Compensation.pragma.2.c"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89  -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/tools/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "/tools/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "/home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/BME280_Compensation.bc" 
+INFO-FLOW: exec /tools/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vivado/2019.2/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/BME280_Compensation.pragma.2.c -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vivado/2019.2/common/technology/autopilot -I /tools/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/BME280_Compensation.bc
+Command       clang done; 1.29 sec.
+INFO-FLOW: Linking Debug ...
+Execute       llvm-ld /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/BME280_Compensation.g.bc -hls-opt -except-internalize compensator -L/tools/Xilinx/Vivado/2019.2/lnx64/lib -lhlsm -lhlsmc++ -o /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/a.g 
+Command       llvm-ld done; 0.67 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 927.980 ; gain = 523.035 ; free physical = 15054 ; free virtual = 24366
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 927.980 ; gain = 523.035 ; free physical = 15054 ; free virtual = 24366
+Execute       get_config_sdx -target 
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+Execute         transform -promote-dbg-pointer /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/a.pp.bc -o /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/a.pp.0.bc -f 
+Execute         llvm-ld /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/a.pp.0.bc -disable-opt -L/tools/Xilinx/Vivado/2019.2/lnx64/lib -lfloatconversion -o /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/a.g.0 
+Command         llvm-ld done; 0.63 sec.
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top compensator -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/a.g.0.bc -o /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 927.980 ; gain = 523.035 ; free physical = 15049 ; free virtual = 24361
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/a.g.1.bc -o /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/a.g.2.prechk.bc -f 
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/a.g.2.prechk.bc -o /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/a.g.2.bc -f -phase syn-check 
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 927.980 ; gain = 523.035 ; free physical = 15049 ; free virtual = 24362
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/a.g.1.bc to /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -function-inline -complex-op-raise -inst-simplify -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/a.o.1.bc -o /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/a.o.1.tmp.bc -f 
+Command         transform done; 0.11 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/a.o.1.tmp.bc -o /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 927.980 ; gain = 523.035 ; free physical = 15031 ; free virtual = 24343
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -ptrLegalization -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/a.o.2.bc -o /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+Command         transform done; 0.15 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 927.980 ; gain = 523.035 ; free physical = 15037 ; free virtual = 24349
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 1.04 sec.
+Command     elaborate done; 6.11 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'compensator' ...
+Execute       ap_set_top_model compensator 
+Execute       get_model_list compensator -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model compensator 
+Execute       get_model_list compensator -filter all-wo-channel 
+INFO-FLOW: Model list for configure: compensator
+INFO-FLOW: Configuring Module : compensator ...
+Execute       set_default_model compensator 
+Execute       apply_spec_resource_limit compensator 
+INFO-FLOW: Model list for preprocess: compensator
+INFO-FLOW: Preprocessing Module: compensator ...
+Execute       set_default_model compensator 
+Execute       cdfg_preprocess -model compensator 
+WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'DSP_Macro' (hls_src/BME280_Compensation.c:26) on 'ashr' operation ('var1_s32', hls_src/BME280_Compensation.c:25) due to incompatible operation sets.
+WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'DSP_Macro' (hls_src/BME280_Compensation.c:29) on 'fptrunc' operation ('temp_comp_var', hls_src/BME280_Compensation.c:28) due to incompatible operation sets.
+WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'DSP_Macro' (hls_src/BME280_Compensation.c:32) on 'add' operation ('add_ln31', hls_src/BME280_Compensation.c:31) due to incompatible operation sets.
+WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'DSP_Macro' (hls_src/BME280_Compensation.c:33) on 'mul' operation ('var2_s64', hls_src/BME280_Compensation.c:32) due to incompatible operation sets.
+WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'DSP_Macro' (hls_src/BME280_Compensation.c:42) on 'sub' operation ('sub_ln41', hls_src/BME280_Compensation.c:41) due to incompatible operation sets.
+WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'DSP_Macro' (hls_src/BME280_Compensation.c:57) on 'fptrunc' operation ('hum_comp_var', hls_src/BME280_Compensation.c:56) due to incompatible operation sets.
+Execute       rtl_gen_preprocess compensator 
+INFO-FLOW: Model list for synthesis: compensator
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'compensator' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model compensator 
+Execute       schedule -model compensator 
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-21] Estimated clock period (9.882ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns).
+WARNING: [SCHED 204-21] The critical path in module 'compensator' consists of the following:
+	'mul' operation of DSP[125] ('mul_ln50', hls_src/BME280_Compensation.c:50) [123]  (3.36 ns)
+	'add' operation of DSP[125] ('add_ln50', hls_src/BME280_Compensation.c:50) [125]  (3.82 ns)
+	'add' operation ('add_ln50_1', hls_src/BME280_Compensation.c:50) [127]  (2.7 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.19 sec.
+INFO: [HLS 200-111]  Elapsed time: 7.79 seconds; current allocated memory: 116.237 MB.
+Execute       syn_report -verbosereport -o /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/compensator.verbose.sched.rpt 
+Execute       db_write -o /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/compensator.sched.adb -f 
+INFO-FLOW: Finish scheduling compensator.
+Execute       set_default_model compensator 
+Execute       bind -model compensator 
+BIND OPTION: model=compensator
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.11 seconds; current allocated memory: 117.269 MB.
+Execute       syn_report -verbosereport -o /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/compensator.verbose.bind.rpt 
+Command       syn_report done; 0.14 sec.
+Execute       db_write -o /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/compensator.bind.adb -f 
+INFO-FLOW: Finish binding compensator.
+Execute       get_model_list compensator -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess compensator 
+INFO-FLOW: Model list for RTL generation: compensator
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'compensator' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model compensator -vendor xilinx -mg_file /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/compensator.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'compensator/temp_comp' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'compensator/pres_comp' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'compensator/hum_comp' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'compensator/temp_raw' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'compensator/pres_raw' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'compensator/hum_raw' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'compensator' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return', 'pres_comp', 'hum_comp', 'temp_raw', 'pres_raw' and 'hum_raw' to AXI-Lite port compensator_io.
+INFO: [SYN 201-210] Renamed object name 'compensator_fptrunc_64ns_32_2_1' to 'compensator_fptrubkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compensator_dmul_64ns_64ns_64_6_max_dsp_1' to 'compensator_dmul_cud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compensator_ddiv_64ns_64ns_64_31_1' to 'compensator_ddiv_dEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compensator_sitodp_64s_64_6_1' to 'compensator_sitodeOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compensator_sitodp_32ns_64_6_1' to 'compensator_sitodfYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compensator_mul_13ns_64s_64_5_1' to 'compensator_mul_1g8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compensator_mul_17ns_48s_63_2_1' to 'compensator_mul_1hbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compensator_sdiv_64ns_31ns_64_68_seq_1' to 'compensator_sdiv_ibs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compensator_mul_14ns_51s_64_2_1' to 'compensator_mul_1jbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compensator_mul_51s_64s_64_5_1' to 'compensator_mul_5kbM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compensator_mul_15s_64s_64_5_1' to 'compensator_mul_1lbW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compensator_mul_mul_7ns_20s_26_1_1' to 'compensator_mul_mmb6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compensator_mac_muladd_7s_22s_30s_30_1_1' to 'compensator_mac_mncg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compensator_mac_muladd_10ns_22ns_15ns_31_1_1' to 'compensator_mac_mocq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compensator_mul_mul_13ns_22s_35_1_1' to 'compensator_mul_mpcA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compensator_mul_mul_17s_17ns_32_1_1' to 'compensator_mul_mqcK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compensator_mul_mul_17s_17s_32_1_1' to 'compensator_mul_mrcU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compensator_mul_mul_8ns_25s_32_1_1' to 'compensator_mul_msc4' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'compensator_ddiv_dEe': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'compensator_dmul_cud': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'compensator_fptrubkb': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'compensator_mac_mncg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'compensator_mac_mocq': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'compensator_mul_1g8j': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'compensator_mul_1hbi': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'compensator_mul_1jbC': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'compensator_mul_1lbW': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'compensator_mul_5kbM': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'compensator_mul_mmb6': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'compensator_mul_mpcA': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'compensator_mul_mqcK': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'compensator_mul_mrcU': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'compensator_mul_msc4': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'compensator_sdiv_ibs': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'compensator_sitodeOg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'compensator_sitodfYi': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'compensator'.
+INFO: [HLS 200-111]  Elapsed time: 0.19 seconds; current allocated memory: 119.381 MB.
+Execute       source /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/compensator.rtl_wrap.cfg.tcl 
+Execute       gen_rtl compensator -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/syn/systemc/compensator -synmodules compensator 
+Execute       gen_rtl compensator -istop -style xilinx -f -lang vhdl -o /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/syn/vhdl/compensator 
+Execute       gen_rtl compensator -istop -style xilinx -f -lang vlog -o /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/syn/verilog/compensator 
+Execute       syn_report -csynth -model compensator -o /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/syn/report/compensator_csynth.rpt 
+Execute       syn_report -rtlxml -model compensator -o /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/syn/report/compensator_csynth.xml 
+Execute       syn_report -verbosereport -model compensator -o /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/compensator.verbose.rpt 
+Command       syn_report done; 0.17 sec.
+Execute       db_write -model compensator -f -o /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/compensator.adb 
+Execute       gen_tb_info compensator -p /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db -o /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/compensator 
+Execute       export_constraint_db -f -tool general -o /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/compensator.constraint.tcl 
+Execute       syn_report -designview -model compensator -o /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/compensator.design.xml 
+Execute       get_config_rtl -disable_wave_debug 
+Execute       syn_report -wcfg -model compensator -o /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/compensator_dataflow_ana.wcfg 
+Execute       syn_report -protoinst -model compensator -o /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/compensator.protoinst 
+Execute       get_config_debug -directory 
+Execute       sc_get_clocks compensator 
+Execute       get_config_export -vivado_clock 
+Execute       sc_get_portdomain compensator 
+INFO-FLOW: Model list for RTL component generation: compensator
+INFO-FLOW: Handling components in module [compensator] ... 
+Execute       source /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/compensator.compgen.tcl 
+INFO-FLOW: Found component compensator_fptrubkb.
+INFO-FLOW: Append model compensator_fptrubkb
+INFO-FLOW: Found component compensator_dmul_cud.
+INFO-FLOW: Append model compensator_dmul_cud
+INFO-FLOW: Found component compensator_ddiv_dEe.
+INFO-FLOW: Append model compensator_ddiv_dEe
+INFO-FLOW: Found component compensator_sitodeOg.
+INFO-FLOW: Append model compensator_sitodeOg
+INFO-FLOW: Found component compensator_sitodfYi.
+INFO-FLOW: Append model compensator_sitodfYi
+INFO-FLOW: Found component compensator_mul_1g8j.
+INFO-FLOW: Append model compensator_mul_1g8j
+INFO-FLOW: Found component compensator_mul_1hbi.
+INFO-FLOW: Append model compensator_mul_1hbi
+INFO-FLOW: Found component compensator_sdiv_ibs.
+INFO-FLOW: Append model compensator_sdiv_ibs
+INFO-FLOW: Found component compensator_mul_1jbC.
+INFO-FLOW: Append model compensator_mul_1jbC
+INFO-FLOW: Found component compensator_mul_5kbM.
+INFO-FLOW: Append model compensator_mul_5kbM
+INFO-FLOW: Found component compensator_mul_1lbW.
+INFO-FLOW: Append model compensator_mul_1lbW
+INFO-FLOW: Found component compensator_mul_mmb6.
+INFO-FLOW: Append model compensator_mul_mmb6
+INFO-FLOW: Found component compensator_mac_mncg.
+INFO-FLOW: Append model compensator_mac_mncg
+INFO-FLOW: Found component compensator_mac_mocq.
+INFO-FLOW: Append model compensator_mac_mocq
+INFO-FLOW: Found component compensator_mul_mpcA.
+INFO-FLOW: Append model compensator_mul_mpcA
+INFO-FLOW: Found component compensator_mul_mqcK.
+INFO-FLOW: Append model compensator_mul_mqcK
+INFO-FLOW: Found component compensator_mul_mrcU.
+INFO-FLOW: Append model compensator_mul_mrcU
+INFO-FLOW: Found component compensator_mul_msc4.
+INFO-FLOW: Append model compensator_mul_msc4
+INFO-FLOW: Found component compensator_compensator_io_s_axi.
+INFO-FLOW: Append model compensator_compensator_io_s_axi
+INFO-FLOW: Append model compensator
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: compensator_fptrubkb compensator_dmul_cud compensator_ddiv_dEe compensator_sitodeOg compensator_sitodfYi compensator_mul_1g8j compensator_mul_1hbi compensator_sdiv_ibs compensator_mul_1jbC compensator_mul_5kbM compensator_mul_1lbW compensator_mul_mmb6 compensator_mac_mncg compensator_mac_mocq compensator_mul_mpcA compensator_mul_mqcK compensator_mul_mrcU compensator_mul_msc4 compensator_compensator_io_s_axi compensator
+INFO-FLOW: To file: write model compensator_fptrubkb
+INFO-FLOW: To file: write model compensator_dmul_cud
+INFO-FLOW: To file: write model compensator_ddiv_dEe
+INFO-FLOW: To file: write model compensator_sitodeOg
+INFO-FLOW: To file: write model compensator_sitodfYi
+INFO-FLOW: To file: write model compensator_mul_1g8j
+INFO-FLOW: To file: write model compensator_mul_1hbi
+INFO-FLOW: To file: write model compensator_sdiv_ibs
+INFO-FLOW: To file: write model compensator_mul_1jbC
+INFO-FLOW: To file: write model compensator_mul_5kbM
+INFO-FLOW: To file: write model compensator_mul_1lbW
+INFO-FLOW: To file: write model compensator_mul_mmb6
+INFO-FLOW: To file: write model compensator_mac_mncg
+INFO-FLOW: To file: write model compensator_mac_mocq
+INFO-FLOW: To file: write model compensator_mul_mpcA
+INFO-FLOW: To file: write model compensator_mul_mqcK
+INFO-FLOW: To file: write model compensator_mul_mrcU
+INFO-FLOW: To file: write model compensator_mul_msc4
+INFO-FLOW: To file: write model compensator_compensator_io_s_axi
+INFO-FLOW: To file: write model compensator
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+Execute       syn_report -model compensator -printsummary 
+INFO: [HLS 200-789] **** Estimated Fmax: 101.19 MHz
+INFO-FLOW: DBG:CMD: auto_generate_csynth_design
+INFO-FLOW: DBG:CMD:     auto_generate --sim-model -phase csynth_design -d /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2
+Execute       source /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/global.setting.tcl
+Execute       source /tools/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/common.gen 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source /tools/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/op.gen 
+Execute       source /tools/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source /tools/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/interface.gen 
+Execute       source /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/global.setting.tcl 
+Execute       source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/artix7/artix7.gen 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/util.gen 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.gen 
+Execute       source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/artix7/artix7_fpv6.gen 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=1 export=0 expOnly=0 dstVlogDir=syn/verilog
+Execute       source /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7a35t-cpg236-1 -data names -quiet 
+Execute       ap_part_info -name xc7a35t-cpg236-1 -data info -quiet 
+Execute       source /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/global.setting.tcl 
+Execute       source /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/global.setting.tcl 
+Execute       source /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/compensator.compgen.tcl 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data names -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data info -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data names -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data info -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data names -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data info -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data names -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data info -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data names -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data info -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data names -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data info -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data names -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data info -quiet 
+INFO: [RTMG 210-282] Generating pipelined core: 'compensator_mul_1g8j_MulnS_0'
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data names -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data info -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data names -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data info -quiet 
+INFO: [RTMG 210-282] Generating pipelined core: 'compensator_mul_1hbi_MulnS_1'
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data names -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data info -quiet 
+INFO: [RTMG 210-282] Generating pipelined core: 'compensator_sdiv_ibs_div'
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data names -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data info -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data names -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data info -quiet 
+INFO: [RTMG 210-282] Generating pipelined core: 'compensator_mul_1jbC_MulnS_2'
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data names -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data info -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data names -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data info -quiet 
+INFO: [RTMG 210-282] Generating pipelined core: 'compensator_mul_5kbM_MulnS_3'
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data names -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data info -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data names -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data info -quiet 
+INFO: [RTMG 210-282] Generating pipelined core: 'compensator_mul_1lbW_MulnS_4'
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data names -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data info -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data names -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data info -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data info 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data names -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data info -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data info 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data names -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data info -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data names -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data info -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data names -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data info -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data names -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data info -quiet 
+Execute         source ./compensator_io.slave.tcl 
+Execute         is_m_axi_addr64 
+Command       ap_source done; 0.38 sec.
+INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2
+Execute       source /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/global.setting.tcl
+Execute       source /tools/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/common.gen 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source /tools/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/op.gen 
+Execute       source /tools/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source /tools/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/interface.gen 
+Execute       source /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/global.setting.tcl 
+Execute       source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/artix7/artix7.gen 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/util.gen 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.gen 
+Execute       source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/artix7/artix7_fpv6.gen 
+Execute         source /tools/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=compensator xml_exists=0
+Execute       source /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/compensator.rtl_wrap.cfg.tcl 
+Execute       source /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/compensator.rtl_wrap.cfg.tcl 
+Execute       source /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/compensator.rtl_wrap.cfg.tcl 
+Execute       source /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/compensator.tbgen.tcl 
+Execute       source /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/compensator.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute       source /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/global.setting.tcl 
+Execute       source /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/compensator.compgen.tcl 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data names -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data info -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data names -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data info -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data names -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data info -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data names -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data info -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data names -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data info -quiet 
+Command       ap_source done; 0.11 sec.
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute       source /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/global.setting.tcl 
+Execute       source /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/compensator.compgen.tcl 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data names -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data info -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data names -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data info -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data names -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data info -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data names -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data info -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data names -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data info -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data names -quiet 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data info -quiet 
+Execute       ap_part_info -name xc7a35t-cpg236-1 -data names -quiet 
+Execute       ap_part_info -name xc7a35t-cpg236-1 -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute       source /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/global.setting.tcl 
+Execute       source /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/compensator.compgen.tcl 
+Execute       ap_part_info -name xc7a35t-cpg236-1 -data names -quiet 
+Execute       ap_part_info -name xc7a35t-cpg236-1 -data info -quiet 
+Execute       ap_part_info -name xc7a35t-cpg236-1 -data names -quiet 
+Execute       ap_part_info -name xc7a35t-cpg236-1 -data info -quiet 
+Execute       source /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7a35t-cpg236-1 -data names -quiet 
+Execute       ap_part_info -name xc7a35t-cpg236-1 -data info -quiet 
+Execute       source /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/compensator.constraint.tcl 
+Execute       source /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/compensator.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=0
+INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=6
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=0 #modelList=20 #gSsdmPorts=0
+Execute       source /tools/Xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/fileutil/fileutil.tcl 
+Execute       source /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/global.setting.tcl 
+Execute       source /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/global.setting.tcl 
+Execute       get_config_export -xo 
+Execute       source /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/compensator.tbgen.tcl 
+Execute       source /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/compensator.compgen.dataonly.tcl 
+Execute       source /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/compensator.compgen.dataonly.tcl 
+Execute       source /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/compensator.tbgen.tcl 
+Execute       source /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/compensator.tbgen.tcl 
+Execute       source /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/compensator.tbgen.tcl 
+Execute       source /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/global.setting.tcl 
+Execute       get_config_sdx -target 
+Execute       source /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/compensator.rtl_wrap.cfg.tcl 
+Execute       source /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/compensator.compgen.dataonly.tcl 
+Execute       source /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7a35t-cpg236-1 -data names -quiet 
+Execute       ap_part_info -name xc7a35t-cpg236-1 -data info -quiet 
+Execute       source /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/compensator.constraint.tcl 
+Execute       sc_get_clocks compensator 
+Execute       ap_part_info -name xc7a35t-cpg236-1 -data names -quiet 
+Execute       ap_part_info -name xc7a35t-cpg236-1 -data info -quiet 
+Execute       source /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/global.setting.tcl 
+Execute       get_config_debug -directory 
+Execute       source /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/impl/misc/compensator_ap_ddiv_29_no_dsp_64_ip.tcl 
+Execute       source /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/impl/misc/compensator_ap_dmul_4_max_dsp_64_ip.tcl 
+Execute       source /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/impl/misc/compensator_ap_fptrunc_0_no_dsp_64_ip.tcl 
+Execute       source /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/impl/misc/compensator_ap_sitodp_4_no_dsp_32_ip.tcl 
+Execute       source /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/impl/misc/compensator_ap_sitodp_4_no_dsp_64_ip.tcl 
+Execute       source /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/compensator.tbgen.tcl 
+Execute       get_config_sdx -target 
+Execute       get_config_sdx -profile 
+Execute       get_config_rtl -kernel_profile 
+Execute       get_config_rtl -stall_sig_gen 
+Execute       get_config_rtl -profile 
+INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist, skipping opencl info: /home/chrispy/workspace/FPRock_CmodA735t/BME280_CompAccellerator/solution2/.autopilot/db/kernel.internal.xml
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 931.141 ; gain = 526.195 ; free physical = 15017 ; free virtual = 24332
+INFO: [VHDL 208-304] Generating VHDL RTL for compensator.
+INFO: [VLOG 209-307] Generating Verilog RTL for compensator.
+Command     autosyn done; 1.81 sec.
+Command   csynth_design done; 7.92 sec.
+Command ap_source done; 9.27 sec.
+Execute cleanup_all 

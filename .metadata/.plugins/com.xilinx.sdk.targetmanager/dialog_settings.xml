@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="Local" key="FPRock_CmodA735t_app-target"/>
+	<item value="_ide/bitstream/design_1_wrapper.mmi" key="FPRock_CmodA735t_app-bmmFile"/>
+	<item value="false" key="FPRock_CmodA735t_app-partial_bit"/>
+	<item value="FPRock_CmodA735t_app" key="programfpga.sdxproject"/>
+	<item value="Auto Detect" key="FPRock_CmodA735t_app-device"/>
+	<item value="false" key="FPRock_CmodA735t_app-skip_rev_check"/>
+	<item value="_ide/bitstream/design_1_wrapper.bit" key="FPRock_CmodA735t_app-bitFile"/>
+	<item value="/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/Debug/FPRock_CmodA735t_app.elf" key="FPRock_CmodA735t_app-microblaze_0-initElf"/>
+</section>
