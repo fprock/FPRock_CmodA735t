@@ -1,66 +1,79 @@
-2021-03-20T22:15:14.88765300255-22:15:14 **** Incremental Build of configuration Debug for project FPRock_CmodA735t_app ****
+2021-03-22T21:09:37.81352800255-21:09:37 **** Incremental Build of configuration Debug for project FPRock_CmodA735t_app ****
 000-make all 
 000-Building file: ../src/testperiph.c
 000-Invoking: MicroBlaze gcc compiler
 000-mb-gcc -Wall -Os -g3 -c -fmessage-length=0 -MT"src/testperiph.o" -I/home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/sw/FPRock_Platform/standalone_domain/bspinclude/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.o" -o "src/testperiph.o" "../src/testperiph.c"
 000-../src/testperiph.c: In function 'BME280_RegSet':
-000/FPRock_CmodA735t_app/src/testperiph.c175-1-1passing argument 3 of 'XIic_Send' from incompatible pointer type [-Wincompatible-pointer-types]1-../src/testperiph.c:175:66: warning: passing argument 3 of 'XIic_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+000/FPRock_CmodA735t_app/src/testperiph.c188-1-1passing argument 3 of 'XIic_Send' from incompatible pointer type [-Wincompatible-pointer-types]1-../src/testperiph.c:188:66: warning: passing argument 3 of 'XIic_Send' from incompatible pointer type [-Wincompatible-pointer-types]
 000-  byteCount = XIic_Send(XPAR_AXI_IIC_0_BASEADDR, BME280_IIC_ADDR, &sendArray, 2, XIIC_STOP);
 000-                                                                  ^~~~~~~~~~
-000-In file included from ../src/testperiph.c:47:
+000-In file included from ../src/testperiph.c:24:
 000/FPRock_Platform/export/FPRock_Platform/sw/FPRock_Platform/standalone_domain/bspinclude/include/xiic_l.h573-1-1expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'u8 (*)[2]' {aka 'unsigned char (*)[2]'}0-/home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/sw/FPRock_Platform/standalone_domain/bspinclude/include/xiic_l.h:573:10: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'u8 (*)[2]' {aka 'unsigned char (*)[2]'}
 000-      u8 *BufferPtr, unsigned ByteCount, u8 Option);
 000-      ~~~~^~~~~~~~~
+000-../src/testperiph.c: In function 'fletcher':
+000/FPRock_CmodA735t_app/src/testperiph.c230-1-1assignment to 'u8' {aka 'unsigned char'} from 'u8 **' {aka 'unsigned char **'} makes integer from pointer without a cast [-Wint-conversion]1-../src/testperiph.c:230:11: warning: assignment to 'u8' {aka 'unsigned char'} from 'u8 **' {aka 'unsigned char **'} makes integer from pointer without a cast [-Wint-conversion]
+000-   *ckBptr = *ckBptr + &ckAptr;
+000-           ^
 000-../src/testperiph.c: At top level:
-000/FPRock_CmodA735t_app/src/testperiph.c212-1-1pointer targets in initialization of 'u8 *' {aka 'unsigned char *'} from 'char *' differ in signedness [-Wpointer-sign]1-../src/testperiph.c:212:16: warning: pointer targets in initialization of 'u8 *' {aka 'unsigned char *'} from 'char *' differ in signedness [-Wpointer-sign]
+000/FPRock_CmodA735t_app/src/testperiph.c237-1-1pointer targets in initialization of 'u8 *' {aka 'unsigned char *'} from 'char *' differ in signedness [-Wpointer-sign]1-../src/testperiph.c:237:16: warning: pointer targets in initialization of 'u8 *' {aka 'unsigned char *'} from 'char *' differ in signedness [-Wpointer-sign]
 000- u8 *testbuff = "hello!\n\r";
 000-                ^~~~~~~~~~~~
 000-../src/testperiph.c: In function 'main':
-000/FPRock_CmodA735t_app/src/testperiph.c271-1-1unsigned conversion from 'int' to 'u8' {aka 'unsigned char'} changes value from '-256' to '0' [-Woverflow]1-../src/testperiph.c:271:7: warning: unsigned conversion from 'int' to 'u8' {aka 'unsigned char'} changes value from '-256' to '0' [-Woverflow]
+000/FPRock_CmodA735t_app/src/testperiph.c304-1-1unsigned conversion from 'int' to 'u8' {aka 'unsigned char'} changes value from '-256' to '0' [-Woverflow]1-../src/testperiph.c:304:7: warning: unsigned conversion from 'int' to 'u8' {aka 'unsigned char'} changes value from '-256' to '0' [-Woverflow]
 000-       ~(BME280_RESET_MASK),
 000-       ^~~~~~~~~~~~~~~~~~~~
-000/FPRock_CmodA735t_app/src/testperiph.c281-1-1unsigned conversion from 'int' to 'u8' {aka 'unsigned char'} changes value from '-253' to '3' [-Woverflow]1-../src/testperiph.c:281:7: warning: unsigned conversion from 'int' to 'u8' {aka 'unsigned char'} changes value from '-253' to '3' [-Woverflow]
+000/FPRock_CmodA735t_app/src/testperiph.c314-1-1unsigned conversion from 'int' to 'u8' {aka 'unsigned char'} changes value from '-253' to '3' [-Woverflow]1-../src/testperiph.c:314:7: warning: unsigned conversion from 'int' to 'u8' {aka 'unsigned char'} changes value from '-253' to '3' [-Woverflow]
 000-       ~(BME280_CONFIG_T_SB_MASK | BME280_CONFIG_FILTER_MASK),
 000-       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-000/FPRock_CmodA735t_app/src/testperiph.c301-1-1unsigned conversion from 'int' to 'u8' {aka 'unsigned char'} changes value from '-256' to '0' [-Woverflow]1-../src/testperiph.c:301:7: warning: unsigned conversion from 'int' to 'u8' {aka 'unsigned char'} changes value from '-256' to '0' [-Woverflow]
+000/FPRock_CmodA735t_app/src/testperiph.c334-1-1unsigned conversion from 'int' to 'u8' {aka 'unsigned char'} changes value from '-256' to '0' [-Woverflow]1-../src/testperiph.c:334:7: warning: unsigned conversion from 'int' to 'u8' {aka 'unsigned char'} changes value from '-256' to '0' [-Woverflow]
 000-       ~(BME280_CTRL_MEAS_MODE_MASK | BME280_CTRL_MEAS_OSRS_P_MASK | BME280_CTRL_MEAS_OSRS_T_MASK),
 000-       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-000/FPRock_CmodA735t_app/src/testperiph.c327-1-1passing argument 3 of 'XIic_Recv' from incompatible pointer type [-Wincompatible-pointer-types]1-../src/testperiph.c:327:66: warning: passing argument 3 of 'XIic_Recv' from incompatible pointer type [-Wincompatible-pointer-types]
+000/FPRock_CmodA735t_app/src/testperiph.c369-1-1passing argument 3 of 'XIic_Recv' from incompatible pointer type [-Wincompatible-pointer-types]1-../src/testperiph.c:369:66: warning: passing argument 3 of 'XIic_Recv' from incompatible pointer type [-Wincompatible-pointer-types]
 000-  ByteCount = XIic_Recv(XPAR_AXI_IIC_0_BASEADDR, BME280_IIC_ADDR, &data, 8, XIIC_STOP);
 000-                                                                  ^~~~~
-000-In file included from ../src/testperiph.c:47:
+000-In file included from ../src/testperiph.c:24:
 000/FPRock_Platform/export/FPRock_Platform/sw/FPRock_Platform/standalone_domain/bspinclude/include/xiic_l.h570-1-1expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint8_t (*)[6]' {aka 'unsigned char (*)[6]'}0-/home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/sw/FPRock_Platform/standalone_domain/bspinclude/include/xiic_l.h:570:10: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint8_t (*)[6]' {aka 'unsigned char (*)[6]'}
 000-      u8 *BufferPtr, unsigned ByteCount, u8 Option);
 000-      ~~~~^~~~~~~~~
-000/FPRock_CmodA735t_app/src/testperiph.c353-1-1passing argument 3 of 'XIic_Recv' from incompatible pointer type [-Wincompatible-pointer-types]1-../src/testperiph.c:353:70: warning: passing argument 3 of 'XIic_Recv' from incompatible pointer type [-Wincompatible-pointer-types]
+000/FPRock_CmodA735t_app/src/testperiph.c404-1-1passing argument 3 of 'XIic_Recv' from incompatible pointer type [-Wincompatible-pointer-types]1-../src/testperiph.c:404:70: warning: passing argument 3 of 'XIic_Recv' from incompatible pointer type [-Wincompatible-pointer-types]
 000-      ByteCount = XIic_Recv(XPAR_AXI_IIC_0_BASEADDR, BME280_IIC_ADDR, &data, 8, XIIC_STOP);
 000-                                                                      ^~~~~
-000-In file included from ../src/testperiph.c:47:
+000-In file included from ../src/testperiph.c:24:
 000/FPRock_Platform/export/FPRock_Platform/sw/FPRock_Platform/standalone_domain/bspinclude/include/xiic_l.h570-1-1expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint8_t (*)[6]' {aka 'unsigned char (*)[6]'}0-/home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/sw/FPRock_Platform/standalone_domain/bspinclude/include/xiic_l.h:570:10: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint8_t (*)[6]' {aka 'unsigned char (*)[6]'}
 000-      u8 *BufferPtr, unsigned ByteCount, u8 Option);
 000-      ~~~~^~~~~~~~~
-000/FPRock_CmodA735t_app/src/testperiph.c237-1-1variable 'ByteCount' set but not used [-Wunused-but-set-variable]1-../src/testperiph.c:237:8: warning: variable 'ByteCount' set but not used [-Wunused-but-set-variable]
+000/FPRock_CmodA735t_app/src/testperiph.c391-1-1unused variable 'printData' [-Wunused-variable]1-../src/testperiph.c:391:5: warning: unused variable 'printData' [-Wunused-variable]
+000-  u8 printData;
+000-     ^~~~~~~~~
+000/FPRock_CmodA735t_app/src/testperiph.c269-1-1unused variable 'GPS_BAvail' [-Wunused-variable]1-../src/testperiph.c:269:8: warning: unused variable 'GPS_BAvail' [-Wunused-variable]
+000-    u16 GPS_BAvail;
+000-        ^~~~~~~~~~
+000/FPRock_CmodA735t_app/src/testperiph.c268-1-1unused variable 'GPS_Status' [-Wunused-variable]1-../src/testperiph.c:268:7: warning: unused variable 'GPS_Status' [-Wunused-variable]
+000-    u8 GPS_Status[2];
+000-       ^~~~~~~~~~
+000/FPRock_CmodA735t_app/src/testperiph.c265-1-1variable 'ByteCount' set but not used [-Wunused-but-set-variable]1-../src/testperiph.c:265:8: warning: variable 'ByteCount' set but not used [-Wunused-but-set-variable]
 000-    int ByteCount;
 000-        ^~~~~~~~~
-000/FPRock_CmodA735t_app/src/testperiph.c226-1-1unused variable 'Busy' [-Wunused-variable]1-../src/testperiph.c:226:8: warning: unused variable 'Busy' [-Wunused-variable]
+000/FPRock_CmodA735t_app/src/testperiph.c253-1-1unused variable 'Busy' [-Wunused-variable]1-../src/testperiph.c:253:8: warning: unused variable 'Busy' [-Wunused-variable]
 000-    u32 Busy;
 000-        ^~~~
-000/FPRock_CmodA735t_app/src/testperiph.c216-1-1unused variable 'intc' [-Wunused-variable]1-../src/testperiph.c:216:17: warning: unused variable 'intc' [-Wunused-variable]
+000/FPRock_CmodA735t_app/src/testperiph.c243-1-1unused variable 'intc' [-Wunused-variable]1-../src/testperiph.c:243:17: warning: unused variable 'intc' [-Wunused-variable]
 000-    static XIntc intc;
 000-                 ^~~~
 000-At top level:
-000/FPRock_CmodA735t_app/src/testperiph.c216-1-1'intc' defined but not used [-Wunused-variable]1intc../src/testperiph.c:216:17: warning: 'intc' defined but not used [-Wunused-variable]
+000/FPRock_CmodA735t_app/src/testperiph.c243-1-1'intc' defined but not used [-Wunused-variable]1intc../src/testperiph.c:243:17: warning: 'intc' defined but not used [-Wunused-variable]
 000-../src/testperiph.c: In function 'main':
-000/FPRock_CmodA735t_app/src/testperiph.c331-1-1array subscript 6 is above array bounds of 'uint8_t[6]' {aka 'unsigned char[6]'} [-Warray-bounds]1-../src/testperiph.c:331:23: warning: array subscript 6 is above array bounds of 'uint8_t[6]' {aka 'unsigned char[6]'} [-Warray-bounds]
+000/FPRock_CmodA735t_app/src/testperiph.c373-1-1array subscript 6 is above array bounds of 'uint8_t[6]' {aka 'unsigned char[6]'} [-Warray-bounds]1-../src/testperiph.c:373:23: warning: array subscript 6 is above array bounds of 'uint8_t[6]' {aka 'unsigned char[6]'} [-Warray-bounds]
 000-  hum_data = ((u32)data[6] << 8) | ((u32)data[7]);
 000-                   ~~~~^~~
-000/FPRock_CmodA735t_app/src/testperiph.c331-1-1array subscript 7 is above array bounds of 'uint8_t[6]' {aka 'unsigned char[6]'} [-Warray-bounds]1-../src/testperiph.c:331:45: warning: array subscript 7 is above array bounds of 'uint8_t[6]' {aka 'unsigned char[6]'} [-Warray-bounds]
+000/FPRock_CmodA735t_app/src/testperiph.c373-1-1array subscript 7 is above array bounds of 'uint8_t[6]' {aka 'unsigned char[6]'} [-Warray-bounds]1-../src/testperiph.c:373:45: warning: array subscript 7 is above array bounds of 'uint8_t[6]' {aka 'unsigned char[6]'} [-Warray-bounds]
 000-  hum_data = ((u32)data[6] << 8) | ((u32)data[7]);
 000-                                         ~~~~^~~
-000/FPRock_CmodA735t_app/src/testperiph.c358-1-1array subscript 6 is above array bounds of 'uint8_t[6]' {aka 'unsigned char[6]'} [-Warray-bounds]1-../src/testperiph.c:358:27: warning: array subscript 6 is above array bounds of 'uint8_t[6]' {aka 'unsigned char[6]'} [-Warray-bounds]
+000/FPRock_CmodA735t_app/src/testperiph.c409-1-1array subscript 6 is above array bounds of 'uint8_t[6]' {aka 'unsigned char[6]'} [-Warray-bounds]1-../src/testperiph.c:409:27: warning: array subscript 6 is above array bounds of 'uint8_t[6]' {aka 'unsigned char[6]'} [-Warray-bounds]
 000-      hum_data = ((u32)data[6] << 8) | ((u32)data[7]);
 000-                       ~~~~^~~
-000/FPRock_CmodA735t_app/src/testperiph.c358-1-1array subscript 7 is above array bounds of 'uint8_t[6]' {aka 'unsigned char[6]'} [-Warray-bounds]1-../src/testperiph.c:358:49: warning: array subscript 7 is above array bounds of 'uint8_t[6]' {aka 'unsigned char[6]'} [-Warray-bounds]
+000/FPRock_CmodA735t_app/src/testperiph.c409-1-1array subscript 7 is above array bounds of 'uint8_t[6]' {aka 'unsigned char[6]'} [-Warray-bounds]1-../src/testperiph.c:409:49: warning: array subscript 7 is above array bounds of 'uint8_t[6]' {aka 'unsigned char[6]'} [-Warray-bounds]
 000-      hum_data = ((u32)data[6] << 8) | ((u32)data[7]);
 000-                                             ~~~~^~~
 000-Finished building: ../src/testperiph.c
@@ -73,9 +86,9 @@
 000-Invoking: MicroBlaze Print Size
 000-mb-size FPRock_CmodA735t_app.elf  |tee "FPRock_CmodA735t_app.elf.size"
 000-   text	   data	    bss	    dec	    hex	filename
-000-  32096	    788	   2332	  35216	   8990	FPRock_CmodA735t_app.elf
+000-  35556	   1828	   2424	  39808	   9b80	FPRock_CmodA735t_app.elf
 000-Finished building: FPRock_CmodA735t_app.elf.size
 000- 
 00255-
-22:15:15 Build Finished (took 217ms)
+21:09:38 Build Finished (took 218ms)
 

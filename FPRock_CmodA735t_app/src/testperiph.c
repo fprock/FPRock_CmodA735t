@@ -1,48 +1,25 @@
-/*
- *
- * Xilinx, Inc.
- * XILINX IS PROVIDING THIS DESIGN, CODE, OR INFORMATION "AS IS" AS A 
- * COURTESY TO YOU.  BY PROVIDING THIS DESIGN, CODE, OR INFORMATION AS
- * ONE POSSIBLE   IMPLEMENTATION OF THIS FEATURE, APPLICATION OR 
- * STANDARD, XILINX IS MAKING NO REPRESENTATION THAT THIS IMPLEMENTATION 
- * IS FREE FROM ANY CLAIMS OF INFRINGEMENT, AND YOU ARE RESPONSIBLE 
- * FOR OBTAINING ANY RIGHTS YOU MAY REQUIRE FOR YOUR IMPLEMENTATION
- * XILINX EXPRESSLY DISCLAIMS ANY WARRANTY WHATSOEVER WITH RESPECT TO 
- * THE ADEQUACY OF THE IMPLEMENTATION, INCLUDING BUT NOT LIMITED TO 
- * ANY WARRANTIES OR REPRESENTATIONS THAT THIS IMPLEMENTATION IS FREE 
- * FROM CLAIMS OF INFRINGEMENT, IMPLIED WARRANTIES OF MERCHANTABILITY 
- * AND FITNESS FOR A PARTICULAR PURPOSE.
- */
 
-/*
- * 
- *
- * This file is a generated sample test application.
- *
- * This application is intended to test and/or illustrate some 
- * functionality of your system.  The contents of this file may
- * vary depending on the IP in your system and may use existing
- * IP driver functions.  These drivers will be generated in your
- * SDK application project when you run the "Generate Libraries" menu item.
- *
- */
 
 #define _BME280_
-#define _VERBOSE_
+//#define _NEOM9N_
+//#define _VERBOSE_
+#define _INTERRUPTS_
+
 
 #include <stdio.h>
+#include <stdlib.h>
 #include "xparameters.h"
 #include "xil_cache.h"
 #include "xintc.h"
-#include "intc_header.h"
+//#include "intc_header.h"
 #include "xgpio.h"
-#include "gpio_header.h"
-#include "iic_header.h"
+//#include "gpio_header.h"
+//#include "iic_header.h"
 #include "xspi.h"
-#include "spi_header.h"
+//#include "spi_header.h"
 #include "xuartlite.h"
-#include "uartlite_header.h"
-#include "uartlite_intr_header.h"
+//#include "uartlite_header.h"
+//#include "uartlite_intr_header.h"
 #include "xil_types.h"
 #include "xiic_l.h"
 #include "xil_printf.h"
@@ -52,11 +29,33 @@
 #include "math.h"
 #include "xcompensator.h"
 
+#define NEOM9N_STATUS_REG 0xFD
+#define NEOM9N_STREAM_REG 0xFF
+#define NEOM9N_IIC_ADDR 0x42
+
+#define XBEE_UARTLITE_DEVICE_ID		XPAR_UARTLITE_1_DEVICE_ID
+#define GPS_UARTLITE_DEVICE_ID		XPAR_UARTLITE_2_DEVICE_ID
+#define XBEE_UARTLITE_INTR_ID     	XPAR_INTC_0_UARTLITE_1_VEC_ID
+#define GPS_UARTLITE_INTR_ID     	XPAR_INTC_0_UARTLITE_2_VEC_ID
+#define COMPENSATOR_INTR_ID			XPAR_INTC_0_COMPENSATOR_0_VEC_ID
+
+#define STRT_CHAR_1 0xBB
+#define STRT_CHAR_2 0xAE
+#define MSG_CLASS_BARO 0x01
+#define MSG_BARO_PAYLOAD_LEN 28
+#define MSG_BARO_PAYLOAD_LEN_MSB 0x1C
+//#define MSG_BARO_PAYLOAD_LEN_LSB 0x00
+#define MSG_STRUCTURE_LEN 6
+#define MSG_BARO_TOTAL_LEN MSG_BARO_PAYLOAD_LEN + MSG_STRUCTURE_LEN
+#define MSG_PAYLOAD_OFFSET 4
+
+
 XUartLite UartXbee;	/* Instance of the UartLite device */
-XuartLite UartGPS;
+
+XCompensator CompInst;
+
 #define INTC_DEVICE_ID	XPAR_INTC_0_DEVICE_ID
 #define INTC_HANDLER	XIntc_InterruptHandler
-XCompensator CompInst;
 //Interrupt Controller Instance
 static XIntc InterruptController; /* Instance of the Interrupt Controller */
 int ResultAvail_CompInst;
@@ -64,7 +63,14 @@ int ResultAvail_CompInst;
 static volatile int TotalRecvCount;
 static volatile int TotalSentCount;
 
-#define GPS_INT_IRQ_ID     XPAR_INTC_0_UARTLITE_0_VEC_ID
+
+
+#define GPS_MSG_LEN 21
+
+u8 GPSBuffer[GPS_MSG_LEN];
+
+int GPSMsgReady;
+
 
 int Compensator_init(XCompensator *CompInst, u16 CompId){
 	 XCompensator_Config *cfg_ptr;
@@ -95,17 +101,8 @@ void Compensator_isr(void *InstancePtr)
  	 ResultAvail_CompInst = 1;
 }
 
-void GPSSendHandler(void *CallBackRef, unsigned int EventData)
-{
-	TotalSentCount = EventData;
-}
 
-void GPSRecvHandler(void *CallBackRef, unsigned int EventData)
-{
-	TotalRecvCount = EventData;
-}
-
-int SetupInterruptSystem(XIntc *IntcInstancePtr, XCompensator *CompInstPtr, u16 CompIntrId, XUartLite *UartLitePtr, u16 GPSIntrId)
+int SetupInterruptSystem(void)
  {
 
  	int Status;
@@ -114,7 +111,7 @@ int SetupInterruptSystem(XIntc *IntcInstancePtr, XCompensator *CompInstPtr, u16 
  	 * Initialize the interrupt controller driver so that it is
  	 * ready to use.
  	 */
- 	Status = XIntc_Initialize(IntcInstancePtr, INTC_DEVICE_ID);
+ 	Status = XIntc_Initialize(&InterruptController, INTC_DEVICE_ID);
  	if (Status != XST_SUCCESS) {
  		print("Error: XInct_Initialize FAILED!\r\n");
  		return XST_FAILURE;
@@ -123,46 +120,37 @@ int SetupInterruptSystem(XIntc *IntcInstancePtr, XCompensator *CompInstPtr, u16 
  	/*
  	 * Perform a self-test to ensure that the hardware was built  correctly.
  	 */
- 	Status = XIntc_SelfTest(IntcInstancePtr);
+ 	Status = XIntc_SelfTest(&InterruptController);
  	if (Status != XST_SUCCESS) {
  		print("Error: XInct_SelfTest FAILED!\r\n");
  		return XST_FAILURE;
  	}
 
- 	/*
- 		 * Connect a device driver handler that will be called when an interrupt
- 		 * for the device occurs, the device driver handler performs the specific
- 		 * interrupt processing for the device.
- 		 */
-	Status = XIntc_Connect(IntcInstancePtr, CompIntrId, (XInterruptHandler)Compensator_isr, (void *)CompInstPtr);
+
+
+#ifdef _BME280_
+	Status = XIntc_Connect(&InterruptController, COMPENSATOR_INTR_ID, (XInterruptHandler)Compensator_isr, (void *)&CompInst);
 	if (Status != XST_SUCCESS) {
-		print("Error: XInct_Connect FAILED!\r\n");
+		print("Error: XInct_Connect-Compensator FAILED!\r\n");
 		return XST_FAILURE;
 	}
-	/*
-	 * Connect a device driver handler that will be called when an interrupt
-	 * for the device occurs, the device driver handler performs the
-	 * specific interrupt processing for the device.
-	 */
-	Status = XIntc_Connect(IntcInstancePtr, GPSIntrId,
-			   (XInterruptHandler)XUartLite_InterruptHandler,
-			   (void *)UartLitePtr);
-	if (Status != XST_SUCCESS) {
-		return XST_FAILURE;
-	}
+#endif
+
 
 	/*
 	 * Start the interrupt controller such that interrupts are enabled for
 	 * all devices that cause interrupts.
 	 */
-	Status = XIntc_Start(IntcInstancePtr, XIN_REAL_MODE);
+	Status = XIntc_Start(&InterruptController, XIN_REAL_MODE);
 	if (Status != XST_SUCCESS) {
 		return XST_FAILURE;
 	}
 
+#ifdef _BME280_
+	XIntc_Enable(&InterruptController, COMPENSATOR_INTR_ID);
+#endif
 
-	XIntc_Enable(IntcInstancePtr, CompIntrId);
- 	/*
+	/*
 	 * Initialize the exception table.
 	 */
 	Xil_ExceptionInit();
@@ -177,10 +165,10 @@ int SetupInterruptSystem(XIntc *IntcInstancePtr, XCompensator *CompInstPtr, u16 
  	 */
  	Xil_ExceptionEnable();
 
-	XCompensator_InterruptEnable(CompInstPtr, 1);
-	XCompensator_InterruptGlobalEnable(CompInstPtr);
-	XUartLite_SetSendHandler(UartLitePtr, GPSSendHandler, UartLitePtr);
-	XUartLite_SetRecvHandler(UartLitePtr, GPSRecvHandler, UartLitePtr);
+#ifdef _BME280_
+	XCompensator_InterruptEnable(&CompInst, 1);
+	XCompensator_InterruptGlobalEnable(&CompInst);
+#endif
 	return XST_SUCCESS;
 
  }
@@ -209,7 +197,7 @@ union u_type{
 	float f;
 };
 
-#ifdef _VERBOSE_
+
 void print_float(float input){
 
 	int whole, thousandths;
@@ -218,7 +206,7 @@ void print_float(float input){
 	thousandths = (input - whole) * 100;
 	xil_printf("%d.%02d\n", whole, thousandths);
 }
-#endif
+
 
 float FloatAltitudeMeters(float currPres, float refPres)
 {
@@ -233,15 +221,23 @@ float setRefPresFromAlt(float currPres, float currAlt){
 	return referencePres;
 }
 
-
-
-
+void fletcher(u8 *ckAptr, u8 *ckBptr, u8 *buffptr, int N){
+	*ckAptr = 0;
+	*ckBptr = 0;
+	int i;
+	for(i = 0; i < N; i++){
+		*ckAptr = *ckAptr + buffptr[i];
+		*ckBptr = *ckBptr + &ckAptr;
+	}
+}
 
 
 
 #define TBLEN 8
 u8 *testbuff = "hello!\n\r";
 
+
+/*******************************MAIN**********************************************************/
 int main () 
 {
    static XIntc intc;
@@ -258,43 +254,50 @@ int main ()
    uint8_t data[6];
    u32 pres_data, temp_data, hum_data;
    u8 retData;
-
+   //GPSBuffer = (u8 *) malloc(GPS_BUFF_LEN);
    float referencePressure = 103400.0;
 
-   u32 P, T, H;
+   u32 P, T, H, Alt;
    float A;
+
    u8 measureAddr = BME280_MEASUREMENTS_REG;
    u8 ctrlRegAddr;
    int ByteCount;
    union u_type cnvrt;
 
+   u8 GPS_Status[2];
+   u16 GPS_BAvail;
+//   u8 baro_msg[MSG_BARO_TOTAL_LEN];
+   u32 *baro_msg;
+   baro_msg = (u32 *) malloc(MSG_BARO_TOTAL_LEN);
+   *((u8 *)baro_msg + 0) = STRT_CHAR_1;
+   *((u8 *)baro_msg + 1) = STRT_CHAR_2;
+   *((u8 *)baro_msg + 2) = MSG_CLASS_BARO;
+   //*((u8 *)baro_msg + 3) = MSG_BARO_PAYLOAD_LEN_LSB;
+   *((u8 *)baro_msg + 3) = MSG_BARO_PAYLOAD_LEN_MSB;
+
    print("---Initialization Starting---\r\n");
    sleep(1);
 
+#ifdef _BME280_
 	Status = Compensator_init(&CompInst, XPAR_COMPENSATOR_0_DEVICE_ID);
 	if (Status != XST_SUCCESS) {
-		print("Error: bme280_compensate_init\t\t\tFAILED!\r\n");
+		print("Error: Compensator_init\t\t\tFAILED!\r\n");
 	}
 	else{
-		print("bme280_compensate_init\t\t\tSUCCESSFUL!\r\n");
+		print("Compensator_init\t\t\tSUCCESSFUL!\r\n");
 	}
-
-	Status = Compensator_IntrSetup(&InterruptController, &CompInst, XPAR_INTC_0_COMPENSATOR_0_VEC_ID);
-	if (Status != XST_SUCCESS) {
-		print("Error: BME280InterruptSetup\t\t\tFAILED!\r\n");
-	}
-	else{
-		print("BME280InterruptSetup\t\t\tSUCCESSFUL!\r\n");
-	}
-
-
+#endif
 
 #ifdef _XBEE_
-	Status = XUartLite_Initialize(&UartXbee, XPAR_UARTLITE_1_DEVICE_ID);
+	Status = XUartLite_Initialize(&UartXbee, XBEE_UARTLITE_DEVICE_ID);
 	if (Status != XST_SUCCESS) {
 		return XST_FAILURE;
 	}
 #endif
+
+
+
 
 #ifdef _BME280_
    Status = BME280_RegSet(BME280_RST_REG,
@@ -347,11 +350,20 @@ int main ()
    	else{
    		print("Mode Correct!\r\n");
    	}
-
-
 #endif
+#ifdef _INTERRUPTS_
+   	Status = SetupInterruptSystem();
+	if (Status != XST_SUCCESS) {
+		print("Error: SetupInterruptSystem\t\t\tFAILED!\r\n");
+	}
+	else{
+		print("SetupInterruptSystem\t\t\tSUCCESSFUL!\r\n");
+	}
+
    	sleep(1);
    	print("---Initialization Complete---\r\n");
+#endif
+#ifdef _BME280_
    	measureAddr = BME280_MEASUREMENTS_REG;
 	ByteCount = XIic_Send(XPAR_AXI_IIC_0_BASEADDR, BME280_IIC_ADDR, &measureAddr, 1, XIIC_REPEATED_START);
 	ByteCount = XIic_Recv(XPAR_AXI_IIC_0_BASEADDR, BME280_IIC_ADDR, &data, 8, XIIC_STOP);
@@ -371,13 +383,22 @@ int main ()
 	T = XCompensator_Get_temp_comp(&CompInst);
 	cnvrt.i = XCompensator_Get_pres_comp(&CompInst);
 	H = XCompensator_Get_hum_comp(&CompInst);
-	referencePressure = getRefPres(cnvrt.f, 13.0);
+	referencePressure = setRefPresFromAlt(cnvrt.f, 13.0);
 	xil_printf("refPres:  ");
 	print_float(referencePressure);
+#endif
 
+	u8 printData;
 
    	//print("\r\nRawPres(uint32_t), CompPres(IEEE 754)(Pa), RawTemp(uint32_t), CompTemp(IEEE 754)(C), RawHum(uint32_t), CompHum(IEEE 754)(%)\r\n\r\n");
    	while(1){
+   		//print("loop\r\n");
+//   		measureAddr = NEOM9N_STATUS_REG;
+//		ByteCount = XIic_Send(XPAR_AXI_IIC_0_BASEADDR, NEOM9N_IIC_ADDR, &measureAddr, 1, XIIC_REPEATED_START);
+//		ByteCount = XIic_Recv(XPAR_AXI_IIC_0_BASEADDR, NEOM9N_IIC_ADDR, &GPS_Status, 2, XIIC_STOP);
+//		GPS_BAvail = (GPS_Status[0] << 8) | GPS_Status[1];
+
+#ifdef _BME280_
    		measureAddr = BME280_MEASUREMENTS_REG;
    		ByteCount = XIic_Send(XPAR_AXI_IIC_0_BASEADDR, BME280_IIC_ADDR, &measureAddr, 1, XIIC_REPEATED_START);
    		ByteCount = XIic_Recv(XPAR_AXI_IIC_0_BASEADDR, BME280_IIC_ADDR, &data, 8, XIIC_STOP);
@@ -401,7 +422,7 @@ int main ()
 //   			usleep(100);
 //   		}
    		while(!ResultAvail_CompInst){
-   					usleep(500); //having issues with this loop when there is nothing in it or
+   					usleep(100); //having issues with this loop when there is nothing in it or
    								//before it. the loop gets hung even when it is not satisfied.
    								// maybe do;while?
 		}
@@ -412,7 +433,47 @@ int main ()
 
 		cnvrt.i = P;
 		A = FloatAltitudeMeters(cnvrt.f, referencePressure);
+		cnvrt.f = A;
+		Alt = cnvrt.i;
+		baro_msg[1] = pres_data;
+		baro_msg[2] = temp_data;
+		baro_msg[3] = hum_data;
+		baro_msg[4] = P;
+		baro_msg[5] = T;
+		baro_msg[6] = H;
+		baro_msg[7] = Alt;
 
+		u8 *ckaAddr = ((u8 *)baro_msg + (MSG_PAYLOAD_OFFSET + MSG_BARO_PAYLOAD_LEN));
+		u8 *ckbAddr = ((u8 *)baro_msg + (MSG_PAYLOAD_OFFSET + MSG_BARO_PAYLOAD_LEN + 1));
+		u8 *plAddr = ((u8 *)baro_msg + MSG_PAYLOAD_OFFSET);
+		fletcher(ckaAddr, ckbAddr, plAddr, MSG_BARO_PAYLOAD_LEN);
+
+
+//		for(int i = 1; i <= ((MSG_BARO_PAYLOAD_LEN)/4); i++){
+//			xil_printf("%x", *(baro_msg + i));
+//		}
+		for(int i = 0; i < MSG_BARO_TOTAL_LEN; i++){
+			xil_printf("%02x\n", *((u8 *)baro_msg + i));
+		}
+		//xil_printf("\r\n%x%x%x%x%x%x%x%x%x%x%x \r\n", STRT_CHAR_1, STRT_CHAR_2, MSG_CLASS_BARO,MSG_BARO_PAYLOAD_LEN_MSB, pres_data, temp_data, hum_data, P, T, H, Alt);
+		//xil_printf("\r\n%x%x%x%x%x%x%x \r\n", pres_data, temp_data, hum_data, P, T, H, Alt);
+#endif
+
+//		if(GPS_BAvail > 0x0000){
+//			xil_printf("bytes available: %d \r\n", GPS_BAvail);
+//			measureAddr = NEOM9N_STREAM_REG;
+//			ByteCount = XIic_Send(XPAR_AXI_IIC_0_BASEADDR, NEOM9N_IIC_ADDR, &measureAddr, 1, XIIC_REPEATED_START);
+//			ByteCount = XIic_Recv(XPAR_AXI_IIC_0_BASEADDR, NEOM9N_IIC_ADDR, &GPSBuffer, GPS_BAvail, XIIC_STOP);
+//			for(int i = 0; i < GPS_BAvail; i++){
+//				printData = GPSBuffer[i];
+//				xil_printf("%c", printData);
+//
+//			}
+//			print("\r\n");
+//			GPS_BAvail = 0x0000;
+//		}
+
+#ifdef _VERBOSE_
    		xil_printf("pres_data: %x%     ", pres_data);
    		xil_printf("temp_data: %x%     ", temp_data);
    		xil_printf("hum_data: %x% \r\n", hum_data);
@@ -427,9 +488,9 @@ int main ()
 		print_float(cnvrt.f);
    		print_float(A);
    		xil_printf("\r\n");
-
-
-   		sleep(1);
+#endif
+   		usleep(500);
+	//	sleep(1);
    	}
 
    print("---Exiting main---\n\r");

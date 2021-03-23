@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item value="/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_bootloader/_ide/bitstream" key="sdx_program_fpga_view_bit_bmm_browse_key"/>
+	<item value="/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/impl_1" key="sdx_program_fpga_view_bit_bmm_browse_key"/>
 	<item value="/home/chrispy/workspace/FPRock_CmodA735t" key="scw_hwspec_file_selection"/>
 	<item value="/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_app/Release" key="zynq_flash_files_selection"/>
 	<item value="/home/chrispy/workspace/FPRock_CmodA735t" key="scw_hwspec"/>
