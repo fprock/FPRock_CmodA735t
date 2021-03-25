@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item value="/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_bootloader/_ide/bitstream/design_1_wrapper.mmi" key="FPRock_CmodA735t_bootloader-bmmFile"/>
+	<item value="/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/impl_1/design_1_wrapper.mmi" key="FPRock_CmodA735t_bootloader-bmmFile"/>
 	<item value="false" key="FPRock_CmodA735t_bootloader-partial_bit"/>
 	<item value="Local" key="FPRock_CmodA735t_app-target"/>
 	<item value="/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/impl_1/design_1_wrapper.mmi" key="FPRock_CmodA735t_app-bmmFile"/>
 	<item value="false" key="FPRock_CmodA735t_bootloader-skip_rev_check"/>
 	<item value="false" key="FPRock_CmodA735t_app-partial_bit"/>
 	<item value="FPRock_CmodA735t_app" key="programfpga.sdxproject"/>
-	<item value="/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_bootloader/_ide/bitstream/design_1_wrapper.bit" key="FPRock_CmodA735t_bootloader-bitFile"/>
+	<item value="/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/impl_1/design_1_wrapper.bit" key="FPRock_CmodA735t_bootloader-bitFile"/>
 	<item value="/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_bootloader/Release/FPRock_CmodA735t_bootloader.elf" key="FPRock_CmodA735t_bootloader-microblaze_0-initElf"/>
 	<item value="Auto Detect" key="FPRock_CmodA735t_app-device"/>
 	<item value="false" key="FPRock_CmodA735t_app-skip_rev_check"/>

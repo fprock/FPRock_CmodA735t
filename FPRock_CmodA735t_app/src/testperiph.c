@@ -1,9 +1,11 @@
 
 
 #define _BME280_
-//#define _NEOM9N_
+#define _NEOM9N_
+#define _XBEE_
 //#define _VERBOSE_
 #define _INTERRUPTS_
+
 
 
 #include <stdio.h>
@@ -22,6 +24,7 @@
 //#include "uartlite_intr_header.h"
 #include "xil_types.h"
 #include "xiic_l.h"
+#include "xiic.h"
 #include "xil_printf.h"
 #include "sleep.h"
 #include "BME280_Sensor.h"
@@ -49,6 +52,8 @@
 #define MSG_BARO_TOTAL_LEN MSG_BARO_PAYLOAD_LEN + MSG_STRUCTURE_LEN
 #define MSG_PAYLOAD_OFFSET 4
 
+#define MSG_GPS_TOTAL_LEN 128
+
 
 XUartLite UartXbee;	/* Instance of the UartLite device */
 
@@ -70,6 +75,11 @@ static volatile int TotalSentCount;
 u8 GPSBuffer[GPS_MSG_LEN];
 
 int GPSMsgReady;
+
+int iicBusStatus;
+
+XIic iic_ctrl;
+XIic_Config *iic_ctrlCfg;
 
 
 int Compensator_init(XCompensator *CompInst, u16 CompId){
@@ -101,6 +111,10 @@ void Compensator_isr(void *InstancePtr)
  	 ResultAvail_CompInst = 1;
 }
 
+//void iicStatusHandler(void *CallBackRef, int StatusEvent)
+//{
+//	iicBusStatus = StatusEvent;
+//}
 
 int SetupInterruptSystem(void)
  {
@@ -135,7 +149,11 @@ int SetupInterruptSystem(void)
 		return XST_FAILURE;
 	}
 #endif
-
+//	Status = XIntc_Connect(&InterruptController, XPAR_INTC_0_IIC_0_VEC_ID, (XInterruptHandler)XIic_InterruptHandler, (void *)&iic_ctrl);
+//	if (Status != XST_SUCCESS) {
+//		print("Error: XInct_Connect-Compensator FAILED!\r\n");
+//		return XST_FAILURE;
+//	}
 
 	/*
 	 * Start the interrupt controller such that interrupts are enabled for
@@ -149,6 +167,7 @@ int SetupInterruptSystem(void)
 #ifdef _BME280_
 	XIntc_Enable(&InterruptController, COMPENSATOR_INTR_ID);
 #endif
+//	XIntc_Enable(&InterruptController, XPAR_INTC_0_IIC_0_VEC_ID);
 
 	/*
 	 * Initialize the exception table.
@@ -169,6 +188,9 @@ int SetupInterruptSystem(void)
 	XCompensator_InterruptEnable(&CompInst, 1);
 	XCompensator_InterruptGlobalEnable(&CompInst);
 #endif
+//	XIic_SetStatusHandler(&iic_ctrl, &iic_ctrl,
+//				   iicStatusHandler);
+//	XIic_Start(&iic_ctrl);
 	return XST_SUCCESS;
 
  }
@@ -215,6 +237,7 @@ float FloatAltitudeMeters(float currPres, float refPres)
 	return heightOutput;
 }
 
+
 float setRefPresFromAlt(float currPres, float currAlt){
 	float referencePres;
 	referencePres = currPres / pow((1 + (-0.000022558 * currAlt)), 5.255882647);
@@ -233,9 +256,7 @@ void fletcher(u8 *ckAptr, u8 *ckBptr, u8 *buffptr, int N){
 
 
 
-#define TBLEN 8
-u8 *testbuff = "hello!\n\r";
-
+u8 *testBuffer = "hello world\r\n";
 
 /*******************************MAIN**********************************************************/
 int main () 
@@ -245,7 +266,7 @@ int main ()
    Xil_ICacheEnable();
    Xil_DCacheEnable();
 
-   print("---Entering main---\n\r");
+   //print("---Entering main---\n\r");
 
 
 
@@ -267,27 +288,31 @@ int main ()
 
    u8 GPS_Status[2];
    u16 GPS_BAvail;
-//   u8 baro_msg[MSG_BARO_TOTAL_LEN];
    u32 *baro_msg;
    baro_msg = (u32 *) malloc(MSG_BARO_TOTAL_LEN);
-   *((u8 *)baro_msg + 0) = STRT_CHAR_1;
-   *((u8 *)baro_msg + 1) = STRT_CHAR_2;
-   *((u8 *)baro_msg + 2) = MSG_CLASS_BARO;
-   //*((u8 *)baro_msg + 3) = MSG_BARO_PAYLOAD_LEN_LSB;
-   *((u8 *)baro_msg + 3) = MSG_BARO_PAYLOAD_LEN_MSB;
+   u8 *baro_msg_u8 = (u8*)baro_msg;
 
-   print("---Initialization Starting---\r\n");
+   u8 *gps_msg;
+   gps_msg = (u8 *) malloc(MSG_GPS_TOTAL_LEN);
+
+   baro_msg_u8[0] = STRT_CHAR_1;
+   baro_msg_u8[1] = STRT_CHAR_2;
+   baro_msg_u8[2] = MSG_CLASS_BARO;
+   baro_msg_u8[3] = MSG_BARO_PAYLOAD_LEN_MSB;
+
+	u8 *ckaAddr;
+	u8 *ckbAddr;
+	u8 *plAddr;
+
+
+
+	int messageReady = 0;
+
+   //print("---Initialization Starting---\r\n");
    sleep(1);
 
-#ifdef _BME280_
-	Status = Compensator_init(&CompInst, XPAR_COMPENSATOR_0_DEVICE_ID);
-	if (Status != XST_SUCCESS) {
-		print("Error: Compensator_init\t\t\tFAILED!\r\n");
-	}
-	else{
-		print("Compensator_init\t\t\tSUCCESSFUL!\r\n");
-	}
-#endif
+
+
 
 #ifdef _XBEE_
 	Status = XUartLite_Initialize(&UartXbee, XBEE_UARTLITE_DEVICE_ID);
@@ -296,74 +321,141 @@ int main ()
 	}
 #endif
 
+//	iic_ctrlCfg = XIic_LookupConfig(XPAR_AXI_IIC_0_DEVICE_ID);
+//	Status = XIic_CfgInitialize(&iic_ctrl, iic_ctrlCfg, iic_ctrlCfg->BaseAddress);
+//	if (Status != XST_SUCCESS) {
+//		return XST_FAILURE;
+//	}
 
 
 
 #ifdef _BME280_
-   Status = BME280_RegSet(BME280_RST_REG,
+
+	/*
+	 * Initialize the barometer data compensator
+	 */
+	Status = Compensator_init(&CompInst, XPAR_COMPENSATOR_0_DEVICE_ID);
+#ifdef _VERBOSE_
+	if (Status != XST_SUCCESS) {
+		print("FAILURE: Compensator_init()\n");
+	}
+	else{
+		print("SUCCESS: Compensator_init()\n");
+	}
+#endif
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	/*
+	 * Perform soft reset on the barometer
+	 */
+	Status = BME280_RegSet(BME280_RST_REG,
    			~(BME280_RESET_MASK),
    			(BME280_SOFT_RESET));
-   	if (Status != XST_SUCCESS) {
-   		print("Error: BME280_SetReg - BME280_RST_REG\t\t\tFAILED!\r\n");
-   	}
-   	else{
-   		print("BME280_SetReg - BME280_RST_REG\t\t\tSUCCESSFUL!\r\n");
-   	}
+#ifdef _VERBOSE_
+	if (Status != XST_SUCCESS) {
+		print("FAILURE: Compensator_init()\n");
+	}
+	else{
+		print("SUCCESS: Compensator_init()\n");
+	}
+#endif
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
 
+/*
+ * Set barometer standby time and hardware filter amount
+ */
    	Status = BME280_RegSet(BME280_CONFIG_REG,
    			~(BME280_CONFIG_T_SB_MASK | BME280_CONFIG_FILTER_MASK),
    			(BME280_T_STANDBY_0_5_MS | BME280_FILTER_COEFF_8));
-   	if (Status != XST_SUCCESS) {
-   		print("Error: BME280_SetReg - BME280_CONFIG_REG\t\t\tFAILED!\r\n");
-   	}
-   	else{
-   		print("BME280_SetReg - BME280_CONFIG_REG\t\t\tSUCCESSFUL!\r\n");
-   	}
+#ifdef _VERBOSE_
+	if (Status != XST_SUCCESS) {
+		print("FAILURE: Compensator_init()\n");
+	}
+	else{
+		print("SUCCESS: Compensator_init()\n");
+	}
+#endif
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
 
+/*
+ * Set barometer humidity oversample amount
+ */
    	Status = BME280_RegSet(BME280_CTRL_HUMIDITY_REG,
    			~(BME280_CTRL_HUM_MASK),
    			BME280_H_OVERSAMPLE_X8);
-   	if (Status != XST_SUCCESS) {
-   		print("Error: BME280_SetReg - BME280_CTRL_HUMIDITY_REG\t\t\tFAILED!\r\n");
-   	}
-   	else{
-   		print("BME280_SetReg - BME280_CTRL_HUMIDITY_REG\t\t\tSUCCESSFUL!\r\n");
-   	}
+#ifdef _VERBOSE_
+	if (Status != XST_SUCCESS) {
+		print("FAILURE: Compensator Initialization\n");
+	}
+	else{
+		print("SUCCESS: Compensator Initialization\n");
+	}
+#endif
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
 
+/*
+ * Set barometer mode, pressure and temperature oversample amounts
+ */
    	Status = BME280_RegSet(BME280_CTRL_MEAS_REG,
    			~(BME280_CTRL_MEAS_MODE_MASK | BME280_CTRL_MEAS_OSRS_P_MASK | BME280_CTRL_MEAS_OSRS_T_MASK),
    			(BME280_CTRL_MEAS_MODE_NORMAL | BME280_P_OVERSAMPLE_X8 | BME280_T_OVERSAMPLE_X8));
-   	if (Status != XST_SUCCESS) {
-   		print("Error: BME280_SetReg - BME280_CTRL_MEAS_REG\t\t\tFAILED!\r\n");
-   	}
-   	else{
-   		print("BME280_SetReg - BME280_CTRL_MEAS_REG\t\t\tSUCCESSFUL!\r\n");
-   	}
+#ifdef _VERBOSE_
+	if (Status != XST_SUCCESS) {
+		print("FAILURE: BME280 set ctrl_meas\n");
+	}
+	else{
+		print("SUCCESS: BME280 set ctrl_meas\n");
+	}
+#endif
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
 
    	ctrlRegAddr = BME280_CTRL_MEAS_REG;
    	ByteCount = XIic_Send(XPAR_AXI_IIC_0_BASEADDR, BME280_IIC_ADDR, &ctrlRegAddr, 1, XIIC_REPEATED_START);
    	ByteCount = XIic_Recv(XPAR_AXI_IIC_0_BASEADDR, BME280_IIC_ADDR, &retData, 1, XIIC_STOP);
-   	//xil_printf("retData = 0x%x%\r\n", retData);
-   	if(retData != (BME280_CTRL_MEAS_MODE_NORMAL | BME280_P_OVERSAMPLE_X8 | BME280_T_OVERSAMPLE_X8)){
-   		print("BME280_CTRL_MEAS_REG Set Incorrectly!\r\n");
-   	}
-   	else{
-   		print("Mode Correct!\r\n");
-   	}
-#endif
-#ifdef _INTERRUPTS_
-   	Status = SetupInterruptSystem();
+#ifdef _VERBOSE_
 	if (Status != XST_SUCCESS) {
-		print("Error: SetupInterruptSystem\t\t\tFAILED!\r\n");
+		print("FAILURE: Compensator_init()\n");
 	}
 	else{
-		print("SetupInterruptSystem\t\t\tSUCCESSFUL!\r\n");
+		print("SUCCESS: Compensator_init()\n");
+	}
+#endif
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+#endif
+
+#ifdef _INTERRUPTS_
+
+   	Status = SetupInterruptSystem();
+#ifdef _VERBOSE_
+	if (Status != XST_SUCCESS) {
+		print("FAILURE: Interrupt Initialization\n");
+	}
+	else{
+		print("SUCCESS: Interrupt Initialization\n");
+	}
+#endif
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
 	}
 
    	sleep(1);
-   	print("---Initialization Complete---\r\n");
+   //	print("---Initialization Complete---\r\n");
 #endif
+
 #ifdef _BME280_
+
    	measureAddr = BME280_MEASUREMENTS_REG;
 	ByteCount = XIic_Send(XPAR_AXI_IIC_0_BASEADDR, BME280_IIC_ADDR, &measureAddr, 1, XIIC_REPEATED_START);
 	ByteCount = XIic_Recv(XPAR_AXI_IIC_0_BASEADDR, BME280_IIC_ADDR, &data, 8, XIIC_STOP);
@@ -384,112 +476,151 @@ int main ()
 	cnvrt.i = XCompensator_Get_pres_comp(&CompInst);
 	H = XCompensator_Get_hum_comp(&CompInst);
 	referencePressure = setRefPresFromAlt(cnvrt.f, 13.0);
-	xil_printf("refPres:  ");
-	print_float(referencePressure);
 #endif
 
 	u8 printData;
+	ResultAvail_CompInst = 0; //reset the compensator interrupt flag
+	int do_not_update = 0;
 
-   	//print("\r\nRawPres(uint32_t), CompPres(IEEE 754)(Pa), RawTemp(uint32_t), CompTemp(IEEE 754)(C), RawHum(uint32_t), CompHum(IEEE 754)(%)\r\n\r\n");
+
+
+
    	while(1){
-   		//print("loop\r\n");
-//   		measureAddr = NEOM9N_STATUS_REG;
-//		ByteCount = XIic_Send(XPAR_AXI_IIC_0_BASEADDR, NEOM9N_IIC_ADDR, &measureAddr, 1, XIIC_REPEATED_START);
-//		ByteCount = XIic_Recv(XPAR_AXI_IIC_0_BASEADDR, NEOM9N_IIC_ADDR, &GPS_Status, 2, XIIC_STOP);
-//		GPS_BAvail = (GPS_Status[0] << 8) | GPS_Status[1];
-
+#ifdef _NEOM9N_
+   		measureAddr = NEOM9N_STATUS_REG;
+		ByteCount = XIic_Send(XPAR_AXI_IIC_0_BASEADDR, NEOM9N_IIC_ADDR, &measureAddr, 1, XIIC_REPEATED_START);
+		ByteCount = XIic_Recv(XPAR_AXI_IIC_0_BASEADDR, NEOM9N_IIC_ADDR, &GPS_Status, 2, XIIC_STOP);
+		GPS_BAvail = (GPS_Status[0] << 8) | GPS_Status[1];
+#endif
 #ifdef _BME280_
-   		measureAddr = BME280_MEASUREMENTS_REG;
-   		ByteCount = XIic_Send(XPAR_AXI_IIC_0_BASEADDR, BME280_IIC_ADDR, &measureAddr, 1, XIIC_REPEATED_START);
-   		ByteCount = XIic_Recv(XPAR_AXI_IIC_0_BASEADDR, BME280_IIC_ADDR, &data, 8, XIIC_STOP);
+		/*
+		 * get data from the barometer and start the compensator
+		 */
+   		if(!do_not_update){
+			measureAddr = BME280_MEASUREMENTS_REG;
+			ByteCount = XIic_Send(XPAR_AXI_IIC_0_BASEADDR, BME280_IIC_ADDR, &measureAddr, 1, XIIC_REPEATED_START);
+			ByteCount = XIic_Recv(XPAR_AXI_IIC_0_BASEADDR, BME280_IIC_ADDR, &data, 8, XIIC_STOP);
+			baro_msg[1] = ((u32)data[0] << 12) | ((u32)data[1] << 4) | ((data[2] >> 4) & 0x0F);
+			baro_msg[2] = ((u32)data[3] << 12) | ((u32)data[4] << 4) | ((data[5] >> 4) & 0x0F);
+			baro_msg[3] = ((u32)data[6] << 8) | ((u32)data[7]);
+			XCompensator_Set_pres_raw(&CompInst, baro_msg[1]); //send p_raw to compensator
+			XCompensator_Set_temp_raw(&CompInst, baro_msg[2]); //send t_raw to compensator
+			XCompensator_Set_hum_raw(&CompInst, baro_msg[3]);	 //send h_raw to compensator
+			XCompensator_Start(&CompInst); // start the compensator
 
-   		ResultAvail_CompInst = 0;
-   		pres_data = ((u32)data[0] << 12) | ((u32)data[1] << 4) | ((data[2] >> 4) & 0x0F);
-   		temp_data = ((u32)data[3] << 12) | ((u32)data[4] << 4) | ((data[5] >> 4) & 0x0F);
-   		hum_data = ((u32)data[6] << 8) | ((u32)data[7]);
+			do_not_update = 1;
+   		}
 
 
-   		//xil_printf("0x%x% , 0x%x% , 0x%x% , 0x%x% , 0x%x% , 0x%x% , 0x%x% \r\n", pres_data, P, temp_data, T, hum_data, H, &A);
-   	//	xil_printf("0x%x% , 0x%x% , 0x%x% , 0x%x% , 0x%x% , 0x%x% \r\n", pres_data, P, temp_data, T, hum_data, H);
-//   	ByteCount = XUartLite_Send(&UartXbee, &data, 8);
-   		XCompensator_Set_temp_raw(&CompInst, temp_data);
-		XCompensator_Set_pres_raw(&CompInst, pres_data);
-		XCompensator_Set_hum_raw(&CompInst, hum_data);
 
-		XCompensator_Start(&CompInst);
+
+
 //   		ByteCount = XUartLite_Send(&UartXbee, testbuff, TBLEN);
 //   		while(XUartLite_IsSending(&UartXbee)){
 //   			usleep(100);
 //   		}
-   		while(!ResultAvail_CompInst){
-   					usleep(100); //having issues with this loop when there is nothing in it or
-   								//before it. the loop gets hung even when it is not satisfied.
-   								// maybe do;while?
-		}
-
-   		T = XCompensator_Get_temp_comp(&CompInst);
-		P = XCompensator_Get_pres_comp(&CompInst);
-		H = XCompensator_Get_hum_comp(&CompInst);
-
-		cnvrt.i = P;
-		A = FloatAltitudeMeters(cnvrt.f, referencePressure);
-		cnvrt.f = A;
-		Alt = cnvrt.i;
-		baro_msg[1] = pres_data;
-		baro_msg[2] = temp_data;
-		baro_msg[3] = hum_data;
-		baro_msg[4] = P;
-		baro_msg[5] = T;
-		baro_msg[6] = H;
-		baro_msg[7] = Alt;
-
-		u8 *ckaAddr = ((u8 *)baro_msg + (MSG_PAYLOAD_OFFSET + MSG_BARO_PAYLOAD_LEN));
-		u8 *ckbAddr = ((u8 *)baro_msg + (MSG_PAYLOAD_OFFSET + MSG_BARO_PAYLOAD_LEN + 1));
-		u8 *plAddr = ((u8 *)baro_msg + MSG_PAYLOAD_OFFSET);
-		fletcher(ckaAddr, ckbAddr, plAddr, MSG_BARO_PAYLOAD_LEN);
-
-
-//		for(int i = 1; i <= ((MSG_BARO_PAYLOAD_LEN)/4); i++){
-//			xil_printf("%x", *(baro_msg + i));
+//   		while(!ResultAvail_CompInst){
+//   					usleep(100); //having issues with this loop when there is nothing in it or
+//   								//before it. the loop gets hung even when it is not satisfied.
+//   								// maybe do;while?
 //		}
-		for(int i = 0; i < MSG_BARO_TOTAL_LEN; i++){
-			xil_printf("%02x\n", *((u8 *)baro_msg + i));
+   		if(ResultAvail_CompInst){
+   			baro_msg[4] = XCompensator_Get_pres_comp(&CompInst);
+   			baro_msg[5] = XCompensator_Get_temp_comp(&CompInst);
+   			baro_msg[6] = XCompensator_Get_hum_comp(&CompInst);
+			cnvrt.i = baro_msg[4];
+			A = FloatAltitudeMeters(cnvrt.f, referencePressure);
+			cnvrt.f = A;
+			baro_msg[7] = cnvrt.i;
+//			ckaAddr = ((u8 *)baro_msg + (MSG_PAYLOAD_OFFSET + MSG_BARO_PAYLOAD_LEN));
+//			ckbAddr = ((u8 *)baro_msg + (MSG_PAYLOAD_OFFSET + MSG_BARO_PAYLOAD_LEN + 1));
+//			plAddr = ((u8 *)baro_msg + MSG_PAYLOAD_OFFSET);
+			ckaAddr = &baro_msg_u8[MSG_PAYLOAD_OFFSET + MSG_BARO_PAYLOAD_LEN];
+			ckbAddr = &baro_msg_u8[MSG_PAYLOAD_OFFSET + MSG_BARO_PAYLOAD_LEN + 1];
+			plAddr = &baro_msg_u8[MSG_PAYLOAD_OFFSET];
+			fletcher(ckaAddr, ckbAddr, plAddr, MSG_BARO_PAYLOAD_LEN);
+			ResultAvail_CompInst = 0; //reset the compensator interrupt flag
+
+			messageReady = 1;
+   		}
+
+
+
+
+
+
+
+
+#endif
+#ifdef _NEOM9N_
+		if(GPS_BAvail > 0x0000){
+			//xil_printf("bytes available: %d \r\n", GPS_BAvail);
+			measureAddr = NEOM9N_STREAM_REG;
+			ByteCount = XIic_Send(XPAR_AXI_IIC_0_BASEADDR, NEOM9N_IIC_ADDR, &measureAddr, 1, XIIC_REPEATED_START);
+			ByteCount = XIic_Recv(XPAR_AXI_IIC_0_BASEADDR, NEOM9N_IIC_ADDR, gps_msg, GPS_BAvail, XIIC_STOP);
+#ifdef _VERBOSE_
+			for(int i = 0; i < GPS_BAvail; i++){
+				printData = GPSBuffer[i];
+				xil_printf("%c", printData);
+
+			}
+			print("\r\n");
+
+#endif
+			messageReady = 2;
+			//GPS_BAvail = 0x0000;
 		}
-		//xil_printf("\r\n%x%x%x%x%x%x%x%x%x%x%x \r\n", STRT_CHAR_1, STRT_CHAR_2, MSG_CLASS_BARO,MSG_BARO_PAYLOAD_LEN_MSB, pres_data, temp_data, hum_data, P, T, H, Alt);
-		//xil_printf("\r\n%x%x%x%x%x%x%x \r\n", pres_data, temp_data, hum_data, P, T, H, Alt);
 #endif
 
-//		if(GPS_BAvail > 0x0000){
-//			xil_printf("bytes available: %d \r\n", GPS_BAvail);
-//			measureAddr = NEOM9N_STREAM_REG;
-//			ByteCount = XIic_Send(XPAR_AXI_IIC_0_BASEADDR, NEOM9N_IIC_ADDR, &measureAddr, 1, XIIC_REPEATED_START);
-//			ByteCount = XIic_Recv(XPAR_AXI_IIC_0_BASEADDR, NEOM9N_IIC_ADDR, &GPSBuffer, GPS_BAvail, XIIC_STOP);
-//			for(int i = 0; i < GPS_BAvail; i++){
-//				printData = GPSBuffer[i];
-//				xil_printf("%c", printData);
-//
-//			}
-//			print("\r\n");
-//			GPS_BAvail = 0x0000;
-//		}
+   		if((messageReady > 0) & !XUartLite_IsSending(&UartXbee)){
 
 #ifdef _VERBOSE_
-   		xil_printf("pres_data: %x%     ", pres_data);
-   		xil_printf("temp_data: %x%     ", temp_data);
-   		xil_printf("hum_data: %x% \r\n", hum_data);
-   		xil_printf("T = 0x%x%     ", T);
-   		xil_printf("P = 0x%x%     ", P);
-   		xil_printf("H = 0x%x% \r\n", H);
-   		cnvrt.i = T;
-   		print_float(cnvrt.f);
-   		cnvrt.i = P;
-		print_float(cnvrt.f);
-   		cnvrt.i = H;
-		print_float(cnvrt.f);
-   		print_float(A);
-   		xil_printf("\r\n");
+			xil_printf("p_raw = %x% \n", baro_msg[1]);
+			xil_printf("t_raw = %x% \n", baro_msg[2]);
+			xil_printf("h_raw = %x% \n", baro_msg[3]);
+
+			print("p_comp = ");
+			cnvrt.i = baro_msg[4];
+			print_float(cnvrt.f);
+
+			print("t_comp = ");
+			cnvrt.i = baro_msg[5];
+			print_float(cnvrt.f);
+
+			print("h_comp = ");
+			cnvrt.i = baro_msg[6];
+			print_float(cnvrt.f);
+
+			print("alt_b = ");
+			cnvrt.i = baro_msg[7];
+			print_float(cnvrt.f);
+			xil_printf("CK_A = 0x%02x \n", *ckaAddr);
+			xil_printf("CK_B = 0x%02x \n\n", *ckbAddr);
 #endif
-   		usleep(500);
+#ifdef _XBEE_
+			if(messageReady == 1){
+				ByteCount = XUartLite_Send(&UartXbee, baro_msg_u8, MSG_BARO_TOTAL_LEN);
+				//print("sending baro\r\n");
+				for(int i = 0; i < MSG_BARO_TOTAL_LEN; i++){
+					xil_printf("%02x", baro_msg_u8[i]);
+				}
+				print("\n");
+			}
+			else if(messageReady == 2){
+				//ByteCount = XUartLite_Send(&UartXbee, gps_msg, GPS_BAvail);
+				ByteCount = XUartLite_Send(&UartXbee, gps_msg, GPS_BAvail);
+				//print("sending gps\r\n");
+				for(int i = 0; i < GPS_BAvail; i++){
+					xil_printf("%02x", gps_msg[i]);
+				}
+				print("\n");
+			}
+			//ByteCount = XUartLite_Send(&UartXbee, testBuffer, 13);
+#endif
+			messageReady = 0;
+			do_not_update = 0;
+   		}
+   		//usleep(500000);
 	//	sleep(1);
    	}
 

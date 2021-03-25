@@ -3,7 +3,7 @@
 	<item value="" key="FPRock_CmodA735t_app-fsblFile"/>
 	<item value="true" key="FPRock_CmodA735t_app-verifyFlash"/>
 	<item value="Local" key="FPRock_CmodA735t_app-target"/>
-	<item value="/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t_bootloader/_ide/bitstream/download.bit" key="FPRock_CmodA735t_bootloader-imgFile"/>
+	<item value="/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/impl_1/download.bit" key="FPRock_CmodA735t_bootloader-imgFile"/>
 	<item value="true" key="FPRock_CmodA735t_app_system-blankCheck"/>
 	<item value="Local" key="FPRock_CmodA735t_app_system-target"/>
 	<item value="0x0" key="FPRock_CmodA735t_app_system-offSet"/>

@@ -1,4 +1,4 @@
-01:46:49 **** Incremental Build of configuration Release for project FPRock_CmodA735t_bootloader ****
+15:58:59 **** Build of configuration Release for project FPRock_CmodA735t_bootloader ****
 make all 
 Building file: ../src/bootloader.c
 Invoking: MicroBlaze gcc compiler
@@ -62,11 +62,6 @@ Invoking: MicroBlaze gcc compiler
 mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/platform.o" -I/home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/sw/FPRock_Platform/standalone_domain/bspinclude/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
 Finished building: ../src/platform.c
  
-Building file: ../src/srec.c
-Invoking: MicroBlaze gcc compiler
-mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/srec.o" -I/home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/sw/FPRock_Platform/standalone_domain/bspinclude/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/srec.d" -MT"src/srec.o" -o "src/srec.o" "../src/srec.c"
-Finished building: ../src/srec.c
- 
 Building target: FPRock_CmodA735t_bootloader.elf
 Invoking: MicroBlaze gcc linker
 mb-gcc -Wl,-T -Wl,../src/lscript.ld -L/home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/export/FPRock_Platform/sw/FPRock_Platform/standalone_domain/bsplib/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -Wl,--no-relax -Wl,--gc-sections -o "FPRock_CmodA735t_bootloader.elf"  ./src/bootloader.o ./src/platform.o ./src/srec.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilisf,-lxil,-lgcc,-lc,--end-group
@@ -79,5 +74,5 @@ mb-size FPRock_CmodA735t_bootloader.elf  |tee "FPRock_CmodA735t_bootloader.elf.s
 Finished building: FPRock_CmodA735t_bootloader.elf.size
  
 
-01:46:49 Build Finished (took 266ms)
+15:58:59 Build Finished (took 214ms)
 
