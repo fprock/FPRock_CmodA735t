@@ -601,6 +601,9 @@ int main ()
 			if(messageReady == 1){
 				ByteCount = XUartLite_Send(&UartXbee, baro_msg_u8, MSG_BARO_TOTAL_LEN);
 				//print("sending baro\r\n");
+				while(XUartLite_IsSending(&UartXbee)){
+					usleep(10);
+				}
 				for(int i = 0; i < MSG_BARO_TOTAL_LEN; i++){
 					xil_printf("%02x", baro_msg_u8[i]);
 				}
@@ -610,6 +613,9 @@ int main ()
 				//ByteCount = XUartLite_Send(&UartXbee, gps_msg, GPS_BAvail);
 				ByteCount = XUartLite_Send(&UartXbee, gps_msg, GPS_BAvail);
 				//print("sending gps\r\n");
+				while(XUartLite_IsSending(&UartXbee)){
+					usleep(10);
+				}
 				for(int i = 0; i < GPS_BAvail; i++){
 					xil_printf("%02x", gps_msg[i]);
 				}
@@ -617,9 +623,11 @@ int main ()
 			}
 			//ByteCount = XUartLite_Send(&UartXbee, testBuffer, 13);
 #endif
+			//ByteCount = XUartLite_Send(&UartXbee, testBuffer, 13);
 			messageReady = 0;
 			do_not_update = 0;
    		}
+
    		//usleep(500000);
 	//	sleep(1);
    	}

@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-| Date             : Wed Mar 17 01:38:57 2021
+| Date             : Fri Mar 26 14:08:48 2021
 | Host             : chrispy-desktop running 64-bit Ubuntu 20.04.2 LTS
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.584        |
+| Total On-Chip Power (W)  | 0.443        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.510        |
-| Device Static (W)        | 0.075        |
+| Dynamic (W)              | 0.368        |
+| Device Static (W)        | 0.074        |
 | Effective TJA (C/W)      | 5.0          |
-| Max Ambient (C)          | 82.1         |
-| Junction Temperature (C) | 27.9         |
+| Max Ambient (C)          | 82.8         |
+| Junction Temperature (C) | 27.2         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,22 +52,22 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.061 |        8 |       --- |             --- |
-| Slice Logic              |     0.083 |    35767 |       --- |             --- |
-|   LUT as Logic           |     0.066 |    13104 |     20800 |           63.00 |
-|   CARRY4                 |     0.009 |     1554 |      8150 |           19.07 |
-|   Register               |     0.005 |    13690 |     41600 |           32.91 |
+| Clocks                   |     0.056 |        8 |       --- |             --- |
+| Slice Logic              |     0.032 |    35740 |       --- |             --- |
+|   LUT as Logic           |     0.027 |    13098 |     20800 |           62.97 |
+|   Register               |     0.002 |    13667 |     41600 |           32.85 |
+|   CARRY4                 |     0.001 |     1554 |      8150 |           19.07 |
 |   LUT as Distributed RAM |     0.001 |      478 |      9600 |            4.98 |
-|   LUT as Shift Register  |     0.001 |      739 |      9600 |            7.70 |
+|   LUT as Shift Register  |    <0.001 |      740 |      9600 |            7.71 |
 |   F7/F8 Muxes            |    <0.001 |      360 |     32600 |            1.10 |
 |   Others                 |    <0.001 |     2997 |       --- |             --- |
-| Signals                  |     0.126 |    27279 |       --- |             --- |
-| Block RAM                |     0.070 |     35.5 |        50 |           71.00 |
+| Signals                  |     0.060 |    27246 |       --- |             --- |
+| Block RAM                |     0.071 |     35.5 |        50 |           71.00 |
 | MMCM                     |     0.104 |        1 |         5 |           20.00 |
-| DSPs                     |     0.042 |       63 |        90 |           70.00 |
+| DSPs                     |     0.022 |       63 |        90 |           70.00 |
 | I/O                      |     0.024 |       48 |       106 |           45.28 |
-| Static Power             |     0.075 |          |           |                 |
-| Total                    |     0.584 |          |           |                 |
+| Static Power             |     0.074 |          |           |                 |
+| Total                    |     0.443 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -77,7 +77,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.390 |       0.378 |      0.011 |
+| Vccint    |       1.000 |     0.248 |       0.237 |      0.011 |
 | Vccaux    |       1.800 |     0.071 |       0.059 |      0.013 |
 | Vcco33    |       3.300 |     0.007 |       0.006 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -151,22 +151,22 @@ Table of Contents
 +-------------------------------+-----------+
 | Name                          | Power (W) |
 +-------------------------------+-----------+
-| design_1_wrapper              |     0.510 |
-|   design_1_i                  |     0.486 |
+| design_1_wrapper              |     0.368 |
+|   design_1_i                  |     0.345 |
 |     axi_emc_0                 |     0.010 |
 |       U0                      |     0.010 |
 |     axi_iic_0                 |     0.002 |
 |       U0                      |     0.002 |
 |     axi_quad_spi_0            |     0.004 |
 |       U0                      |     0.004 |
-|     axi_smc                   |     0.034 |
-|       inst                    |     0.034 |
+|     axi_smc                   |     0.033 |
+|       inst                    |     0.033 |
 |     clk_wiz_0                 |     0.104 |
 |       inst                    |     0.104 |
-|     compensator_0             |     0.193 |
-|       U0                      |     0.193 |
-|     microblaze_0              |     0.125 |
-|       U0                      |     0.125 |
+|     compensator_0             |     0.057 |
+|       U0                      |     0.057 |
+|     microblaze_0              |     0.121 |
+|       U0                      |     0.121 |
 |     microblaze_0_axi_intc     |     0.001 |
 |       U0                      |     0.001 |
 |     microblaze_0_axi_periph   |     0.002 |

@@ -2,8 +2,8 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Wed Mar 17 01:34:29 2021
-# Process ID: 43636
+# Start of session at: Fri Mar 26 14:04:51 2021
+# Process ID: 14028
 # Current directory: /home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1
 # Command line: vivado -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: /home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/design_1_wrapper.vds
@@ -19,9 +19,9 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 43677 
+INFO: Helper process launched with PID 14070 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1997.145 ; gain = 201.719 ; free physical = 12041 ; free virtual = 22176
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1998.918 ; gain = 201.719 ; free physical = 21134 ; free virtual = 26922
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:40]
 INFO: [Synth 8-3491] module 'IOBUF' declared at '/tools/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:36196' bound to instance 'cellular_ram_dq_iobuf_0' of component 'IOBUF' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:144]
@@ -40,32 +40,32 @@ INFO: [Synth 8-3491] module 'IOBUF' declared at '/tools/Xilinx/Vivado/2019.2/scr
 INFO: [Synth 8-3491] module 'IOBUF' declared at '/tools/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:36196' bound to instance 'cellular_ram_dq_iobuf_7' of component 'IOBUF' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:193]
 INFO: [Synth 8-3491] module 'design_1' declared at '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/synth/design_1.vhd:2728' bound to instance 'design_1_i' of component 'design_1' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:200]
 INFO: [Synth 8-638] synthesizing module 'design_1' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/synth/design_1.vhd:2774]
-INFO: [Synth 8-3491] module 'design_1_axi_emc_0_0' declared at '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-43636-chrispy-desktop/realtime/design_1_axi_emc_0_0_stub.vhdl:5' bound to instance 'axi_emc_0' of component 'design_1_axi_emc_0_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/synth/design_1.vhd:3759]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_emc_0_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-43636-chrispy-desktop/realtime/design_1_axi_emc_0_0_stub.vhdl:62]
-INFO: [Synth 8-3491] module 'design_1_axi_gpio_0_0' declared at '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-43636-chrispy-desktop/realtime/design_1_axi_gpio_0_0_stub.vhdl:5' bound to instance 'axi_gpio_0' of component 'design_1_axi_gpio_0_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/synth/design_1.vhd:3814]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_0_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-43636-chrispy-desktop/realtime/design_1_axi_gpio_0_0_stub.vhdl:31]
-INFO: [Synth 8-3491] module 'design_1_axi_iic_0_0' declared at '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-43636-chrispy-desktop/realtime/design_1_axi_iic_0_0_stub.vhdl:5' bound to instance 'axi_iic_0' of component 'design_1_axi_iic_0_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/synth/design_1.vhd:3837]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_iic_0_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-43636-chrispy-desktop/realtime/design_1_axi_iic_0_0_stub.vhdl:38]
-INFO: [Synth 8-3491] module 'design_1_axi_quad_spi_0_0' declared at '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-43636-chrispy-desktop/realtime/design_1_axi_quad_spi_0_0_stub.vhdl:5' bound to instance 'axi_quad_spi_0' of component 'design_1_axi_quad_spi_0_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/synth/design_1.vhd:3867]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_quad_spi_0_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-43636-chrispy-desktop/realtime/design_1_axi_quad_spi_0_0_stub.vhdl:51]
-INFO: [Synth 8-3491] module 'design_1_axi_smc_0' declared at '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-43636-chrispy-desktop/realtime/design_1_axi_smc_0_stub.vhdl:5' bound to instance 'axi_smc' of component 'design_1_axi_smc_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/synth/design_1.vhd:3910]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_smc_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-43636-chrispy-desktop/realtime/design_1_axi_smc_0_stub.vhdl:94]
-INFO: [Synth 8-3491] module 'design_1_axi_uartlite_0_0' declared at '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-43636-chrispy-desktop/realtime/design_1_axi_uartlite_0_0_stub.vhdl:5' bound to instance 'axi_uartlite_0' of component 'design_1_axi_uartlite_0_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/synth/design_1.vhd:3996]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_uartlite_0_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-43636-chrispy-desktop/realtime/design_1_axi_uartlite_0_0_stub.vhdl:33]
-INFO: [Synth 8-3491] module 'design_1_axi_uartlite_1_0' declared at '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-43636-chrispy-desktop/realtime/design_1_axi_uartlite_1_0_stub.vhdl:5' bound to instance 'axi_uartlite_1' of component 'design_1_axi_uartlite_1_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/synth/design_1.vhd:4021]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_uartlite_1_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-43636-chrispy-desktop/realtime/design_1_axi_uartlite_1_0_stub.vhdl:33]
-INFO: [Synth 8-3491] module 'design_1_axi_uartlite_2_0' declared at '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-43636-chrispy-desktop/realtime/design_1_axi_uartlite_2_0_stub.vhdl:5' bound to instance 'axi_uartlite_2' of component 'design_1_axi_uartlite_2_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/synth/design_1.vhd:4046]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_uartlite_2_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-43636-chrispy-desktop/realtime/design_1_axi_uartlite_2_0_stub.vhdl:33]
-INFO: [Synth 8-3491] module 'design_1_clk_wiz_0_0' declared at '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-43636-chrispy-desktop/realtime/design_1_clk_wiz_0_0_stub.vhdl:5' bound to instance 'clk_wiz_0' of component 'design_1_clk_wiz_0_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/synth/design_1.vhd:4071]
-INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-43636-chrispy-desktop/realtime/design_1_clk_wiz_0_0_stub.vhdl:16]
-INFO: [Synth 8-3491] module 'design_1_compensator_0_0' declared at '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-43636-chrispy-desktop/realtime/design_1_compensator_0_0_stub.vhdl:5' bound to instance 'compensator_0' of component 'design_1_compensator_0_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/synth/design_1.vhd:4079]
-INFO: [Synth 8-638] synthesizing module 'design_1_compensator_0_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-43636-chrispy-desktop/realtime/design_1_compensator_0_0_stub.vhdl:31]
-INFO: [Synth 8-3491] module 'design_1_mdm_1_0' declared at '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-43636-chrispy-desktop/realtime/design_1_mdm_1_0_stub.vhdl:5' bound to instance 'mdm_1' of component 'design_1_mdm_1_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/synth/design_1.vhd:4102]
-INFO: [Synth 8-638] synthesizing module 'design_1_mdm_1_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-43636-chrispy-desktop/realtime/design_1_mdm_1_0_stub.vhdl:21]
-INFO: [Synth 8-3491] module 'design_1_microblaze_0_0' declared at '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-43636-chrispy-desktop/realtime/design_1_microblaze_0_0_stub.vhdl:5' bound to instance 'microblaze_0' of component 'design_1_microblaze_0_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/synth/design_1.vhd:4115]
-INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-43636-chrispy-desktop/realtime/design_1_microblaze_0_0_stub.vhdl:137]
-INFO: [Synth 8-3491] module 'design_1_microblaze_0_axi_intc_0' declared at '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-43636-chrispy-desktop/realtime/design_1_microblaze_0_axi_intc_0_stub.vhdl:5' bound to instance 'microblaze_0_axi_intc' of component 'design_1_microblaze_0_axi_intc_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/synth/design_1.vhd:4275]
-INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_axi_intc_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-43636-chrispy-desktop/realtime/design_1_microblaze_0_axi_intc_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'design_1_axi_emc_0_0' declared at '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-14028-chrispy-desktop/realtime/design_1_axi_emc_0_0_stub.vhdl:5' bound to instance 'axi_emc_0' of component 'design_1_axi_emc_0_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/synth/design_1.vhd:3759]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_emc_0_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-14028-chrispy-desktop/realtime/design_1_axi_emc_0_0_stub.vhdl:62]
+INFO: [Synth 8-3491] module 'design_1_axi_gpio_0_0' declared at '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-14028-chrispy-desktop/realtime/design_1_axi_gpio_0_0_stub.vhdl:5' bound to instance 'axi_gpio_0' of component 'design_1_axi_gpio_0_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/synth/design_1.vhd:3814]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_0_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-14028-chrispy-desktop/realtime/design_1_axi_gpio_0_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'design_1_axi_iic_0_0' declared at '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-14028-chrispy-desktop/realtime/design_1_axi_iic_0_0_stub.vhdl:5' bound to instance 'axi_iic_0' of component 'design_1_axi_iic_0_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/synth/design_1.vhd:3837]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_iic_0_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-14028-chrispy-desktop/realtime/design_1_axi_iic_0_0_stub.vhdl:38]
+INFO: [Synth 8-3491] module 'design_1_axi_quad_spi_0_0' declared at '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-14028-chrispy-desktop/realtime/design_1_axi_quad_spi_0_0_stub.vhdl:5' bound to instance 'axi_quad_spi_0' of component 'design_1_axi_quad_spi_0_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/synth/design_1.vhd:3867]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_quad_spi_0_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-14028-chrispy-desktop/realtime/design_1_axi_quad_spi_0_0_stub.vhdl:51]
+INFO: [Synth 8-3491] module 'design_1_axi_smc_0' declared at '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-14028-chrispy-desktop/realtime/design_1_axi_smc_0_stub.vhdl:5' bound to instance 'axi_smc' of component 'design_1_axi_smc_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/synth/design_1.vhd:3910]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_smc_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-14028-chrispy-desktop/realtime/design_1_axi_smc_0_stub.vhdl:94]
+INFO: [Synth 8-3491] module 'design_1_axi_uartlite_0_0' declared at '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-14028-chrispy-desktop/realtime/design_1_axi_uartlite_0_0_stub.vhdl:5' bound to instance 'axi_uartlite_0' of component 'design_1_axi_uartlite_0_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/synth/design_1.vhd:3996]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_uartlite_0_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-14028-chrispy-desktop/realtime/design_1_axi_uartlite_0_0_stub.vhdl:33]
+INFO: [Synth 8-3491] module 'design_1_axi_uartlite_1_0' declared at '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-14028-chrispy-desktop/realtime/design_1_axi_uartlite_1_0_stub.vhdl:5' bound to instance 'axi_uartlite_1' of component 'design_1_axi_uartlite_1_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/synth/design_1.vhd:4021]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_uartlite_1_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-14028-chrispy-desktop/realtime/design_1_axi_uartlite_1_0_stub.vhdl:33]
+INFO: [Synth 8-3491] module 'design_1_axi_uartlite_2_0' declared at '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-14028-chrispy-desktop/realtime/design_1_axi_uartlite_2_0_stub.vhdl:5' bound to instance 'axi_uartlite_2' of component 'design_1_axi_uartlite_2_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/synth/design_1.vhd:4046]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_uartlite_2_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-14028-chrispy-desktop/realtime/design_1_axi_uartlite_2_0_stub.vhdl:33]
+INFO: [Synth 8-3491] module 'design_1_clk_wiz_0_0' declared at '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-14028-chrispy-desktop/realtime/design_1_clk_wiz_0_0_stub.vhdl:5' bound to instance 'clk_wiz_0' of component 'design_1_clk_wiz_0_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/synth/design_1.vhd:4071]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-14028-chrispy-desktop/realtime/design_1_clk_wiz_0_0_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'design_1_compensator_0_0' declared at '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-14028-chrispy-desktop/realtime/design_1_compensator_0_0_stub.vhdl:5' bound to instance 'compensator_0' of component 'design_1_compensator_0_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/synth/design_1.vhd:4079]
+INFO: [Synth 8-638] synthesizing module 'design_1_compensator_0_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-14028-chrispy-desktop/realtime/design_1_compensator_0_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'design_1_mdm_1_0' declared at '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-14028-chrispy-desktop/realtime/design_1_mdm_1_0_stub.vhdl:5' bound to instance 'mdm_1' of component 'design_1_mdm_1_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/synth/design_1.vhd:4102]
+INFO: [Synth 8-638] synthesizing module 'design_1_mdm_1_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-14028-chrispy-desktop/realtime/design_1_mdm_1_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'design_1_microblaze_0_0' declared at '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-14028-chrispy-desktop/realtime/design_1_microblaze_0_0_stub.vhdl:5' bound to instance 'microblaze_0' of component 'design_1_microblaze_0_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/synth/design_1.vhd:4115]
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-14028-chrispy-desktop/realtime/design_1_microblaze_0_0_stub.vhdl:137]
+INFO: [Synth 8-3491] module 'design_1_microblaze_0_axi_intc_0' declared at '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-14028-chrispy-desktop/realtime/design_1_microblaze_0_axi_intc_0_stub.vhdl:5' bound to instance 'microblaze_0_axi_intc' of component 'design_1_microblaze_0_axi_intc_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/synth/design_1.vhd:4275]
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_axi_intc_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-14028-chrispy-desktop/realtime/design_1_microblaze_0_axi_intc_0_stub.vhdl:36]
 INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_axi_periph_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/synth/design_1.vhd:1671]
 INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_8RVYHO' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/synth/design_1.vhd:57]
 INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_8RVYHO' (2#1) [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/synth/design_1.vhd:57]
@@ -85,23 +85,23 @@ INFO: [Synth 8-638] synthesizing module 'm07_couplers_imp_1YO2N20' [/home/chrisp
 INFO: [Synth 8-256] done synthesizing module 'm07_couplers_imp_1YO2N20' (9#1) [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/synth/design_1.vhd:764]
 INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1RZP34U' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/synth/design_1.vhd:1427]
 INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1RZP34U' (10#1) [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/synth/design_1.vhd:1427]
-INFO: [Synth 8-3491] module 'design_1_xbar_0' declared at '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-43636-chrispy-desktop/realtime/design_1_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'design_1_xbar_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/synth/design_1.vhd:2561]
-INFO: [Synth 8-638] synthesizing module 'design_1_xbar_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-43636-chrispy-desktop/realtime/design_1_xbar_0_stub.vhdl:51]
+INFO: [Synth 8-3491] module 'design_1_xbar_0' declared at '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-14028-chrispy-desktop/realtime/design_1_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'design_1_xbar_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/synth/design_1.vhd:2561]
+INFO: [Synth 8-638] synthesizing module 'design_1_xbar_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-14028-chrispy-desktop/realtime/design_1_xbar_0_stub.vhdl:51]
 INFO: [Synth 8-256] done synthesizing module 'design_1_microblaze_0_axi_periph_0' (11#1) [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/synth/design_1.vhd:1671]
 INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/synth/design_1.vhd:848]
-INFO: [Synth 8-3491] module 'design_1_dlmb_bram_if_cntlr_0' declared at '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-43636-chrispy-desktop/realtime/design_1_dlmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'dlmb_bram_if_cntlr' of component 'design_1_dlmb_bram_if_cntlr_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/synth/design_1.vhd:1062]
-INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_bram_if_cntlr_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-43636-chrispy-desktop/realtime/design_1_dlmb_bram_if_cntlr_0_stub.vhdl:31]
-INFO: [Synth 8-3491] module 'design_1_dlmb_v10_0' declared at '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-43636-chrispy-desktop/realtime/design_1_dlmb_v10_0_stub.vhdl:5' bound to instance 'dlmb_v10' of component 'design_1_dlmb_v10_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/synth/design_1.vhd:1116]
-INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_v10_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-43636-chrispy-desktop/realtime/design_1_dlmb_v10_0_stub.vhdl:36]
-INFO: [Synth 8-3491] module 'design_1_ilmb_bram_if_cntlr_0' declared at '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-43636-chrispy-desktop/realtime/design_1_ilmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'ilmb_bram_if_cntlr' of component 'design_1_ilmb_bram_if_cntlr_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/synth/design_1.vhd:1144]
-INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_bram_if_cntlr_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-43636-chrispy-desktop/realtime/design_1_ilmb_bram_if_cntlr_0_stub.vhdl:31]
-INFO: [Synth 8-3491] module 'design_1_ilmb_v10_0' declared at '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-43636-chrispy-desktop/realtime/design_1_ilmb_v10_0_stub.vhdl:5' bound to instance 'ilmb_v10' of component 'design_1_ilmb_v10_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/synth/design_1.vhd:1198]
-INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_v10_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-43636-chrispy-desktop/realtime/design_1_ilmb_v10_0_stub.vhdl:36]
-INFO: [Synth 8-3491] module 'design_1_lmb_bram_0' declared at '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-43636-chrispy-desktop/realtime/design_1_lmb_bram_0_stub.vhdl:5' bound to instance 'lmb_bram' of component 'design_1_lmb_bram_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/synth/design_1.vhd:1226]
-INFO: [Synth 8-638] synthesizing module 'design_1_lmb_bram_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-43636-chrispy-desktop/realtime/design_1_lmb_bram_0_stub.vhdl:27]
+INFO: [Synth 8-3491] module 'design_1_dlmb_bram_if_cntlr_0' declared at '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-14028-chrispy-desktop/realtime/design_1_dlmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'dlmb_bram_if_cntlr' of component 'design_1_dlmb_bram_if_cntlr_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/synth/design_1.vhd:1062]
+INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_bram_if_cntlr_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-14028-chrispy-desktop/realtime/design_1_dlmb_bram_if_cntlr_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'design_1_dlmb_v10_0' declared at '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-14028-chrispy-desktop/realtime/design_1_dlmb_v10_0_stub.vhdl:5' bound to instance 'dlmb_v10' of component 'design_1_dlmb_v10_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/synth/design_1.vhd:1116]
+INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_v10_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-14028-chrispy-desktop/realtime/design_1_dlmb_v10_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'design_1_ilmb_bram_if_cntlr_0' declared at '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-14028-chrispy-desktop/realtime/design_1_ilmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'ilmb_bram_if_cntlr' of component 'design_1_ilmb_bram_if_cntlr_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/synth/design_1.vhd:1144]
+INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_bram_if_cntlr_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-14028-chrispy-desktop/realtime/design_1_ilmb_bram_if_cntlr_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'design_1_ilmb_v10_0' declared at '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-14028-chrispy-desktop/realtime/design_1_ilmb_v10_0_stub.vhdl:5' bound to instance 'ilmb_v10' of component 'design_1_ilmb_v10_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/synth/design_1.vhd:1198]
+INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_v10_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-14028-chrispy-desktop/realtime/design_1_ilmb_v10_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'design_1_lmb_bram_0' declared at '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-14028-chrispy-desktop/realtime/design_1_lmb_bram_0_stub.vhdl:5' bound to instance 'lmb_bram' of component 'design_1_lmb_bram_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/synth/design_1.vhd:1226]
+INFO: [Synth 8-638] synthesizing module 'design_1_lmb_bram_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-14028-chrispy-desktop/realtime/design_1_lmb_bram_0_stub.vhdl:27]
 INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' (12#1) [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/synth/design_1.vhd:848]
-INFO: [Synth 8-3491] module 'design_1_rst_clk_wiz_0_100M_0' declared at '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-43636-chrispy-desktop/realtime/design_1_rst_clk_wiz_0_100M_0_stub.vhdl:5' bound to instance 'rst_clk_wiz_0_100M' of component 'design_1_rst_clk_wiz_0_100M_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/synth/design_1.vhd:4506]
-INFO: [Synth 8-638] synthesizing module 'design_1_rst_clk_wiz_0_100M_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-43636-chrispy-desktop/realtime/design_1_rst_clk_wiz_0_100M_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'design_1_rst_clk_wiz_0_100M_0' declared at '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-14028-chrispy-desktop/realtime/design_1_rst_clk_wiz_0_100M_0_stub.vhdl:5' bound to instance 'rst_clk_wiz_0_100M' of component 'design_1_rst_clk_wiz_0_100M_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/synth/design_1.vhd:4506]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_clk_wiz_0_100M_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/.Xil/Vivado-14028-chrispy-desktop/realtime/design_1_rst_clk_wiz_0_100M_0_stub.vhdl:21]
 INFO: [Synth 8-3491] module 'design_1_xlconcat_0_0' declared at '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:58' bound to instance 'xlconcat_0' of component 'design_1_xlconcat_0_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/synth/design_1.vhd:4519]
 INFO: [Synth 8-6157] synthesizing module 'design_1_xlconcat_0_0' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:58]
 INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_3_xlconcat' [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.srcs/sources_1/bd/design_1/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
@@ -233,7 +233,7 @@ WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnecte
 WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnected port S00_ACLK
 WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnected port S00_ARESETN
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2068.863 ; gain = 273.438 ; free physical = 12068 ; free virtual = 22191
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2070.637 ; gain = 273.438 ; free physical = 21164 ; free virtual = 26954
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -246,12 +246,12 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2071.832 ; gain = 276.406 ; free physical = 12062 ; free virtual = 22184
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2070.637 ; gain = 273.438 ; free physical = 21160 ; free virtual = 26950
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2071.832 ; gain = 276.406 ; free physical = 12062 ; free virtual = 22184
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2070.637 ; gain = 273.438 ; free physical = 21160 ; free virtual = 26950
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2080.738 ; gain = 0.000 ; free physical = 12049 ; free virtual = 22173
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2082.543 ; gain = 0.000 ; free physical = 21151 ; free virtual = 26941
 INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -306,22 +306,22 @@ Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs
 Finished Parsing XDC File [/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2194.582 ; gain = 0.000 ; free physical = 11986 ; free virtual = 22111
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2197.387 ; gain = 0.000 ; free physical = 21067 ; free virtual = 26858
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 15 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 15 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2194.582 ; gain = 0.000 ; free physical = 11986 ; free virtual = 22111
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2197.387 ; gain = 0.000 ; free physical = 21067 ; free virtual = 26858
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2197.551 ; gain = 402.125 ; free physical = 12075 ; free virtual = 22183
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2200.355 ; gain = 403.156 ; free physical = 21137 ; free virtual = 26929
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2197.551 ; gain = 402.125 ; free physical = 12075 ; free virtual = 22183
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2200.355 ; gain = 403.156 ; free physical = 21137 ; free virtual = 26929
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -352,10 +352,10 @@ Applied set_property DONT_TOUCH = true for design_1_i/xlconcat_0. (constraint fi
 Applied set_property DONT_TOUCH = true for design_1_i/axi_uartlite_2. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/compensator_0. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2197.551 ; gain = 402.125 ; free physical = 12076 ; free virtual = 22183
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2200.355 ; gain = 403.156 ; free physical = 21137 ; free virtual = 26929
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2197.551 ; gain = 402.125 ; free physical = 12076 ; free virtual = 22184
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2200.355 ; gain = 403.156 ; free physical = 21137 ; free virtual = 26929
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -410,7 +410,7 @@ WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnecte
 WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnected port S00_ARESETN
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2197.551 ; gain = 402.125 ; free physical = 12076 ; free virtual = 22188
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2200.355 ; gain = 403.156 ; free physical = 21135 ; free virtual = 26930
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -422,13 +422,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 2197.551 ; gain = 402.125 ; free physical = 11953 ; free virtual = 22061
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 2200.355 ; gain = 403.156 ; free physical = 21010 ; free virtual = 26813
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 2197.551 ; gain = 402.125 ; free physical = 11953 ; free virtual = 22061
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 2200.355 ; gain = 403.156 ; free physical = 21010 ; free virtual = 26813
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -440,7 +440,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 2197.551 ; gain = 402.125 ; free physical = 11952 ; free virtual = 22059
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 2200.355 ; gain = 403.156 ; free physical = 21008 ; free virtual = 26810
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -464,13 +464,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 2197.551 ; gain = 402.125 ; free physical = 11946 ; free virtual = 22054
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 2200.355 ; gain = 403.156 ; free physical = 21002 ; free virtual = 26805
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 2197.551 ; gain = 402.125 ; free physical = 11946 ; free virtual = 22054
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 2200.355 ; gain = 403.156 ; free physical = 21002 ; free virtual = 26805
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -489,25 +489,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 2197.551 ; gain = 402.125 ; free physical = 11946 ; free virtual = 22054
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 2200.355 ; gain = 403.156 ; free physical = 21002 ; free virtual = 26805
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 2197.551 ; gain = 402.125 ; free physical = 11946 ; free virtual = 22054
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 2200.355 ; gain = 403.156 ; free physical = 21002 ; free virtual = 26805
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 2197.551 ; gain = 402.125 ; free physical = 11946 ; free virtual = 22054
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 2200.355 ; gain = 403.156 ; free physical = 21002 ; free virtual = 26805
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 2197.551 ; gain = 402.125 ; free physical = 11946 ; free virtual = 22054
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 2200.355 ; gain = 403.156 ; free physical = 21002 ; free virtual = 26805
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -579,18 +579,18 @@ Report Instance Areas:
 |5     |    microblaze_0_local_memory |microblaze_0_local_memory_imp_1K0VQXK |   496|
 +------+------------------------------+--------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 2197.551 ; gain = 402.125 ; free physical = 11946 ; free virtual = 22054
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 2200.355 ; gain = 403.156 ; free physical = 21002 ; free virtual = 26805
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 18 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 2197.551 ; gain = 276.406 ; free physical = 12001 ; free virtual = 22108
-Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 2197.551 ; gain = 402.125 ; free physical = 12001 ; free virtual = 22108
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2200.355 ; gain = 273.438 ; free physical = 21055 ; free virtual = 26858
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 2200.355 ; gain = 403.156 ; free physical = 21055 ; free virtual = 26858
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2197.551 ; gain = 0.000 ; free physical = 12070 ; free virtual = 22178
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2200.355 ; gain = 0.000 ; free physical = 21123 ; free virtual = 26927
 INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2197.551 ; gain = 0.000 ; free physical = 12013 ; free virtual = 22121
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2200.355 ; gain = 0.000 ; free physical = 21066 ; free virtual = 26871
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 15 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 15 instances
@@ -598,10 +598,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 107 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 2197.551 ; gain = 652.102 ; free physical = 12138 ; free virtual = 22246
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2197.551 ; gain = 0.000 ; free physical = 12138 ; free virtual = 22246
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 2200.355 ; gain = 653.070 ; free physical = 21190 ; free virtual = 26995
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2200.355 ; gain = 0.000 ; free physical = 21190 ; free virtual = 26995
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/chrispy/workspace/FPRock_CmodA735t/FPRock_CmodA735t.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Mar 17 01:35:03 2021...
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 26 14:05:23 2021...

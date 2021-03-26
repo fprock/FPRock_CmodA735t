@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="design_1_ilmb_v10_0_synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1615926965">
-  <File Type="RDS-RDS" Name="design_1_ilmb_v10_0.vds"/>
   <File Type="RDS-DCP" Name="design_1_ilmb_v10_0.dcp"/>
   <File Type="PA-TCL" Name="design_1_ilmb_v10_0.tcl"/>
+  <File Type="RDS-RDS" Name="design_1_ilmb_v10_0.vds"/>
   <File Type="REPORTS-TCL" Name="design_1_ilmb_v10_0_reports.tcl"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/design_1_ilmb_v10_0">
     <File Path="$PSRCDIR/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0.xci">

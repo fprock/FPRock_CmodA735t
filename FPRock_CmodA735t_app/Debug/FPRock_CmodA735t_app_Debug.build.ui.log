@@ -1,4 +1,4 @@
-2021-03-25T16:34:17.91626400255-16:34:17 **** Incremental Build of configuration Debug for project FPRock_CmodA735t_app ****
+2021-03-26T15:09:05.72651100255-15:09:05 **** Incremental Build of configuration Debug for project FPRock_CmodA735t_app ****
 000-make all 
 000-Building file: ../src/testperiph.c
 000-Invoking: MicroBlaze gcc compiler
@@ -99,9 +99,9 @@
 000-Invoking: MicroBlaze Print Size
 000-mb-size FPRock_CmodA735t_app.elf  |tee "FPRock_CmodA735t_app.elf.size"
 000-   text	   data	    bss	    dec	    hex	filename
-000-  35644	   1876	   2528	  40048	   9c70	FPRock_CmodA735t_app.elf
+000-  35732	   1876	   2528	  40136	   9cc8	FPRock_CmodA735t_app.elf
 000-Finished building: FPRock_CmodA735t_app.elf.size
 000- 
 00255-
-16:34:18 Build Finished (took 214ms)
+15:09:05 Build Finished (took 214ms)
 
