@@ -604,7 +604,7 @@ int main ()
 				for(int i = 0; i < MSG_BARO_TOTAL_LEN; i++){
 					xil_printf("%02x", baro_msg_u8[i]);
 				}
-				//print("\n");
+				print("\n");
 			}
 			else if(messageReady == 2){
 				//ByteCount = XUartLite_Send(&UartXbee, gps_msg, GPS_BAvail);
@@ -613,7 +613,7 @@ int main ()
 				for(int i = 0; i < GPS_BAvail; i++){
 					xil_printf("%02x", gps_msg[i]);
 				}
-				//print("\n");
+				print("\n");
 			}
 			//ByteCount = XUartLite_Send(&UartXbee, testBuffer, 13);
 #endif

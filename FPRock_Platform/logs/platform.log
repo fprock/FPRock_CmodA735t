@@ -5114,3 +5114,196 @@ TRACE::2021-03-24.19:39:03::SCWMssOS::Checking the sw design at  /home/chrispy/w
 TRACE::2021-03-24.19:39:03::SCWMssOS::DEBUG:  swdes dump  /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss|system||
 
 TRACE::2021-03-24.19:39:03::SCWMssOS::Sw design exists and opened at  /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-25.17:14:12::SCWPlatform::Trying to open the hw design at /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:12::SCWPlatform::DSA given /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:12::SCWPlatform::DSA absoulate path /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:13::SCWPlatform::DSA directory /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw
+TRACE::2021-03-25.17:14:13::SCWPlatform:: Platform Path /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:13::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2021-03-25.17:14:13::SCWPlatform::Do not have an existing db opened. 
+TRACE::2021-03-25.17:14:14::SCWPlatform::Opened new HwDB with name design_1_wrapper_0
+TRACE::2021-03-25.17:14:14::SCWReader::Active system found as  FPRock_Platform
+TRACE::2021-03-25.17:14:14::SCWReader::Handling sysconfig FPRock_Platform
+TRACE::2021-03-25.17:14:14::SCWDomain::checking for install qemu data   : 
+TRACE::2021-03-25.17:14:14::SCWPlatform::Trying to open the hw design at /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:14::SCWPlatform::DSA given /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:14::SCWPlatform::DSA absoulate path /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:14::SCWPlatform::DSA directory /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw
+TRACE::2021-03-25.17:14:14::SCWPlatform:: Platform Path /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:14::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2021-03-25.17:14:14::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-25.17:14:14::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-25.17:14:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-25.17:14:14::SCWPlatform::Trying to open the hw design at /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:14::SCWPlatform::DSA given /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:14::SCWPlatform::DSA absoulate path /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:14::SCWPlatform::DSA directory /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw
+TRACE::2021-03-25.17:14:14::SCWPlatform:: Platform Path /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:14::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2021-03-25.17:14:14::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-25.17:14:14::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-25.17:14:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-25.17:14:14::SCWPlatform::Trying to open the hw design at /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:14::SCWPlatform::DSA given /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:14::SCWPlatform::DSA absoulate path /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:14::SCWPlatform::DSA directory /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw
+TRACE::2021-03-25.17:14:14::SCWPlatform:: Platform Path /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:14::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2021-03-25.17:14:14::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-25.17:14:14::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-25.17:14:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-25.17:14:14::SCWMssOS::Checking the sw design at  /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-25.17:14:14::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2021-03-25.17:14:14::SCWMssOS::No sw design opened at  /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-25.17:14:14::SCWMssOS::mss exists loading the mss file  /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-25.17:14:14::SCWMssOS::Opened the sw design from mss  /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-25.17:14:14::SCWMssOS::Adding the swdes entry /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2021-03-25.17:14:14::SCWMssOS::updating the scw layer about changes
+TRACE::2021-03-25.17:14:14::SCWMssOS::Opened the sw design.  /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-25.17:14:14::SCWPlatform::Trying to open the hw design at /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:14::SCWPlatform::DSA given /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:14::SCWPlatform::DSA absoulate path /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:14::SCWPlatform::DSA directory /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw
+TRACE::2021-03-25.17:14:14::SCWPlatform:: Platform Path /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:14::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2021-03-25.17:14:14::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-25.17:14:14::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-25.17:14:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-25.17:14:14::SCWMssOS::Checking the sw design at  /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-25.17:14:14::SCWMssOS::DEBUG:  swdes dump  /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-03-25.17:14:14::SCWMssOS::Sw design exists and opened at  /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-25.17:14:14::SCWMssOS:: library already available in sw design:  xilisf:5.14
+TRACE::2021-03-25.17:14:14::SCWPlatform::Trying to open the hw design at /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:14::SCWPlatform::DSA given /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:14::SCWPlatform::DSA absoulate path /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:14::SCWPlatform::DSA directory /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw
+TRACE::2021-03-25.17:14:14::SCWPlatform:: Platform Path /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:14::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2021-03-25.17:14:14::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-25.17:14:14::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-25.17:14:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-25.17:14:14::SCWMssOS::Checking the sw design at  /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-25.17:14:14::SCWMssOS::DEBUG:  swdes dump  /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-03-25.17:14:14::SCWMssOS::Sw design exists and opened at  /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-25.17:14:14::SCWPlatform::Trying to open the hw design at /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:14::SCWPlatform::DSA given /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:14::SCWPlatform::DSA absoulate path /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:14::SCWPlatform::DSA directory /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw
+TRACE::2021-03-25.17:14:14::SCWPlatform:: Platform Path /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:14::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2021-03-25.17:14:14::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-25.17:14:14::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-25.17:14:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-25.17:14:14::SCWMssOS::Checking the sw design at  /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-25.17:14:14::SCWMssOS::DEBUG:  swdes dump  /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-03-25.17:14:14::SCWMssOS::Sw design exists and opened at  /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-25.17:14:14::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2021-03-25.17:14:14::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2021-03-25.17:14:14::SCWPlatform::Trying to open the hw design at /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:14::SCWPlatform::DSA given /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:14::SCWPlatform::DSA absoulate path /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:14::SCWPlatform::DSA directory /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw
+TRACE::2021-03-25.17:14:14::SCWPlatform:: Platform Path /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:14::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2021-03-25.17:14:14::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-25.17:14:14::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-25.17:14:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-25.17:14:14::SCWMssOS::Checking the sw design at  /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-25.17:14:14::SCWMssOS::DEBUG:  swdes dump  /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-03-25.17:14:14::SCWMssOS::Sw design exists and opened at  /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-25.17:14:14::SCWReader::No isolation master present  
+TRACE::2021-03-25.17:14:14::SCWPlatform::Trying to open the hw design at /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:14::SCWPlatform::DSA given /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:14::SCWPlatform::DSA absoulate path /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:14::SCWPlatform::DSA directory /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw
+TRACE::2021-03-25.17:14:14::SCWPlatform:: Platform Path /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:14::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2021-03-25.17:14:14::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-25.17:14:14::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-25.17:14:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-25.17:14:14::SCWMssOS::Checking the sw design at  /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-25.17:14:14::SCWMssOS::DEBUG:  swdes dump  /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-03-25.17:14:14::SCWMssOS::Sw design exists and opened at  /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-25.17:14:14::SCWMssOS::In reload Mss file.
+TRACE::2021-03-25.17:14:14::SCWPlatform::Trying to open the hw design at /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:14::SCWPlatform::DSA given /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:14::SCWPlatform::DSA absoulate path /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:14::SCWPlatform::DSA directory /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw
+TRACE::2021-03-25.17:14:14::SCWPlatform:: Platform Path /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:14::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2021-03-25.17:14:14::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-25.17:14:14::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-25.17:14:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-25.17:14:14::SCWMssOS::Checking the sw design at  /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-25.17:14:14::SCWMssOS::DEBUG:  swdes dump  /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+KEYINFO::2021-03-25.17:14:14::SCWMssOS::Could not open the swdb for system
+KEYINFO::2021-03-25.17:14:14::SCWMssOS::Could not open the sw design at  system
+ERROR: [Hsi 55-1558] Software Design system is not found
+
+TRACE::2021-03-25.17:14:14::SCWMssOS::Cleared the swdb table entry
+TRACE::2021-03-25.17:14:14::SCWMssOS::No sw design opened at  /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-25.17:14:14::SCWMssOS::mss exists loading the mss file  /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-25.17:14:14::SCWMssOS::Opened the sw design from mss  /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-25.17:14:14::SCWMssOS::Adding the swdes entry /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2021-03-25.17:14:14::SCWMssOS::updating the scw layer about changes
+TRACE::2021-03-25.17:14:14::SCWMssOS::Opened the sw design.  /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-25.17:14:14::SCWPlatform::Trying to open the hw design at /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:14::SCWPlatform::DSA given /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:14::SCWPlatform::DSA absoulate path /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:14::SCWPlatform::DSA directory /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw
+TRACE::2021-03-25.17:14:14::SCWPlatform:: Platform Path /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:14::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2021-03-25.17:14:14::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-25.17:14:14::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-25.17:14:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-25.17:14:14::SCWMssOS::Checking the sw design at  /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-25.17:14:14::SCWMssOS::DEBUG:  swdes dump  /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-03-25.17:14:14::SCWMssOS::Sw design exists and opened at  /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-25.17:14:14::SCWMssOS:: library already available in sw design:  xilisf:5.14
+TRACE::2021-03-25.17:14:14::SCWPlatform::Trying to open the hw design at /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:14::SCWPlatform::DSA given /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:14::SCWPlatform::DSA absoulate path /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:14::SCWPlatform::DSA directory /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw
+TRACE::2021-03-25.17:14:14::SCWPlatform:: Platform Path /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:14::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2021-03-25.17:14:14::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-25.17:14:14::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-25.17:14:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-25.17:14:14::SCWMssOS::Checking the sw design at  /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-25.17:14:14::SCWMssOS::DEBUG:  swdes dump  /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-03-25.17:14:14::SCWMssOS::Sw design exists and opened at  /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-25.17:14:14::SCWPlatform::Trying to open the hw design at /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:14::SCWPlatform::DSA given /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:14::SCWPlatform::DSA absoulate path /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:14::SCWPlatform::DSA directory /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw
+TRACE::2021-03-25.17:14:14::SCWPlatform:: Platform Path /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:14::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2021-03-25.17:14:14::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-25.17:14:14::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-25.17:14:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-25.17:14:14::SCWMssOS::Checking the sw design at  /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-25.17:14:14::SCWMssOS::DEBUG:  swdes dump  /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-03-25.17:14:14::SCWMssOS::Sw design exists and opened at  /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-25.17:14:14::SCWPlatform::Trying to open the hw design at /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:14::SCWPlatform::DSA given /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:14::SCWPlatform::DSA absoulate path /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:14::SCWPlatform::DSA directory /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw
+TRACE::2021-03-25.17:14:14::SCWPlatform:: Platform Path /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/hw/design_2_wrapper.xsa
+TRACE::2021-03-25.17:14:14::SCWPlatform:: Unique name xilinx:cmod_a7-35t::0.0
+TRACE::2021-03-25.17:14:14::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-03-25.17:14:14::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-03-25.17:14:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-25.17:14:14::SCWMssOS::Checking the sw design at  /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-25.17:14:14::SCWMssOS::DEBUG:  swdes dump  /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-03-25.17:14:14::SCWMssOS::Sw design exists and opened at  /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-25.17:14:14::SCWMssOS::Removing the swdes entry for  /home/chrispy/workspace/FPRock_CmodA735t/FPRock_Platform/microblaze_0/standalone_domain/bsp/system.mss
