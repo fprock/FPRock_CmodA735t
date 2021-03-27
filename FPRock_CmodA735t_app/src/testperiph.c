@@ -13,15 +13,9 @@
 #include "xparameters.h"
 #include "xil_cache.h"
 #include "xintc.h"
-//#include "intc_header.h"
 #include "xgpio.h"
-//#include "gpio_header.h"
-//#include "iic_header.h"
 #include "xspi.h"
-//#include "spi_header.h"
 #include "xuartlite.h"
-//#include "uartlite_header.h"
-//#include "uartlite_intr_header.h"
 #include "xil_types.h"
 #include "xiic_l.h"
 #include "xiic.h"
@@ -250,7 +244,7 @@ void fletcher(u8 *ckAptr, u8 *ckBptr, u8 *buffptr, int N){
 	int i;
 	for(i = 0; i < N; i++){
 		*ckAptr = *ckAptr + buffptr[i];
-		*ckBptr = *ckBptr + &ckAptr;
+		*ckBptr = *ckBptr + *ckAptr;
 	}
 }
 
@@ -511,19 +505,6 @@ int main ()
 			do_not_update = 1;
    		}
 
-
-
-
-
-//   		ByteCount = XUartLite_Send(&UartXbee, testbuff, TBLEN);
-//   		while(XUartLite_IsSending(&UartXbee)){
-//   			usleep(100);
-//   		}
-//   		while(!ResultAvail_CompInst){
-//   					usleep(100); //having issues with this loop when there is nothing in it or
-//   								//before it. the loop gets hung even when it is not satisfied.
-//   								// maybe do;while?
-//		}
    		if(ResultAvail_CompInst){
    			baro_msg[4] = XCompensator_Get_pres_comp(&CompInst);
    			baro_msg[5] = XCompensator_Get_temp_comp(&CompInst);
@@ -532,9 +513,6 @@ int main ()
 			A = FloatAltitudeMeters(cnvrt.f, referencePressure);
 			cnvrt.f = A;
 			baro_msg[7] = cnvrt.i;
-//			ckaAddr = ((u8 *)baro_msg + (MSG_PAYLOAD_OFFSET + MSG_BARO_PAYLOAD_LEN));
-//			ckbAddr = ((u8 *)baro_msg + (MSG_PAYLOAD_OFFSET + MSG_BARO_PAYLOAD_LEN + 1));
-//			plAddr = ((u8 *)baro_msg + MSG_PAYLOAD_OFFSET);
 			ckaAddr = &baro_msg_u8[MSG_PAYLOAD_OFFSET + MSG_BARO_PAYLOAD_LEN];
 			ckbAddr = &baro_msg_u8[MSG_PAYLOAD_OFFSET + MSG_BARO_PAYLOAD_LEN + 1];
 			plAddr = &baro_msg_u8[MSG_PAYLOAD_OFFSET];
@@ -543,12 +521,6 @@ int main ()
 
 			messageReady = 1;
    		}
-
-
-
-
-
-
 
 
 #endif
@@ -600,7 +572,6 @@ int main ()
 #ifdef _XBEE_
 			if(messageReady == 1){
 				ByteCount = XUartLite_Send(&UartXbee, baro_msg_u8, MSG_BARO_TOTAL_LEN);
-				//print("sending baro\r\n");
 				while(XUartLite_IsSending(&UartXbee)){
 					usleep(10);
 				}
@@ -610,9 +581,7 @@ int main ()
 				//print("\n");
 			}
 			else if(messageReady == 2){
-				//ByteCount = XUartLite_Send(&UartXbee, gps_msg, GPS_BAvail);
 				ByteCount = XUartLite_Send(&UartXbee, gps_msg, GPS_BAvail);
-				//print("sending gps\r\n");
 				while(XUartLite_IsSending(&UartXbee)){
 					usleep(10);
 				}
@@ -629,7 +598,7 @@ int main ()
    		}
 
    		//usleep(500000);
-	//	sleep(1);
+		//sleep(1);
    	}
 
    print("---Exiting main---\n\r");

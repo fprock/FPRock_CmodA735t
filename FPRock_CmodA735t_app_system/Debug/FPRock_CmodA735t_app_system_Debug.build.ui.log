@@ -1,6 +1,6 @@
-2021-03-26T14:13:31.69886700255-14:13:31 **** Build of configuration Debug for project FPRock_CmodA735t_app_system ****
+2021-03-26T21:24:41.85955900255-21:24:41 **** Incremental Build of configuration Debug for project FPRock_CmodA735t_app_system ****
 000-make all 
 000-Skipping SD card image generation. Reason: The system project only has applications for microblaze processors.
 00255-
-14:13:31 Build Finished (took 113ms)
+21:24:41 Build Finished (took 115ms)
 
